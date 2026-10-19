@@ -610,28 +610,29 @@ slplots_comb<-ggpubr::ggarrange(sl_plot, struct_plot, ncol = 2,   labels = c("a)
                   font.label = list(size = 38, face = "bold"), 
                    label.x = 0.02 , label.y = 0.98) # position of tags in each panel (0–1))
 
-ggsave(filename = "figures/SL_plots_combined.png", width= 22, height=10, dpi = 300)
+ggsave(filename = "figures/SL_plots_combined.png", 
+       plot = slplots_comb, width= 22, height=10, dpi = 300)
 
 ```
 ## check the facilitation effect for unstructured strams
 
 ```{r}
-facil_effect<-lmer(RTms ~ 1+target_rep*sequence_type+syllable_order_n_z+trial_new+
-                   (1+target_rep*sequence_type++syllable_order_n_z+trial_new|participant ) ,
-                 data = full_df[is.na(full_df$target_pos) |full_df$target_pos!=1,], 
-                 control = lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1000000000)), 
-                 REML=T)
+# facil_effect<-lmer(RTms ~ 1+target_rep*sequence_type+syllable_order_n_z+trial_new+
+#                    (1+target_rep*sequence_type++syllable_order_n_z+trial_new|participant ) ,
+#                  data = full_df[is.na(full_df$target_pos) |full_df$target_pos!=1,], 
+#                  control = lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1000000000)), 
+#                  REML=T)
 
 summary(facil_effect)
 Anova(facil_effect, type = 2)
 
 # only in the unstructured
-unstructured_streams_fact_effect<-lmer(RTms ~ 1+target_rep+syllable_order_n_z+
-                   (1+target_rep+syllable_order_n_z|participant ) ,
-                 data = full_df[ 
-                   full_df$sequence_type=="unstructured"  ,], 
-                 control = lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1000000000)), 
-                 REML=T)
+# unstructured_streams_fact_effect<-lmer(RTms ~ 1+target_rep+syllable_order_n_z+
+#                    (1+target_rep+syllable_order_n_z|participant ) ,
+#                  data = full_df[ 
+#                    full_df$sequence_type=="unstructured"  ,], 
+#                  control = lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1000000000)), 
+#                  REML=T)
 
 
 summary(unstructured_streams_fact_effect)

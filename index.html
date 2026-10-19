@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.10.18" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
 
 <title>SL_valence</title>
@@ -63,41 +65,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
-<script src="analysis_files/libs/clipboard/clipboard.min.js"></script>
-<script src="analysis_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="analysis_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="analysis_files/libs/quarto-html/popper.min.js"></script>
-<script src="analysis_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="analysis_files/libs/quarto-html/anchor.min.js"></script>
-<link href="analysis_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="analysis_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="analysis_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="analysis_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="analysis_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<!-- htmldependencies:E3FAD763 -->
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
 
 </head>
 
-<body class="quarto-light">
+<body>
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#data-are-first-cleaned-and-preprocessed" id="toc-data-are-first-cleaned-and-preprocessed" class="nav-link active" data-scroll-target="#data-are-first-cleaned-and-preprocessed">Data are first cleaned and preprocessed</a></li>
-  <li><a href="#load-the-cleaned-and-preprocessed-data" id="toc-load-the-cleaned-and-preprocessed-data" class="nav-link" data-scroll-target="#load-the-cleaned-and-preprocessed-data">Load the cleaned and preprocessed data</a></li>
-  <li><a href="#descriptives" id="toc-descriptives" class="nav-link" data-scroll-target="#descriptives">Descriptives</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"></a></li>
-  <li><a href="#accuracy-and-sd" id="toc-accuracy-and-sd" class="nav-link" data-scroll-target="#accuracy-and-sd">Accuracy and sd</a></li>
-  </ul>
-</nav>
-</div>
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <div id="quarto-toc-target"></div>
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -118,25 +128,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data-are-first-cleaned-and-preprocessed" id="toc-data-are-first-cleaned-and-preprocessed">Data are first cleaned and preprocessed</a></li>
+  <li><a href="#load-the-cleaned-and-preprocessed-data" id="toc-load-the-cleaned-and-preprocessed-data">Load the cleaned and preprocessed data</a></li>
+  <li><a href="#descriptives" id="toc-descriptives">Descriptives</a></li>
+  <li><a href="#section" id="toc-section"></a></li>
+  <li><a href="#section-1" id="toc-section-1"></a></li>
+  <li><a href="#section-2" id="toc-section-2"></a></li>
+  <li><a href="#section-3" id="toc-section-3"></a></li>
+  <li><a href="#accuracy-and-sd" id="toc-accuracy-and-sd">Accuracy and sd</a></li>
+  <li><a href="#section-4" id="toc-section-4"></a></li>
+  <li><a href="#section-5" id="toc-section-5"></a></li>
+  <li><a href="#section-6" id="toc-section-6"></a></li>
+  <li><a href="#now-check-if-there-are-participants-who-did-not-complete-the-all-trials" id="toc-now-check-if-there-are-participants-who-did-not-complete-the-all-trials">now check if there are participants who did not complete the all trials</a>
+  <ul>
+  <li><a href="#section-7" id="toc-section-7"></a></li>
+  <li><a href="#section-8" id="toc-section-8"></a></li>
+  <li><a href="#section-9" id="toc-section-9"></a></li>
+  <li><a href="#section-10" id="toc-section-10"></a></li>
+  <li><a href="#is-there-a-difference-in-age-due-to-condition-assignment" id="toc-is-there-a-difference-in-age-due-to-condition-assignment">is there a difference in age due to condition assignment?</a></li>
+  <li><a href="#section-11" id="toc-section-11"></a></li>
+  <li><a href="#random-structure-model-selection" id="toc-random-structure-model-selection">Random structure model selection</a></li>
+  <li><a href="#statistical-learning-main-results" id="toc-statistical-learning-main-results">Statistical learning main results</a></li>
+  <li><a href="#break-down-the-interaction" id="toc-break-down-the-interaction">Break down the interaction</a></li>
+  <li><a href="#sl-results-plot" id="toc-sl-results-plot">SL results plot</a></li>
+  <li><a href="#structured-vs-random-streams" id="toc-structured-vs-random-streams">Structured vs random streams</a></li>
+  <li><a href="#plot" id="toc-plot">Plot</a></li>
+  <li><a href="#check-the-facilitation-effect-for-unstructured-strams" id="toc-check-the-facilitation-effect-for-unstructured-strams">check the facilitation effect for unstructured strams</a></li>
+  </ul></li>
+  </ul>
+</nav>
 <section id="data-are-first-cleaned-and-preprocessed" class="level2">
-<h2 class="anchored" data-anchor-id="data-are-first-cleaned-and-preprocessed">Data are first cleaned and preprocessed</h2>
+<h2>Data are first cleaned and preprocessed</h2>
 </section>
 <section id="load-the-cleaned-and-preprocessed-data" class="level2">
-<h2 class="anchored" data-anchor-id="load-the-cleaned-and-preprocessed-data">Load the cleaned and preprocessed data</h2>
+<h2>Load the cleaned and preprocessed data</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># cleawn the workspace</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># cleawn the workspace</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>())</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># load the long df with SL data</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>full_df<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"group_data/long_df_stat.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>full_df<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">&quot;group_data/long_df_stat.csv&quot;</span>)</span></code></pre></div>
 </details>
 </div>
 </section>
 <section id="descriptives" class="level2">
-<h2 class="anchored" data-anchor-id="descriptives">Descriptives</h2>
+<h2>Descriptives</h2>
 <p>As false alarms, we consider the cases in which participants pressed space when:</p>
 <ul>
 <li><ol type="1">
@@ -149,170 +191,183 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The proportion is then calculated as the number of key presses over the number of syllables diveded by 48 times 4 (number of targets)</p>
 </section>
 <section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<h2></h2>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "total number of participants = 238"</code></pre>
+<pre><code>[1] &quot;total number of participants = 238&quot;</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 3 rows containing non-finite outside the scale range
+(`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 3 rows containing non-finite outside the scale range
+(`stat_density()`).</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
-<figure class="figure">
-<p><img src="analysis_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<figure>
+<p><img src="analysis_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672" /></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 <section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1"></h2>
+<h2></h2>
 <p>Delete participants age&gt;35</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>full_df<span class="ot">&lt;-</span>full_df<span class="sc">%&gt;%</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>     <span class="fu">filter</span>(age<span class="sc">&lt;</span><span class="dv">36</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># derive descriptives again</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>descriptives<span class="ot">&lt;-</span>full_df <span class="sc">%&gt;%</span> </span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(participant ) <span class="sc">%&gt;%</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">age =</span> <span class="fu">first</span>(age), </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">gender =</span> <span class="fu">first</span>(gender),</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">feedback =</span> <span class="fu">first</span>(feedback),</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">Mean_RT =</span> <span class="fu">mean</span>(RTms, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">accuracy =</span> <span class="fu">mean</span>(accuracy, <span class="at">na.rm =</span> T), </span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarms_count=</span> <span class="fu">sum</span>(FA, <span class="at">na.rm=</span> T),</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>            <span class="at">valence =</span>  <span class="fu">mean</span>(slider_valence_2.response, <span class="at">na.rm =</span> T),</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarm_per =</span> <span class="fu">sum</span>(FA<span class="sc">==</span><span class="dv">1</span>, <span class="at">na.rm =</span>T)<span class="sc">/</span> (<span class="fu">n</span>()<span class="sc">/</span><span class="dv">48</span><span class="sc">*</span><span class="dv">4</span>),</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>            <span class="at">n_trials =</span> (<span class="fu">n</span>()<span class="sc">/</span><span class="dv">48</span><span class="sc">*</span><span class="dv">4</span>)</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  ) </span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co"># histogrames of age</span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(descriptives<span class="sc">$</span>age)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>full_df<span class="ot">&lt;-</span>full_df<span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>     <span class="fu">filter</span>(age<span class="sc">&lt;</span><span class="dv">36</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># derive descriptives again</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>descriptives<span class="ot">&lt;-</span>full_df <span class="sc">%&gt;%</span> </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(participant ) <span class="sc">%&gt;%</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">age =</span> <span class="fu">first</span>(age), </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">gender =</span> <span class="fu">first</span>(gender),</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">feedback =</span> <span class="fu">first</span>(feedback),</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">Mean_RT =</span> <span class="fu">mean</span>(RTms, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">accuracy =</span> <span class="fu">mean</span>(accuracy, <span class="at">na.rm =</span> T), </span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarms_count=</span> <span class="fu">sum</span>(FA, <span class="at">na.rm=</span> T),</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>            <span class="at">valence =</span>  <span class="fu">mean</span>(slider_valence_2.response, <span class="at">na.rm =</span> T),</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarm_per =</span> <span class="fu">sum</span>(FA<span class="sc">==</span><span class="dv">1</span>, <span class="at">na.rm =</span>T)<span class="sc">/</span> (<span class="fu">n</span>()<span class="sc">/</span><span class="dv">48</span><span class="sc">*</span><span class="dv">4</span>),</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>            <span class="at">n_trials =</span> (<span class="fu">n</span>()<span class="sc">/</span><span class="dv">48</span><span class="sc">*</span><span class="dv">4</span>)</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># histogrames of age</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(descriptives, <span class="fu">aes</span>(<span class="at">x =</span> age))<span class="sc">+</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">after_stat</span>(density)), <span class="at">position =</span> <span class="st">&quot;identity&quot;</span>,</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>                 <span class="at">fill =</span> <span class="st">&quot;#009E73&quot;</span>,</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>                 <span class="at">alpha =</span>.<span class="dv">4</span>, <span class="at">bins =</span> <span class="dv">10</span>)<span class="sc">+</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">linewidth =</span> <span class="dv">1</span>, <span class="at">alpha =</span> .<span class="dv">30</span>,  <span class="at">fill =</span> <span class="st">&quot;#009E73&quot;</span>)<span class="sc">+</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
 </details>
 <div class="cell-output-display">
 <div>
-<figure class="figure">
-<p><img src="analysis_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<figure>
+<p><img src="analysis_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672" /></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 <section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2"></h2>
+<h2></h2>
 <p>Descriptives</p>
 </section>
 <section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3"></h2>
+<h2></h2>
 <p>Recode the variable “gender”. This variable has many different values. We need to record only three: Male, female, non-binary, not -reported</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># unique values gender</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>gender_unique<span class="ot">&lt;-</span><span class="fu">unique</span>(descriptives<span class="sc">$</span>gender)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># it is participant 91</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># there are some values that appear to be "FALSE". I need to find the right value</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>descriptives<span class="sc">$</span>participant[descriptives<span class="sc">$</span>gender<span class="sc">==</span><span class="st">"FALSE"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># unique values gender</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>gender_unique<span class="ot">&lt;-</span><span class="fu">unique</span>(descriptives<span class="sc">$</span>gender)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># it is participant 91</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># there are some values that appear to be &quot;FALSE&quot;. I need to find the right value</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>descriptives<span class="sc">$</span>participant[descriptives<span class="sc">$</span>gender<span class="sc">==</span><span class="st">&quot;FALSE&quot;</span>]</span></code></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 91</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># it is participant 91. I can tell that is a female</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new variable</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>descriptives<span class="sc">$</span>gender_new<span class="ot">&lt;-</span>descriptives<span class="sc">$</span>gender</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>males<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"Male"</span>, <span class="st">"male"</span>,   <span class="st">"Men"</span> ,  <span class="st">"man"</span>,<span class="st">"Male"</span>,  <span class="st">"male "</span>, <span class="st">"male"</span>, <span class="st">"Man"</span>,<span class="st">"Man "</span>, <span class="st">"M"</span> )</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>females<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"Female"</span> ,  <span class="st">"Woman"</span> ,<span class="st">"female"</span> ,  <span class="st">"woman"</span> ,   <span class="st">"woman "</span> , <span class="st">"women"</span> , <span class="st">"female "</span> ,</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>           <span class="st">"femalwe"</span>, <span class="st">"vrouw "</span>, <span class="st">"Vrouw"</span>, <span class="st">"Vrouw "</span> ,  <span class="st">"vrouw"</span>,<span class="st">"Female "</span>, <span class="st">"Femail"</span> ,<span class="st">"f"</span> , <span class="st">"v"</span>, <span class="st">"FALSE"</span> )</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>descriptives<span class="sc">$</span>gender_new[descriptives<span class="sc">$</span>gender_new <span class="sc">%in%</span> males ]<span class="ot">&lt;-</span><span class="st">"Male"</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>descriptives<span class="sc">$</span>gender_new[descriptives<span class="sc">$</span>gender_new <span class="sc">%in%</span> females ]<span class="ot">&lt;-</span><span class="st">"Female"</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>non_binary<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"non-binary"</span>, <span class="st">"Bigender (biological male)"</span>,<span class="st">"nonbinary"</span>)</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>descriptives<span class="sc">$</span>gender_new[descriptives<span class="sc">$</span>gender_new <span class="sc">%in%</span> non_binary ]<span class="ot">&lt;-</span><span class="st">"Non binary"</span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(descriptives<span class="sc">$</span>gender_new)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># it is participant 91. I can tell that is a female</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new variable</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>descriptives<span class="sc">$</span>gender_new<span class="ot">&lt;-</span>descriptives<span class="sc">$</span>gender</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>males<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="st">&quot;male&quot;</span>,   <span class="st">&quot;Men&quot;</span> ,  <span class="st">&quot;man&quot;</span>,<span class="st">&quot;Male&quot;</span>,  <span class="st">&quot;male &quot;</span>, <span class="st">&quot;male&quot;</span>, <span class="st">&quot;Man&quot;</span>,<span class="st">&quot;Man &quot;</span>, <span class="st">&quot;M&quot;</span> )</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>females<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;Female&quot;</span> ,  <span class="st">&quot;Woman&quot;</span> ,<span class="st">&quot;female&quot;</span> ,  <span class="st">&quot;woman&quot;</span> ,   <span class="st">&quot;woman &quot;</span> , <span class="st">&quot;women&quot;</span> , <span class="st">&quot;female &quot;</span> ,</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>           <span class="st">&quot;femalwe&quot;</span>, <span class="st">&quot;vrouw &quot;</span>, <span class="st">&quot;Vrouw&quot;</span>, <span class="st">&quot;Vrouw &quot;</span> ,  <span class="st">&quot;vrouw&quot;</span>,<span class="st">&quot;Female &quot;</span>, <span class="st">&quot;Femail&quot;</span> ,<span class="st">&quot;f&quot;</span> , <span class="st">&quot;v&quot;</span>, <span class="st">&quot;FALSE&quot;</span> )</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>descriptives<span class="sc">$</span>gender_new[descriptives<span class="sc">$</span>gender_new <span class="sc">%in%</span> males ]<span class="ot">&lt;-</span><span class="st">&quot;Male&quot;</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>descriptives<span class="sc">$</span>gender_new[descriptives<span class="sc">$</span>gender_new <span class="sc">%in%</span> females ]<span class="ot">&lt;-</span><span class="st">&quot;Female&quot;</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>non_binary<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;non-binary&quot;</span>, <span class="st">&quot;Bigender (biological male)&quot;</span>,<span class="st">&quot;nonbinary&quot;</span>)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>descriptives<span class="sc">$</span>gender_new[descriptives<span class="sc">$</span>gender_new <span class="sc">%in%</span> non_binary ]<span class="ot">&lt;-</span><span class="st">&quot;Non binary&quot;</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(descriptives<span class="sc">$</span>gender_new)</span></code></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Female"     "Non binary" "Male"      </code></pre>
+<pre><code>[1] &quot;Female&quot;     &quot;Non binary&quot; &quot;Male&quot;      </code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># now also for the full_df</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>full_df<span class="sc">$</span>gender_new<span class="ot">&lt;-</span>full_df<span class="sc">$</span>gender</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>full_df<span class="sc">$</span>gender_new[full_df<span class="sc">$</span>gender_new <span class="sc">%in%</span> males ]<span class="ot">&lt;-</span><span class="st">"Male"</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>full_df<span class="sc">$</span>gender_new[full_df<span class="sc">$</span>gender_new <span class="sc">%in%</span> females ]<span class="ot">&lt;-</span><span class="st">"Female"</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>non_binary<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"non-binary"</span>, <span class="st">"Bigender (biological male)"</span>,<span class="st">"nonbinary"</span>)</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>full_df<span class="sc">$</span>gender_new[full_df<span class="sc">$</span>gender_new <span class="sc">%in%</span> non_binary ]<span class="ot">&lt;-</span><span class="st">"Non binary"</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(full_df<span class="sc">$</span>gender_new)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># now also for the full_df</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>full_df<span class="sc">$</span>gender_new<span class="ot">&lt;-</span>full_df<span class="sc">$</span>gender</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>full_df<span class="sc">$</span>gender_new[full_df<span class="sc">$</span>gender_new <span class="sc">%in%</span> males ]<span class="ot">&lt;-</span><span class="st">&quot;Male&quot;</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>full_df<span class="sc">$</span>gender_new[full_df<span class="sc">$</span>gender_new <span class="sc">%in%</span> females ]<span class="ot">&lt;-</span><span class="st">&quot;Female&quot;</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>non_binary<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;non-binary&quot;</span>, <span class="st">&quot;Bigender (biological male)&quot;</span>,<span class="st">&quot;nonbinary&quot;</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>full_df<span class="sc">$</span>gender_new[full_df<span class="sc">$</span>gender_new <span class="sc">%in%</span> non_binary ]<span class="ot">&lt;-</span><span class="st">&quot;Non binary&quot;</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(full_df<span class="sc">$</span>gender_new)</span></code></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Female"     "Non binary" "Male"      </code></pre>
+<pre><code>[1] &quot;Female&quot;     &quot;Non binary&quot; &quot;Male&quot;      </code></pre>
 </div>
 </div>
 </section>
 <section id="accuracy-and-sd" class="level2">
-<h2 class="anchored" data-anchor-id="accuracy-and-sd">Accuracy and sd</h2>
+<h2>Accuracy and sd</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>full_df <span class="sc">%&gt;%</span> </span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(participant ) <span class="sc">%&gt;%</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">age =</span> <span class="fu">first</span>(age), </span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">gender_new =</span> <span class="fu">first</span>(gender_new),</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">feedback=</span><span class="fu">first</span>(feedback),</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">Mean_RT =</span> <span class="fu">mean</span>(RTms, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">accuracy =</span> <span class="fu">mean</span>(accuracy, <span class="at">na.rm =</span> T), </span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarms_count=</span> <span class="fu">sum</span>(FA, <span class="at">na.rm=</span> T),</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarm_per =</span> <span class="fu">sum</span>(FA<span class="sc">==</span><span class="dv">1</span>, <span class="at">na.rm =</span>T)<span class="sc">/</span> (<span class="fu">n</span>()<span class="sc">/</span><span class="dv">48</span><span class="sc">*</span><span class="dv">4</span>),</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">n_trials =</span> (<span class="fu">n</span>()<span class="sc">/</span><span class="dv">48</span><span class="sc">*</span><span class="dv">4</span>)</span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(feedback)<span class="sc">%&gt;%</span></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n_participants =</span> <span class="fu">n_distinct</span>(participant),</span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_age =</span> <span class="fu">mean</span>(age, <span class="at">na.rm=</span>T), </span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd_age =</span> <span class="fu">sd</span>(age, <span class="at">na.rm=</span>T),</span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">n_male   =</span> <span class="fu">sum</span>(gender_new <span class="sc">==</span> <span class="st">"Male"</span> ,   <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">n_female =</span> <span class="fu">sum</span>(gender_new <span class="sc">==</span> <span class="st">"Female"</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">n_non_binary =</span> <span class="fu">sum</span>(gender_new <span class="sc">==</span> <span class="st">"Non binary"</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    <span class="co">#feedback_cond = sum(feedback ==1, na.rm = T),</span></span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">age_min  =</span> <span class="fu">min</span>(age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">age_max  =</span> <span class="fu">max</span>(age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))  <span class="sc">%&gt;%</span> </span>
-<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>   <span class="fu">tab_header</span>(</span>
-<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>     <span class="at">title =</span>  <span class="st">"participants"</span></span>
-<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>   )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>full_df <span class="sc">%&gt;%</span> </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(participant ) <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">age =</span> <span class="fu">first</span>(age), </span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">gender_new =</span> <span class="fu">first</span>(gender_new),</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">feedback=</span><span class="fu">first</span>(feedback),</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">Mean_RT =</span> <span class="fu">mean</span>(RTms, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">accuracy =</span> <span class="fu">mean</span>(accuracy, <span class="at">na.rm =</span> T), </span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarms_count=</span> <span class="fu">sum</span>(FA, <span class="at">na.rm=</span> T),</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarm_per =</span> <span class="fu">sum</span>(FA<span class="sc">==</span><span class="dv">1</span>, <span class="at">na.rm =</span>T)<span class="sc">/</span> (<span class="fu">n</span>()<span class="sc">/</span><span class="dv">48</span><span class="sc">*</span><span class="dv">4</span>),</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">n_trials =</span> (<span class="fu">n</span>()<span class="sc">/</span><span class="dv">48</span><span class="sc">*</span><span class="dv">4</span>)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(feedback)<span class="sc">%&gt;%</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n_participants =</span> <span class="fu">n_distinct</span>(participant),</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_age =</span> <span class="fu">mean</span>(age, <span class="at">na.rm=</span>T), </span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd_age =</span> <span class="fu">sd</span>(age, <span class="at">na.rm=</span>T),</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">n_male   =</span> <span class="fu">sum</span>(gender_new <span class="sc">==</span> <span class="st">&quot;Male&quot;</span> ,   <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">n_female =</span> <span class="fu">sum</span>(gender_new <span class="sc">==</span> <span class="st">&quot;Female&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">n_non_binary =</span> <span class="fu">sum</span>(gender_new <span class="sc">==</span> <span class="st">&quot;Non binary&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>    <span class="co">#feedback_cond = sum(feedback ==1, na.rm = T),</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">age_min  =</span> <span class="fu">min</span>(age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">age_max  =</span> <span class="fu">max</span>(age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))  <span class="sc">%&gt;%</span> </span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>   <span class="fu">tab_header</span>(</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>     <span class="at">title =</span>  <span class="st">&quot;participants&quot;</span></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>   )</span></code></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="jawnyujnqf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jawnyujnqf table {
+<div id="cnucywnhxr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cnucywnhxr table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jawnyujnqf thead, #jawnyujnqf tbody, #jawnyujnqf tfoot, #jawnyujnqf tr, #jawnyujnqf td, #jawnyujnqf th {
+#cnucywnhxr thead, #cnucywnhxr tbody, #cnucywnhxr tfoot, #cnucywnhxr tr, #cnucywnhxr td, #cnucywnhxr th {
   border-style: none;
 }
 
-#jawnyujnqf p {
+#cnucywnhxr p {
   margin: 0;
   padding: 0;
 }
 
-#jawnyujnqf .gt_table {
+#cnucywnhxr .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -338,12 +393,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_caption {
+#cnucywnhxr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jawnyujnqf .gt_title {
+#cnucywnhxr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -355,7 +410,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#jawnyujnqf .gt_subtitle {
+#cnucywnhxr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -367,7 +422,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#jawnyujnqf .gt_heading {
+#cnucywnhxr .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -379,13 +434,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_bottom_border {
+#cnucywnhxr .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_col_headings {
+#cnucywnhxr .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -400,7 +455,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_col_heading {
+#cnucywnhxr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -420,7 +475,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#jawnyujnqf .gt_column_spanner_outer {
+#cnucywnhxr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -432,15 +487,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#jawnyujnqf .gt_column_spanner_outer:first-child {
+#cnucywnhxr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jawnyujnqf .gt_column_spanner_outer:last-child {
+#cnucywnhxr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jawnyujnqf .gt_column_spanner {
+#cnucywnhxr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -452,11 +507,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#jawnyujnqf .gt_spanner_row {
+#cnucywnhxr .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jawnyujnqf .gt_group_heading {
+#cnucywnhxr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -482,7 +537,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#jawnyujnqf .gt_empty_group_heading {
+#cnucywnhxr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -497,15 +552,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#jawnyujnqf .gt_from_md > :first-child {
+#cnucywnhxr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jawnyujnqf .gt_from_md > :last-child {
+#cnucywnhxr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jawnyujnqf .gt_row {
+#cnucywnhxr .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -524,7 +579,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#jawnyujnqf .gt_stub {
+#cnucywnhxr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -537,7 +592,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#jawnyujnqf .gt_stub_row_group {
+#cnucywnhxr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -551,15 +606,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#jawnyujnqf .gt_row_group_first td {
+#cnucywnhxr .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jawnyujnqf .gt_row_group_first th {
+#cnucywnhxr .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jawnyujnqf .gt_summary_row {
+#cnucywnhxr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -569,16 +624,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#jawnyujnqf .gt_first_summary_row {
+#cnucywnhxr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_first_summary_row.thick {
+#cnucywnhxr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jawnyujnqf .gt_last_summary_row {
+#cnucywnhxr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -588,7 +643,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_grand_summary_row {
+#cnucywnhxr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -598,7 +653,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#jawnyujnqf .gt_first_grand_summary_row {
+#cnucywnhxr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -608,7 +663,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_last_grand_summary_row_top {
+#cnucywnhxr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -618,11 +673,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_striped {
+#cnucywnhxr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jawnyujnqf .gt_table_body {
+#cnucywnhxr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -631,7 +686,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_footnotes {
+#cnucywnhxr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -645,7 +700,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_footnote {
+#cnucywnhxr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -654,7 +709,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#jawnyujnqf .gt_sourcenotes {
+#cnucywnhxr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -668,7 +723,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#jawnyujnqf .gt_sourcenote {
+#cnucywnhxr .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -676,80 +731,80 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#jawnyujnqf .gt_left {
+#cnucywnhxr .gt_left {
   text-align: left;
 }
 
-#jawnyujnqf .gt_center {
+#cnucywnhxr .gt_center {
   text-align: center;
 }
 
-#jawnyujnqf .gt_right {
+#cnucywnhxr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jawnyujnqf .gt_font_normal {
+#cnucywnhxr .gt_font_normal {
   font-weight: normal;
 }
 
-#jawnyujnqf .gt_font_bold {
+#cnucywnhxr .gt_font_bold {
   font-weight: bold;
 }
 
-#jawnyujnqf .gt_font_italic {
+#cnucywnhxr .gt_font_italic {
   font-style: italic;
 }
 
-#jawnyujnqf .gt_super {
+#cnucywnhxr .gt_super {
   font-size: 65%;
 }
 
-#jawnyujnqf .gt_footnote_marks {
+#cnucywnhxr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jawnyujnqf .gt_asterisk {
+#cnucywnhxr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jawnyujnqf .gt_indent_1 {
+#cnucywnhxr .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jawnyujnqf .gt_indent_2 {
+#cnucywnhxr .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jawnyujnqf .gt_indent_3 {
+#cnucywnhxr .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jawnyujnqf .gt_indent_4 {
+#cnucywnhxr .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jawnyujnqf .gt_indent_5 {
+#cnucywnhxr .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jawnyujnqf .katex-display {
+#cnucywnhxr .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jawnyujnqf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#cnucywnhxr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_heading header">
-<td colspan="8" class="gt_heading gt_title gt_font_normal gt_bottom_border">participants</td>
+<th colspan="8" class="gt_heading gt_title gt_font_normal gt_bottom_border">participants</th>
 </tr>
 <tr class="gt_col_headings even">
 <th id="n_participants" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">n_participants</th>
@@ -779,11 +834,1721 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>historgrams of accuracy and false alarms</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(descriptives, <span class="fu">aes</span>(<span class="at">x =</span> accuracy))<span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;accuracy distribution&quot;</span>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img src="analysis_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672" /></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="section-4" class="level2">
+<h2></h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(descriptives, <span class="fu">aes</span>(<span class="at">x =</span> false_alarm_per))<span class="sc">+</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;false alarms % distribution&quot;</span>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img src="analysis_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672" /></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="section-5" class="level2">
+<h2></h2>
+<p>Select only participants with accuracy above mean - 2.5 SD and false alarm percentage below mean + 2.5 sd</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>cutoff_accuracy<span class="ot">&lt;-</span><span class="fu">mean</span>(descriptives<span class="sc">$</span>accuracy, <span class="at">na.rm=</span>T) <span class="sc">-</span> <span class="fl">2.5</span><span class="sc">*</span><span class="fu">sd</span>(descriptives<span class="sc">$</span>accuracy, <span class="at">na.rm=</span>T)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span>(<span class="st">&quot;cutoff for accuracy is &quot;</span>, cutoff_accuracy)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;cutoff for accuracy is 0.547611568241064&quot;</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>excl_acc<span class="ot">&lt;-</span>descriptives<span class="sc">$</span>participant[descriptives<span class="sc">$</span>accuracy<span class="sc">&lt;</span>cutoff_accuracy]</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co"># select participants</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span> (<span class="st">&quot;participants excluded for low accuracy are &quot;</span>, </span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(descriptives[descriptives<span class="sc">$</span>accuracy<span class="sc">&lt;</span> cutoff_accuracy,]))</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;participants excluded for low accuracy are 5&quot;</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># now exclusion for false alarms</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>cutoff_false_alarm<span class="ot">&lt;-</span><span class="fu">mean</span>(descriptives<span class="sc">$</span>false_alarm_per, <span class="at">na.rm=</span>T) <span class="sc">+</span> <span class="fl">2.5</span><span class="sc">*</span><span class="fu">sd</span>(descriptives<span class="sc">$</span>false_alarm_per, <span class="at">na.rm=</span>T)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span>(<span class="st">&quot;cutoff for false alarm is &quot;</span>, cutoff_false_alarm)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;cutoff for false alarm is 0.434586141680215&quot;</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># select participants</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span> (<span class="st">&quot;participants excluded for high false alarms are &quot;</span>, </span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(descriptives[descriptives<span class="sc">$</span>false_alarm_per<span class="sc">&gt;</span> cutoff_false_alarm,]))</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;participants excluded for high false alarms are 6&quot;</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>excl_fa<span class="ot">&lt;-</span>descriptives<span class="sc">$</span>participant[descriptives<span class="sc">$</span>false_alarm_per<span class="sc">&gt;</span>cutoff_false_alarm]</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span> (<span class="st">&quot;total participants excluded for low accuracy and high false alarms are &quot;</span>, </span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">unique</span>(<span class="fu">c</span>(excl_acc, excl_fa))))</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;total participants excluded for low accuracy and high false alarms are 11&quot;</code></pre>
+</div>
+</div>
+</section>
+<section id="section-6" class="level2">
+<h2></h2>
+<p>Number of remaining participants by feedback condition</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>full_df<span class="ot">&lt;-</span>full_df[<span class="sc">!</span>full_df<span class="sc">$</span>participant<span class="sc">%in%</span> <span class="fu">c</span>(excl_acc, excl_fa),]</span></code></pre></div>
+</details>
+</div>
+</section>
+<section id="now-check-if-there-are-participants-who-did-not-complete-the-all-trials" class="level1">
+<h1>now check if there are participants who did not complete the all trials</h1>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;5 participants were excluded because did not complete all the trials (72 structured and 18 unstructured)&quot;</code></pre>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>full_df[<span class="sc">!</span><span class="fu">is.na</span>(full_df<span class="sc">$</span>feedback),] <span class="sc">%&gt;%</span> </span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(participant ) <span class="sc">%&gt;%</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">age =</span> <span class="fu">first</span>(age), </span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">gender_new =</span> <span class="fu">first</span>(gender_new),</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">feedback=</span><span class="fu">first</span>(feedback),</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">Mean_RT =</span> <span class="fu">mean</span>(RTms, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">accuracy =</span> <span class="fu">mean</span>(accuracy, <span class="at">na.rm =</span> T), </span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarms_count=</span> <span class="fu">sum</span>(FA, <span class="at">na.rm=</span> T),</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarm_per =</span> <span class="fu">sum</span>(FA<span class="sc">==</span><span class="dv">1</span>, <span class="at">na.rm =</span>T)<span class="sc">/</span> (<span class="fu">n</span>()<span class="sc">/</span><span class="dv">48</span><span class="sc">*</span><span class="dv">4</span>),</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">n_trials =</span> (<span class="fu">n</span>()<span class="sc">/</span><span class="dv">48</span><span class="sc">*</span><span class="dv">4</span>)</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(feedback)<span class="sc">%&gt;%</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n_participants =</span> <span class="fu">n_distinct</span>(participant),</span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_age =</span> <span class="fu">mean</span>(age, <span class="at">na.rm=</span>T), </span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd_age =</span> <span class="fu">sd</span>(age, <span class="at">na.rm=</span>T),</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">n_male   =</span> <span class="fu">sum</span>(gender_new <span class="sc">==</span> <span class="st">&quot;Male&quot;</span> ,   <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">n_female =</span> <span class="fu">sum</span>(gender_new <span class="sc">==</span> <span class="st">&quot;Female&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">n_non_binary =</span> <span class="fu">sum</span>(gender_new <span class="sc">==</span> <span class="st">&quot;Non binary&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>    <span class="co">#feedback_cond = sum(feedback ==1, na.rm = T),</span></span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">age_min  =</span> <span class="fu">min</span>(age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">age_max  =</span> <span class="fu">max</span>(age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean_RT =</span> <span class="fu">mean</span>(Mean_RT, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a>            <span class="at">accuracy =</span> <span class="fu">mean</span>(accuracy, <span class="at">na.rm =</span> T), </span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a>            <span class="at">false_alarms_per=</span> <span class="fu">first</span>(false_alarm_per)) <span class="sc">%&gt;%</span></span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb29-28"><a href="#cb29-28" aria-hidden="true" tabindex="-1"></a>   <span class="fu">tab_header</span>(</span>
+<span id="cb29-29"><a href="#cb29-29" aria-hidden="true" tabindex="-1"></a>     <span class="at">title =</span>  <span class="st">&quot;participants&quot;</span></span>
+<span id="cb29-30"><a href="#cb29-30" aria-hidden="true" tabindex="-1"></a>   )</span></code></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="tyllaueuwh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#tyllaueuwh table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#tyllaueuwh thead, #tyllaueuwh tbody, #tyllaueuwh tfoot, #tyllaueuwh tr, #tyllaueuwh td, #tyllaueuwh th {
+  border-style: none;
+}
+
+#tyllaueuwh p {
+  margin: 0;
+  padding: 0;
+}
+
+#tyllaueuwh .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#tyllaueuwh .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#tyllaueuwh .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#tyllaueuwh .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#tyllaueuwh .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#tyllaueuwh .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#tyllaueuwh .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#tyllaueuwh .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#tyllaueuwh .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#tyllaueuwh .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#tyllaueuwh .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#tyllaueuwh .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#tyllaueuwh .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#tyllaueuwh .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#tyllaueuwh .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tyllaueuwh .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#tyllaueuwh .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#tyllaueuwh .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#tyllaueuwh .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tyllaueuwh .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#tyllaueuwh .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tyllaueuwh .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#tyllaueuwh .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tyllaueuwh .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#tyllaueuwh .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tyllaueuwh .gt_left {
+  text-align: left;
+}
+
+#tyllaueuwh .gt_center {
+  text-align: center;
+}
+
+#tyllaueuwh .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#tyllaueuwh .gt_font_normal {
+  font-weight: normal;
+}
+
+#tyllaueuwh .gt_font_bold {
+  font-weight: bold;
+}
+
+#tyllaueuwh .gt_font_italic {
+  font-style: italic;
+}
+
+#tyllaueuwh .gt_super {
+  font-size: 65%;
+}
+
+#tyllaueuwh .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#tyllaueuwh .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#tyllaueuwh .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#tyllaueuwh .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#tyllaueuwh .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#tyllaueuwh .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#tyllaueuwh .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#tyllaueuwh .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#tyllaueuwh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<th colspan="11" class="gt_heading gt_title gt_font_normal gt_bottom_border">participants</th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="n_participants" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">n_participants</th>
+<th id="mean_age" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">mean_age</th>
+<th id="sd_age" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">sd_age</th>
+<th id="n_male" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">n_male</th>
+<th id="n_female" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">n_female</th>
+<th id="n_non_binary" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">n_non_binary</th>
+<th id="age_min" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">age_min</th>
+<th id="age_max" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">age_max</th>
+<th id="Mean_RT" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Mean_RT</th>
+<th id="accuracy" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">accuracy</th>
+<th id="false_alarms_per" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">false_alarms_per</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="n_participants">207</td>
+<td class="gt_row gt_right" headers="mean_age">23.02415</td>
+<td class="gt_row gt_right" headers="sd_age">2.95178</td>
+<td class="gt_row gt_right" headers="n_male">58</td>
+<td class="gt_row gt_right" headers="n_female">145</td>
+<td class="gt_row gt_right" headers="n_non_binary">4</td>
+<td class="gt_row gt_right" headers="age_min">17</td>
+<td class="gt_row gt_right" headers="age_max">33</td>
+<td class="gt_row gt_right" headers="Mean_RT">646.0543</td>
+<td class="gt_row gt_right" headers="accuracy">0.8628959</td>
+<td class="gt_row gt_right" headers="false_alarms_per">0.0462585</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<section id="section-7" class="level2">
+<h2></h2>
+<p>Is the difference in accuracy and RT statistically significant?</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>mod_rt<span class="ot">&lt;-</span><span class="fu">lmer</span>(RTms<span class="sc">~</span>feedback <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>participant),</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> full_df <span class="sc">%&gt;%</span> </span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>participant <span class="sc">%in%</span> <span class="fu">c</span>(excl_acc, excl_fa) <span class="sc">&amp;</span> accuracy <span class="sc">==</span><span class="dv">1</span>))</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_rt)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+lmerModLmerTest]
+Formula: RTms ~ feedback + (1 | participant)
+   Data: 
+full_df %&gt;% filter(!participant %in% c(excl_acc, excl_fa) &amp; accuracy ==      1)
+
+REML criterion at convergence: 827199.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-5.9604 -0.5033 -0.1071  0.4251  4.5263 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ participant (Intercept)  9164     95.73  
+ Residual                22266    149.22  
+Number of obs: 64303, groups:  participant, 207
+
+Fixed effects:
+            Estimate Std. Error     df t value Pr(&gt;|t|)    
+(Intercept)   644.92       9.38 205.02  68.757   &lt;2e-16 ***
+feedback      -14.40      13.36 204.98  -1.078    0.282    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Correlation of Fixed Effects:
+         (Intr)
+feedback -0.702</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>mod_rt2<span class="ot">&lt;-</span><span class="fu">lm</span>(Mean_RT<span class="sc">~</span>feedback , <span class="at">data =</span> descriptives)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_rt2)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = Mean_RT ~ feedback, data = descriptives)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-187.64  -82.98  -25.14   53.82 1235.37 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)   672.92      12.87  52.299   &lt;2e-16 ***
+feedback      -35.52      18.32  -1.939   0.0538 .  
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 136.8 on 221 degrees of freedom
+Multiple R-squared:  0.01673,   Adjusted R-squared:  0.01228 
+F-statistic:  3.76 on 1 and 221 DF,  p-value: 0.05377</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(mod_rt2)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Mean_RT
+           Df  Sum Sq Mean Sq F value  Pr(&gt;F)  
+feedback    1   70336   70336  3.7597 0.05377 .
+Residuals 221 4134408   18708                  
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+</div>
+</section>
+<section id="section-8" class="level2">
+<h2></h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>mod_accuracy2<span class="ot">&lt;-</span><span class="fu">lm</span>(accuracy<span class="sc">~</span>feedback , <span class="at">data =</span> descriptives)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_accuracy2)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = accuracy ~ feedback, data = descriptives)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.80233 -0.03578  0.02823  0.07539  0.15878 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  0.83288    0.01120  74.362   &lt;2e-16 ***
+feedback     0.02789    0.01595   1.749   0.0817 .  
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 0.1191 on 221 degrees of freedom
+Multiple R-squared:  0.01365,   Adjusted R-squared:  0.009191 
+F-statistic: 3.059 on 1 and 221 DF,  p-value: 0.08166</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(mod_accuracy2)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: accuracy
+           Df  Sum Sq  Mean Sq F value  Pr(&gt;F)  
+feedback    1 0.04337 0.043367  3.0593 0.08166 .
+Residuals 221 3.13278 0.014175                  
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+</div>
+</section>
+<section id="section-9" class="level2">
+<h2></h2>
+<p>False alarms</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>mod_fa2<span class="ot">&lt;-</span><span class="fu">lm</span>(false_alarm_per<span class="sc">~</span>feedback , <span class="at">data =</span> descriptives)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_fa2)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = false_alarm_per ~ feedback, data = descriptives)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.13892 -0.06864 -0.02782  0.03795  0.47060 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 0.163878   0.009946  16.477   &lt;2e-16 ***
+feedback    0.013140   0.014161   0.928    0.354    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 0.1057 on 221 degrees of freedom
+Multiple R-squared:  0.003881,  Adjusted R-squared:  -0.0006262 
+F-statistic: 0.8611 on 1 and 221 DF,  p-value: 0.3544</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(mod_fa2)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: false_alarm_per
+           Df  Sum Sq   Mean Sq F value Pr(&gt;F)
+feedback    1 0.00962 0.0096247  0.8611 0.3544
+Residuals 221 2.47023 0.0111775               </code></pre>
+</div>
+</div>
+</section>
+<section id="section-10" class="level2">
+<h2></h2>
+<p>valence</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>mod_val2<span class="ot">&lt;-</span><span class="fu">lm</span>(valence<span class="sc">~</span>feedback , <span class="at">data =</span> descriptives)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_val2)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = valence ~ feedback, data = descriptives)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-51.271 -12.174  -2.472  16.033  44.798 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  54.6533     1.9159  28.526   &lt;2e-16 ***
+feedback     -0.4766     2.7279  -0.175    0.861    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 20.37 on 221 degrees of freedom
+Multiple R-squared:  0.0001381, Adjusted R-squared:  -0.004386 
+F-statistic: 0.03053 on 1 and 221 DF,  p-value: 0.8615</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(mod_val2)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: valence
+           Df Sum Sq Mean Sq F value Pr(&gt;F)
+feedback    1     13   12.66  0.0305 0.8615
+Residuals 221  91670  414.79               </code></pre>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># valence and arousal</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>full_df_val<span class="ot">&lt;-</span>full_df[<span class="sc">!</span><span class="fu">is.na</span>(full_df<span class="sc">$</span>slider_valence_2.response),]</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="co"># select only accuracy =1</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>full_df<span class="ot">&lt;-</span>full_df[full_df<span class="sc">$</span>accuracy<span class="sc">==</span><span class="dv">1</span>,]</span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a><span class="co"># get trial number </span></span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>full_df<span class="sc">$</span>trial_num<span class="ot">&lt;-</span>full_df<span class="sc">$</span>trialN<span class="fl">.1</span></span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a><span class="co"># check how many trials pwer participant per condition</span></span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a>trial_val<span class="ot">&lt;-</span>full_df_val<span class="sc">%&gt;%</span></span>
+<span id="cb48-12"><a href="#cb48-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(participant, sequence_type) <span class="sc">%&gt;%</span></span>
+<span id="cb48-13"><a href="#cb48-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tally</span>()</span>
+<span id="cb48-14"><a href="#cb48-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-15"><a href="#cb48-15" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(trial_val<span class="sc">$</span>n)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 72 18</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># we only have 72 and 18</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="co"># how many participants left?</span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span>(<span class="st">&quot;we have &quot;</span>, <span class="fu">length</span>(<span class="fu">unique</span>(full_df<span class="sc">$</span>participant[</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>  <span class="sc">!</span><span class="fu">is.na</span>(full_df<span class="sc">$</span>participant)</span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>])), <span class="st">&quot; participants left&quot;</span>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;we have 207 participants left&quot;</code></pre>
+</div>
+</div>
+</section>
+<section id="is-there-a-difference-in-age-due-to-condition-assignment" class="level2">
+<h2>is there a difference in age due to condition assignment?</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>descriptives<span class="ot">&lt;-</span>descriptives[<span class="sc">!</span>descriptives<span class="sc">$</span>participant<span class="sc">%in%</span> <span class="fu">c</span>(excl_acc, excl_fa),]</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>descriptives<span class="ot">&lt;-</span>descriptives[<span class="sc">!</span>descriptives<span class="sc">$</span>participant <span class="sc">%in%</span> part_incompl, ]</span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>mod_age2<span class="ot">&lt;-</span><span class="fu">lm</span>(age<span class="sc">~</span>feedback,  <span class="at">data =</span> descriptives)</span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mod_age2)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = age ~ feedback, data = descriptives)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-5.843 -2.200 -0.200  1.478 10.157 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  23.2000     0.2882  80.490   &lt;2e-16 ***
+feedback     -0.3569     0.4106  -0.869    0.386    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 2.954 on 205 degrees of freedom
+Multiple R-squared:  0.003671,  Adjusted R-squared:  -0.001189 
+F-statistic: 0.7553 on 1 and 205 DF,  p-value: 0.3858</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(mod_age2)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: age
+           Df  Sum Sq Mean Sq F value Pr(&gt;F)
+feedback    1    6.59  6.5890  0.7553 0.3858
+Residuals 205 1788.29  8.7234               </code></pre>
+</div>
+</div>
+</section>
+<section id="section-11" class="level2">
+<h2></h2>
+<p>Create valence datasets</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate mean and standard deviation</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>  valence_summary_val<span class="ot">&lt;-</span> <span class="fu">summarySEwithin</span>(full_df_val,</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">measurevar =</span> <span class="fu">c</span>(<span class="st">&quot;slider_valence_2.response&quot;</span>),</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">withinvars =</span> <span class="fu">c</span>(<span class="st">&quot;target_pos&quot;</span>, </span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>                                                         <span class="st">&quot;sequence_type&quot;</span> ), </span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">betweenvars =</span> <span class="fu">c</span>(<span class="st">&quot;feedback&quot;</span>, <span class="st">&quot;participant&quot;</span>),</span>
+<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">idvar =</span> <span class="st">&quot;participant&quot;</span>, </span>
+<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">na.rm =</span> T)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Automatically converting the following non-factors to factors: feedback, participant, target_pos, sequence_type</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># val diff is the difference between the measure and the baseline</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  valence_summary_val_diff<span class="ot">&lt;-</span> <span class="fu">summarySEwithin</span>(full_df_val,</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">measurevar =</span> <span class="fu">c</span>(<span class="st">&quot;val_diff&quot;</span>),</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">withinvars =</span> <span class="fu">c</span>(<span class="st">&quot;target_pos&quot;</span>, </span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>                                                       <span class="st">&quot;sequence_type&quot;</span> ), </span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">betweenvars =</span> <span class="fu">c</span>(<span class="st">&quot;feedback&quot;</span>, <span class="st">&quot;participant&quot;</span>),</span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">idvar =</span> <span class="st">&quot;participant&quot;</span>, </span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">na.rm =</span> T)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Automatically converting the following non-factors to factors: feedback, participant, target_pos, sequence_type</code></pre>
+</div>
+</div>
+</section>
+<section id="random-structure-model-selection" class="level2">
+<h2>Random structure model selection</h2>
+</section>
+<section id="statistical-learning-main-results" class="level2">
+<h2>Statistical learning main results</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load the data</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;mainSLmodels.Rdata&quot;</span>)</span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a><span class="co"># stat_learn_mod_compl_syll_nointer_wcov&lt;-lmer(RTms ~ 1+target_pos*target_rep*feedback2+syllable_order_n_z+</span></span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a><span class="co">#                    (1+target_pos+target_rep+syllable_order_n_z|participant ) ,</span></span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a><span class="co">#                  data = full_df[ </span></span>
+<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a><span class="co">#                    full_df$sequence_type==&quot;structured&quot; ,], </span></span>
+<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a><span class="co">#                  control = lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1000000000)), </span></span>
+<span id="cb60-9"><a href="#cb60-9" aria-hidden="true" tabindex="-1"></a><span class="co">#                  REML=T)</span></span>
+<span id="cb60-10"><a href="#cb60-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-11"><a href="#cb60-11" aria-hidden="true" tabindex="-1"></a><span class="fu">Anova</span>(stat_learn_mod_compl_syll_nointer_wcov, <span class="at">type =</span><span class="dv">2</span>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: RTms
+                                   Chisq Df Pr(&gt;Chisq)    
+target_pos                       16.3047  2  0.0002881 ***
+target_rep                      166.7508  3  &lt; 2.2e-16 ***
+feedback2                         0.8593  1  0.3539466    
+syllable_order_n_z              195.8371  1  &lt; 2.2e-16 ***
+target_pos:target_rep            75.8564  6  2.557e-14 ***
+target_pos:feedback2              1.1974  2  0.5495147    
+target_rep:feedback2              2.4236  3  0.4892545    
+target_pos:target_rep:feedback2   3.3504  6  0.7637530    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(stat_learn_mod_compl_syll_nointer_wcov)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+lmerModLmerTest]
+Formula: RTms ~ 1 + target_pos * target_rep * feedback2 + syllable_order_n_z +  
+    (1 + target_pos + target_rep + syllable_order_n_z | participant)
+   Data: full_df[full_df$sequence_type == &quot;structured&quot;, ]
+Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1e+09))
+
+REML criterion at convergence: 660863.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-5.8066 -0.5031 -0.1087  0.4263  4.5070 
+
+Random effects:
+ Groups      Name               Variance Std.Dev. Corr                         
+ participant (Intercept)         9167.10  95.745                               
+             target_pos2           95.18   9.756   0.39                        
+             target_pos3           32.53   5.703   0.52 -0.58                  
+             target_rep2          392.50  19.812  -0.14 -0.41  0.26            
+             target_rep3          735.37  27.118  -0.24 -0.41  0.17  0.95      
+             target_rep4         1744.58  41.768  -0.27 -0.46  0.19  0.88  0.98
+             syllable_order_n_z   308.07  17.552   0.22  0.60 -0.36 -0.52 -0.72
+ Residual                       22239.33 149.129                               
+       
+       
+       
+       
+       
+       
+       
+ -0.83 
+       
+Number of obs: 51351, groups:  participant, 207
+
+Fixed effects:
+                                     Estimate Std. Error         df t value
+(Intercept)                          672.3302     7.3569   232.8081  91.388
+target_pos2                           -9.4348     3.2875  2442.0701  -2.870
+target_pos3                            5.6754     3.2700  6622.4307   1.736
+target_rep2                          -29.2046     3.7559   935.8939  -7.776
+target_rep3                          -46.5762     4.7532   591.0006  -9.799
+target_rep4                          -59.7199     6.1783   368.8197  -9.666
+feedback21                            -6.8066     6.8808   229.0926  -0.989
+syllable_order_n_z                    29.0085     2.0729   206.0802  13.994
+target_pos2:target_rep2               19.4242     4.5335 50641.4127   4.285
+target_pos3:target_rep2              -18.3788     4.5647 50691.7489  -4.026
+target_pos2:target_rep3                4.2757     4.5570 50708.8936   0.938
+target_pos3:target_rep3              -12.5724     4.5884 50741.2951  -2.740
+target_pos2:target_rep4                4.9663     4.5916 50763.4457   1.082
+target_pos3:target_rep4              -18.3854     4.6193 50747.4477  -3.980
+target_pos2:feedback21                -0.9379     3.2873  2368.4574  -0.285
+target_pos3:feedback21                -1.0243     3.2674  7637.8972  -0.314
+target_rep2:feedback21                -1.2698     3.4419  1357.0408  -0.369
+target_rep3:feedback21                -0.6848     3.5420  1186.3605  -0.193
+target_rep4:feedback21                 3.9748     3.6936   892.5897   1.076
+target_pos2:target_rep2:feedback21     4.4619     4.5308 50717.6567   0.985
+target_pos3:target_rep2:feedback21     1.8900     4.5647 50691.6311   0.414
+target_pos2:target_rep3:feedback21     2.4438     4.5454 50200.1432   0.538
+target_pos3:target_rep3:feedback21    -1.9732     4.5880 50754.9136  -0.430
+target_pos2:target_rep4:feedback21    -2.4123     4.5712 50059.6076  -0.528
+target_pos3:target_rep4:feedback21    -2.2548     4.6135 50847.9915  -0.489
+                                   Pr(&gt;|t|)    
+(Intercept)                         &lt; 2e-16 ***
+target_pos2                         0.00414 ** 
+target_pos3                         0.08269 .  
+target_rep2                        1.97e-14 ***
+target_rep3                         &lt; 2e-16 ***
+target_rep4                         &lt; 2e-16 ***
+feedback21                          0.32360    
+syllable_order_n_z                  &lt; 2e-16 ***
+target_pos2:target_rep2            1.83e-05 ***
+target_pos3:target_rep2            5.67e-05 ***
+target_pos2:target_rep3             0.34812    
+target_pos3:target_rep3             0.00615 ** 
+target_pos2:target_rep4             0.27944    
+target_pos3:target_rep4            6.90e-05 ***
+target_pos2:feedback21              0.77543    
+target_pos3:feedback21              0.75391    
+target_rep2:feedback21              0.71223    
+target_rep3:feedback21              0.84672    
+target_rep4:feedback21              0.28216    
+target_pos2:target_rep2:feedback21  0.32473    
+target_pos3:target_rep2:feedback21  0.67884    
+target_pos2:target_rep3:feedback21  0.59083    
+target_pos3:target_rep3:feedback21  0.66714    
+target_pos2:target_rep4:feedback21  0.59769    
+target_pos3:target_rep4:feedback21  0.62503    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Correlation matrix not shown by default, as p = 25 &gt; 12.
+Use print(x, correlation=TRUE)  or
+    vcov(x)        if you need it</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>optimizer (bobyqa) convergence code: 0 (OK)
+boundary (singular) fit: see help(&#39;isSingular&#39;)</code></pre>
+</div>
+</div>
+</section>
+<section id="break-down-the-interaction" class="level2">
+<h2>Break down the interaction</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>emm_sl<span class="ot">&lt;-</span><span class="fu">emmeans</span>(stat_learn_mod_compl_syll_nointer_wcov, <span class="sc">~</span> target_pos <span class="sc">|</span> target_rep)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Note: D.f. calculations have been disabled because the number of observations exceeds 3000.
+To enable adjustments, add the argument &#39;pbkrtest.limit = 51351&#39; (or larger)
+[or, globally, &#39;set emm_options(pbkrtest.limit = 51351)&#39; or larger];
+but be warned that this may result in large computation time and memory use.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Note: D.f. calculations have been disabled because the number of observations exceeds 3000.
+To enable adjustments, add the argument &#39;lmerTest.limit = 51351&#39; (or larger)
+[or, globally, &#39;set emm_options(lmerTest.limit = 51351)&#39; or larger];
+but be warned that this may result in large computation time and memory use.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>NOTE: Results may be misleading due to involvement in interactions</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(emm_sl, <span class="at">adjust =</span> <span class="st">&quot;bonferroni&quot;</span>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>target_rep = 1:
+ contrast                  estimate   SE  df z.ratio p.value
+ target_pos1 - target_pos2     9.43 3.29 Inf   2.870  0.0123
+ target_pos1 - target_pos3    -5.68 3.27 Inf  -1.736  0.2479
+ target_pos2 - target_pos3   -15.11 3.37 Inf  -4.480 &lt;0.0001
+
+target_rep = 2:
+ contrast                  estimate   SE  df z.ratio p.value
+ target_pos1 - target_pos2    -9.99 3.28 Inf  -3.042  0.0071
+ target_pos1 - target_pos3    12.70 3.24 Inf   3.926  0.0003
+ target_pos2 - target_pos3    22.69 3.34 Inf   6.795 &lt;0.0001
+
+target_rep = 3:
+ contrast                  estimate   SE  df z.ratio p.value
+ target_pos1 - target_pos2     5.16 3.29 Inf   1.569  0.3501
+ target_pos1 - target_pos3     6.90 3.27 Inf   2.111  0.1043
+ target_pos2 - target_pos3     1.74 3.37 Inf   0.516  1.0000
+
+target_rep = 4:
+ contrast                  estimate   SE  df z.ratio p.value
+ target_pos1 - target_pos2     4.47 3.32 Inf   1.344  0.5369
+ target_pos1 - target_pos3    12.71 3.31 Inf   3.844  0.0004
+ target_pos2 - target_pos3     8.24 3.38 Inf   2.436  0.0446
+
+Results are averaged over the levels of: feedback2 
+Degrees-of-freedom method: asymptotic 
+P value adjustment: bonferroni method for 3 tests </code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">contrast</span>(</span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>  emm_sl,</span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a> <span class="at">method =</span> <span class="fu">list</span>(<span class="at">linear =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>)), </span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a> <span class="at">adjust =</span> <span class="st">&quot;bonferroni&quot;</span></span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>target_rep = 1:
+ contrast estimate   SE  df z.ratio p.value
+ linear       5.68 3.27 Inf   1.736  0.0826
+
+target_rep = 2:
+ contrast estimate   SE  df z.ratio p.value
+ linear     -12.70 3.24 Inf  -3.926 &lt;0.0001
+
+target_rep = 3:
+ contrast estimate   SE  df z.ratio p.value
+ linear      -6.90 3.27 Inf  -2.111  0.0348
+
+target_rep = 4:
+ contrast estimate   SE  df z.ratio p.value
+ linear     -12.71 3.31 Inf  -3.844  0.0001
+
+Results are averaged over the levels of: feedback2 
+Degrees-of-freedom method: asymptotic </code></pre>
+</div>
+</div>
+</section>
+<section id="sl-results-plot" class="level2">
+<h2>SL results plot</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>emm_sl_df<span class="ot">&lt;-</span><span class="fu">as.data.frame</span>(emm_sl)</span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a>sl_plot<span class="ot">&lt;-</span><span class="fu">ggplot</span>(emm_sl_df, <span class="fu">aes</span>(<span class="at">x =</span> target_pos, <span class="at">y =</span> emmean, <span class="at">color =</span> target_pos,  <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">&quot;black&quot;</span>) <span class="sc">+</span></span>
+<span id="cb74-6"><a href="#cb74-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> emmean<span class="sc">-</span>SE, <span class="at">ymax =</span> emmean<span class="sc">+</span>SE), <span class="at">width =</span> <span class="fl">0.1</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb74-7"><a href="#cb74-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb74-8"><a href="#cb74-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Triplet position&quot;</span>,</span>
+<span id="cb74-9"><a href="#cb74-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;RT (ms)&quot;</span>,</span>
+<span id="cb74-10"><a href="#cb74-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Triplet position&quot;</span></span>
+<span id="cb74-11"><a href="#cb74-11" aria-hidden="true" tabindex="-1"></a>  )<span class="sc">+</span></span>
+<span id="cb74-12"><a href="#cb74-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;Word presentation&quot;</span>)<span class="sc">+</span></span>
+<span id="cb74-13"><a href="#cb74-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb74-14"><a href="#cb74-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(.<span class="sc">~</span>target_rep)<span class="sc">+</span></span>
+<span id="cb74-15"><a href="#cb74-15" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>)<span class="sc">+</span></span>
+<span id="cb74-16"><a href="#cb74-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb74-17"><a href="#cb74-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">35</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">face =</span> <span class="st">&quot;plain&quot;</span>),</span>
+<span id="cb74-18"><a href="#cb74-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">35</span>),</span>
+<span id="cb74-19"><a href="#cb74-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">35</span>),</span>
+<span id="cb74-20"><a href="#cb74-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">30</span>),</span>
+<span id="cb74-21"><a href="#cb74-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="fu">rel</span>(<span class="dv">2</span>)),</span>
+<span id="cb74-22"><a href="#cb74-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="fu">rel</span>(<span class="dv">2</span>)), </span>
+<span id="cb74-23"><a href="#cb74-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text.x =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">30</span>)</span>
+<span id="cb74-24"><a href="#cb74-24" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb76"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>sl_plot</span></code></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img src="analysis_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid" width="672" /></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="structured-vs-random-streams" class="level2">
+<h2>Structured vs random streams</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co"># determine the random structure of the the model</span></span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a><span class="co"># source(&quot;R/4.structured_vs_unstructured_random_effects_model_selection.R&quot;)</span></span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a><span class="co"># stat_learn_mod_comp_str_full_rand_wpred_wcov&lt;-lmer(RTms ~ 1+sequence_type_f*feedback2+syllable_order_n_z+trial_num_z+</span></span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a><span class="co">#                    (1+sequence_type_f+syllable_order_n_z+trial_num_z|participant ) ,</span></span>
+<span id="cb77-6"><a href="#cb77-6" aria-hidden="true" tabindex="-1"></a><span class="co">#               data = full_df[is.na(full_df$target_pos) |full_df$target_pos==3, ],</span></span>
+<span id="cb77-7"><a href="#cb77-7" aria-hidden="true" tabindex="-1"></a><span class="co">#                  control = lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e5)), </span></span>
+<span id="cb77-8"><a href="#cb77-8" aria-hidden="true" tabindex="-1"></a><span class="co">#                  REML=F)</span></span>
+<span id="cb77-9"><a href="#cb77-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-10"><a href="#cb77-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(stat_learn_mod_comp_str_full_rand_wpred_wcov)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite&#39;s
+  method [lmerModLmerTest]
+Formula: RTms ~ 1 + sequence_type_f * feedback2 + syllable_order_n_z +  
+    trial_num_z + (1 + sequence_type_f + syllable_order_n_z +  
+    trial_num_z | participant)
+   Data: full_df[is.na(full_df$target_pos) | full_df$target_pos == 3,      ]
+Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+ 382644.2  382785.4 -191305.1  382610.2     29848 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-6.7051 -0.5076 -0.1111  0.4154  4.7064 
+
+Random effects:
+ Groups      Name               Variance Std.Dev. Corr              
+ participant (Intercept)         9439.95  97.16                     
+             sequence_type_f1     345.94  18.60   -0.11             
+             syllable_order_n_z    68.73   8.29   -0.12  0.15       
+             trial_num_z          782.45  27.97    0.17 -0.98 -0.05 
+ Residual                       20588.21 143.49                     
+Number of obs: 29865, groups:  participant, 207
+
+Fixed effects:
+                             Estimate Std. Error        df t value Pr(&gt;|t|)    
+(Intercept)                 641.16073    6.81940 206.83592  94.020  &lt; 2e-16 ***
+sequence_type_f1            -10.71715    1.71813 200.88671  -6.238 2.58e-09 ***
+feedback21                   -8.43632    6.69901 207.04773  -1.259  0.20933    
+syllable_order_n_z            7.83083    1.01429 193.66011   7.721 6.04e-13 ***
+trial_num_z                   6.11636    2.28753 200.72298   2.674  0.00812 ** 
+sequence_type_f1:feedback21  -0.06445    0.87027 194.71485  -0.074  0.94104    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Correlation of Fixed Effects:
+            (Intr) sqn__1 fdbc21 syl___ trl_n_
+sqnc_typ_f1 -0.117                            
+feedback21   0.014  0.001                     
+syllbl_rd__ -0.069  0.071 -0.001              
+trial_num_z  0.176 -0.861  0.000 -0.029       
+sqnc_t_1:21  0.001  0.004  0.075  0.000 -0.002</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Anova</span>(stat_learn_mod_comp_str_full_rand_wpred_wcov, <span class="at">type =</span><span class="dv">2</span>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: RTms
+                            Chisq Df Pr(&gt;Chisq)    
+sequence_type_f           38.9058  1  4.448e-10 ***
+feedback2                  1.5809  1     0.2086    
+syllable_order_n_z        59.6062  1  1.159e-14 ***
+trial_num_z                7.1491  1     0.0075 ** 
+sequence_type_f:feedback2  0.0055  1     0.9410    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+</div>
+</section>
+<section id="plot" class="level2">
+<h2>Plot</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="co"># with sequence type now for plotting</span></span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a><span class="co"># stat_learn_mod_comp_str_full_rand_wpred_wcov2&lt;-lmer(RTms ~ 1+sequence_type*feedback2+syllable_order_n_z+trial_num_z+</span></span>
+<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a><span class="co">#                    (1+sequence_type+syllable_order_n_z+trial_num_z|participant ) ,</span></span>
+<span id="cb81-4"><a href="#cb81-4" aria-hidden="true" tabindex="-1"></a><span class="co">#               data = full_df[is.na(full_df$target_pos) |full_df$target_pos==3, ],</span></span>
+<span id="cb81-5"><a href="#cb81-5" aria-hidden="true" tabindex="-1"></a><span class="co">#                  control = lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e5)), </span></span>
+<span id="cb81-6"><a href="#cb81-6" aria-hidden="true" tabindex="-1"></a><span class="co">#                  REML=F)</span></span>
+<span id="cb81-7"><a href="#cb81-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-8"><a href="#cb81-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-9"><a href="#cb81-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-10"><a href="#cb81-10" aria-hidden="true" tabindex="-1"></a><span class="co"># create the estimated marginal means for the contrast</span></span>
+<span id="cb81-11"><a href="#cb81-11" aria-hidden="true" tabindex="-1"></a>emm_struct<span class="ot">&lt;-</span><span class="fu">emmeans</span>(stat_learn_mod_comp_str_full_rand_wpred_wcov2, <span class="sc">~</span> sequence_type )</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Note: D.f. calculations have been disabled because the number of observations exceeds 3000.
+To enable adjustments, add the argument &#39;pbkrtest.limit = 29865&#39; (or larger)
+[or, globally, &#39;set emm_options(pbkrtest.limit = 29865)&#39; or larger];
+but be warned that this may result in large computation time and memory use.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Note: D.f. calculations have been disabled because the number of observations exceeds 3000.
+To enable adjustments, add the argument &#39;lmerTest.limit = 29865&#39; (or larger)
+[or, globally, &#39;set emm_options(lmerTest.limit = 29865)&#39; or larger];
+but be warned that this may result in large computation time and memory use.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>NOTE: Results may be misleading due to involvement in interactions</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(emm_struct)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast                  estimate   SE  df z.ratio p.value
+ structured - unstructured    -21.4 3.44 Inf  -6.238 &lt;0.0001
+
+Results are averaged over the levels of: feedback2 
+Degrees-of-freedom method: asymptotic </code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a>emm_struct_df<span class="ot">&lt;-</span><span class="fu">as.data.frame</span>(emm_struct)</span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a><span class="co"># rename sequence type from unstructured to random</span></span>
+<span id="cb87-4"><a href="#cb87-4" aria-hidden="true" tabindex="-1"></a>emm_struct_df<span class="sc">$</span>sequence_type2<span class="ot">&lt;-</span><span class="fu">ifelse</span>(emm_struct_df<span class="sc">$</span>sequence_type<span class="sc">==</span><span class="st">&quot;unstructured&quot;</span>,</span>
+<span id="cb87-5"><a href="#cb87-5" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">&quot;random&quot;</span>, <span class="st">&quot;structured&quot;</span>)</span>
+<span id="cb87-6"><a href="#cb87-6" aria-hidden="true" tabindex="-1"></a>struct_plot<span class="ot">&lt;-</span><span class="fu">ggplot</span>(emm_struct_df, <span class="fu">aes</span>(<span class="at">x =</span> sequence_type2, <span class="at">y =</span> emmean, <span class="at">color =</span> sequence_type2,  <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb87-7"><a href="#cb87-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb87-8"><a href="#cb87-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">&quot;black&quot;</span>) <span class="sc">+</span></span>
+<span id="cb87-9"><a href="#cb87-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> asymp.LCL, <span class="at">ymax =</span> asymp.UCL), <span class="at">width =</span> <span class="fl">0.1</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb87-10"><a href="#cb87-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb87-11"><a href="#cb87-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Sequence type&quot;</span>,</span>
+<span id="cb87-12"><a href="#cb87-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;RT (ms)&quot;</span>,</span>
+<span id="cb87-13"><a href="#cb87-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Sequence type&quot;</span></span>
+<span id="cb87-14"><a href="#cb87-14" aria-hidden="true" tabindex="-1"></a>  )<span class="sc">+</span></span>
+<span id="cb87-15"><a href="#cb87-15" aria-hidden="true" tabindex="-1"></a>  <span class="co">#ggtitle(&quot;Target repetition&quot;)+</span></span>
+<span id="cb87-16"><a href="#cb87-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb87-17"><a href="#cb87-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_discrete</span>(<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;Random&quot;</span>, <span class="st">&quot;Structured&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb87-18"><a href="#cb87-18" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>)<span class="sc">+</span></span>
+<span id="cb87-19"><a href="#cb87-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb87-20"><a href="#cb87-20" aria-hidden="true" tabindex="-1"></a>    <span class="co">#plot.title = element_text(size = 35, hjust = 0.5, face = &quot;plain&quot;),</span></span>
+<span id="cb87-21"><a href="#cb87-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">35</span>),</span>
+<span id="cb87-22"><a href="#cb87-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">35</span>),</span>
+<span id="cb87-23"><a href="#cb87-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">30</span>),</span>
+<span id="cb87-24"><a href="#cb87-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="fu">rel</span>(<span class="dv">2</span>)),</span>
+<span id="cb87-25"><a href="#cb87-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="fu">rel</span>(<span class="dv">2</span>)), </span>
+<span id="cb87-26"><a href="#cb87-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text.x =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">30</span>)</span>
+<span id="cb87-27"><a href="#cb87-27" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb87-28"><a href="#cb87-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-29"><a href="#cb87-29" aria-hidden="true" tabindex="-1"></a>struct_plot</span></code></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img src="analysis_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid" width="672" /></p>
+</figure>
+</div>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>slplots_comb<span class="ot">&lt;-</span>ggpubr<span class="sc">::</span><span class="fu">ggarrange</span>(sl_plot, struct_plot, <span class="at">ncol =</span> <span class="dv">2</span>,   <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;a)&quot;</span>, <span class="st">&quot;b)&quot;</span> ), </span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">font.label =</span> <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">38</span>, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>), </span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">label.x =</span> <span class="fl">0.02</span> , <span class="at">label.y =</span> <span class="fl">0.98</span>) <span class="co"># position of tags in each panel (0–1))</span></span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="st">&quot;figures/SL_plots_combined.png&quot;</span>, </span>
+<span id="cb88-6"><a href="#cb88-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">plot =</span> slplots_comb, <span class="at">width=</span> <span class="dv">22</span>, <span class="at">height=</span><span class="dv">10</span>, <span class="at">dpi =</span> <span class="dv">300</span>)</span></code></pre></div>
+</details>
+</div>
+</section>
+<section id="check-the-facilitation-effect-for-unstructured-strams" class="level2">
+<h2>check the facilitation effect for unstructured strams</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co"># facil_effect&lt;-lmer(RTms ~ 1+target_rep*sequence_type+syllable_order_n_z+trial_new+</span></span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a><span class="co">#                    (1+target_rep*sequence_type++syllable_order_n_z+trial_new|participant ) ,</span></span>
+<span id="cb89-3"><a href="#cb89-3" aria-hidden="true" tabindex="-1"></a><span class="co">#                  data = full_df[is.na(full_df$target_pos) |full_df$target_pos!=1,], </span></span>
+<span id="cb89-4"><a href="#cb89-4" aria-hidden="true" tabindex="-1"></a><span class="co">#                  control = lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1000000000)), </span></span>
+<span id="cb89-5"><a href="#cb89-5" aria-hidden="true" tabindex="-1"></a><span class="co">#                  REML=T)</span></span>
+<span id="cb89-6"><a href="#cb89-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb89-7"><a href="#cb89-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(facil_effect)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+lmerModLmerTest]
+Formula: RTms ~ 1 + target_rep * sequence_type + syllable_order_n_z +  
+    trial_new + (1 + target_rep * sequence_type + +syllable_order_n_z +  
+    trial_new | participant)
+   Data: full_df[is.na(full_df$target_pos) | full_df$target_pos != 1,      ]
+Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1e+09))
+
+REML criterion at convergence: 607668.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-6.5125 -0.5080 -0.1148  0.4170  4.6206 
+
+Random effects:
+ Groups      Name                                  Variance  Std.Dev. Corr 
+ participant (Intercept)                           1.055e+04 102.7362      
+             target_rep2                           6.085e+02  24.6671 -0.08
+             target_rep3                           1.445e+03  38.0178 -0.22
+             target_rep4                           2.883e+03  53.6916 -0.22
+             sequence_typeunstructured             9.580e+01   9.7877  0.09
+             syllable_order_n_z                    3.945e+02  19.8611  0.22
+             trial_new                             6.854e-01   0.8279 -0.29
+             target_rep2:sequence_typeunstructured 2.654e+02  16.2917 -0.21
+             target_rep3:sequence_typeunstructured 1.173e+02  10.8305 -0.04
+             target_rep4:sequence_typeunstructured 1.260e+02  11.2237 -0.22
+ Residual                                          2.126e+04 145.8200      
+                                                 
+                                                 
+                                                 
+  0.90                                           
+  0.87  0.98                                     
+  0.41 -0.02  0.01                               
+ -0.60 -0.80 -0.89  0.14                         
+  0.02  0.02 -0.04 -0.02  0.02                   
+ -0.75 -0.53 -0.42 -0.44 -0.02  0.17             
+ -0.83 -0.67 -0.56 -0.37  0.12  0.01  0.97       
+ -0.90 -0.69 -0.72 -0.60  0.55  0.00  0.64  0.67 
+                                                 
+Number of obs: 47342, groups:  participant, 207
+
+Fixed effects:
+                                        Estimate Std. Error         df t value
+(Intercept)                            648.10214    7.65682  205.69193  84.644
+target_rep2                            -25.03038    3.08419  214.83471  -8.116
+target_rep3                            -43.70793    4.43988  213.80229  -9.844
+target_rep4                            -56.54528    5.97970  203.84009  -9.456
+sequence_typeunstructured               -2.73451    3.07426  741.31562  -0.889
+syllable_order_n_z                      25.15936    2.21721  201.32330  11.347
+trial_new                                0.39648    0.06345  203.22099   6.249
+target_rep2:sequence_typeunstructured    7.45496    4.36975  934.28146   1.706
+target_rep3:sequence_typeunstructured   22.05569    4.32424 1826.73465   5.100
+target_rep4:sequence_typeunstructured   27.79256    4.34880 1328.62280   6.391
+                                      Pr(&gt;|t|)    
+(Intercept)                            &lt; 2e-16 ***
+target_rep2                           3.70e-14 ***
+target_rep3                            &lt; 2e-16 ***
+target_rep4                            &lt; 2e-16 ***
+sequence_typeunstructured               0.3740    
+syllable_order_n_z                     &lt; 2e-16 ***
+trial_new                             2.39e-09 ***
+target_rep2:sequence_typeunstructured   0.0883 .  
+target_rep3:sequence_typeunstructured 3.74e-07 ***
+target_rep4:sequence_typeunstructured 2.28e-10 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Correlation of Fixed Effects:
+            (Intr) trgt_2 trgt_3 trgt_4 sqnc_t syl___ trl_nw tr_2:_ tr_3:_
+target_rep2 -0.251                                                        
+target_rep3 -0.352  0.739                                                 
+target_rep4 -0.354  0.723  0.889                                          
+sqnc_typnst -0.078  0.297  0.158  0.113                                   
+syllbl_rd__  0.323 -0.533 -0.786 -0.881  0.046                            
+trial_new   -0.302 -0.001 -0.007 -0.043 -0.004  0.038                     
+trgt_rp2:s_  0.017 -0.460 -0.190 -0.142 -0.694 -0.028  0.038              
+trgt_rp3:s_  0.067 -0.264 -0.324 -0.152 -0.689  0.007  0.001  0.519       
+trgt_rp4:s_  0.025 -0.255 -0.173 -0.240 -0.697  0.024 -0.001  0.503  0.499
+optimizer (bobyqa) convergence code: 0 (OK)
+boundary (singular) fit: see help(&#39;isSingular&#39;)</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Anova</span>(facil_effect, <span class="at">type =</span> <span class="dv">2</span>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: RTms
+                           Chisq Df Pr(&gt;Chisq)    
+target_rep                79.447  3  &lt; 2.2e-16 ***
+sequence_type             47.999  1  4.264e-12 ***
+syllable_order_n_z       128.762  1  &lt; 2.2e-16 ***
+trial_new                 39.045  1  4.141e-10 ***
+target_rep:sequence_type  53.100  3  1.745e-11 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="co"># only in the unstructured</span></span>
+<span id="cb93-2"><a href="#cb93-2" aria-hidden="true" tabindex="-1"></a><span class="co"># unstructured_streams_fact_effect&lt;-lmer(RTms ~ 1+target_rep+syllable_order_n_z+</span></span>
+<span id="cb93-3"><a href="#cb93-3" aria-hidden="true" tabindex="-1"></a><span class="co">#                    (1+target_rep+syllable_order_n_z|participant ) ,</span></span>
+<span id="cb93-4"><a href="#cb93-4" aria-hidden="true" tabindex="-1"></a><span class="co">#                  data = full_df[ </span></span>
+<span id="cb93-5"><a href="#cb93-5" aria-hidden="true" tabindex="-1"></a><span class="co">#                    full_df$sequence_type==&quot;unstructured&quot;  ,], </span></span>
+<span id="cb93-6"><a href="#cb93-6" aria-hidden="true" tabindex="-1"></a><span class="co">#                  control = lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1000000000)), </span></span>
+<span id="cb93-7"><a href="#cb93-7" aria-hidden="true" tabindex="-1"></a><span class="co">#                  REML=T)</span></span>
+<span id="cb93-8"><a href="#cb93-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb93-9"><a href="#cb93-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb93-10"><a href="#cb93-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(unstructured_streams_fact_effect)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+lmerModLmerTest]
+Formula: RTms ~ 1 + target_rep + syllable_order_n_z + (1 + target_rep +  
+    syllable_order_n_z | participant)
+   Data: full_df[full_df$sequence_type == &quot;unstructured&quot;, ]
+Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1e+09))
+
+REML criterion at convergence: 166058.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-5.5610 -0.4958 -0.0879  0.4358  4.4231 
+
+Random effects:
+ Groups      Name               Variance Std.Dev. Corr                    
+ participant (Intercept)        11005.1  104.91                           
+             target_rep2          472.3   21.73   -0.40                   
+             target_rep3         2743.4   52.38   -0.41  1.00             
+             target_rep4         6885.4   82.98   -0.44  1.00  1.00       
+             syllable_order_n_z  1134.5   33.68    0.38 -0.99 -0.97 -0.98 
+ Residual                       20393.4  142.81                           
+Number of obs: 12952, groups:  participant, 207
+
+Fixed effects:
+                   Estimate Std. Error      df t value Pr(&gt;|t|)    
+(Intercept)         654.153      8.716 212.900  75.048  &lt; 2e-16 ***
+target_rep2         -11.542      4.696 512.498  -2.458   0.0143 *  
+target_rep3          -9.961      7.414 238.621  -1.344   0.1803    
+target_rep4         -11.466     10.686 209.661  -1.073   0.2845    
+syllable_order_n_z   17.905      4.064 202.943   4.406  1.7e-05 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Correlation of Fixed Effects:
+            (Intr) trgt_2 trgt_3 trgt_4
+target_rep2 -0.530                     
+target_rep3 -0.602  0.758              
+target_rep4 -0.626  0.745  0.905       
+syllbl_rd__  0.566 -0.656 -0.869 -0.935
+optimizer (bobyqa) convergence code: 0 (OK)
+boundary (singular) fit: see help(&#39;isSingular&#39;)</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Anova</span>(unstructured_streams_fact_effect, <span class="at">type =</span><span class="dv">2</span>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: RTms
+                     Chisq Df Pr(&gt;Chisq)    
+target_rep          7.3595  3    0.06128 .  
+syllable_order_n_z 19.4138  1  1.052e-05 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="co"># test for linearity</span></span>
+<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a>fac_unstruct <span class="ot">&lt;-</span> <span class="fu">emmeans</span>(facil_effect, <span class="sc">~</span> target_rep<span class="sc">|</span>sequence_type)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Note: D.f. calculations have been disabled because the number of observations exceeds 3000.
+To enable adjustments, add the argument &#39;pbkrtest.limit = 47342&#39; (or larger)
+[or, globally, &#39;set emm_options(pbkrtest.limit = 47342)&#39; or larger];
+but be warned that this may result in large computation time and memory use.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Note: D.f. calculations have been disabled because the number of observations exceeds 3000.
+To enable adjustments, add the argument &#39;lmerTest.limit = 47342&#39; (or larger)
+[or, globally, &#39;set emm_options(lmerTest.limit = 47342)&#39; or larger];
+but be warned that this may result in large computation time and memory use.</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(fac_unstruct, <span class="at">adjust =</span> <span class="st">&quot;bonferroni&quot;</span>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>sequence_type = structured:
+ contrast                  estimate   SE  df z.ratio p.value
+ target_rep1 - target_rep2    25.03 3.08 Inf   8.116 &lt;0.0001
+ target_rep1 - target_rep3    43.71 4.44 Inf   9.844 &lt;0.0001
+ target_rep1 - target_rep4    56.55 5.98 Inf   9.456 &lt;0.0001
+ target_rep2 - target_rep3    18.68 3.00 Inf   6.232 &lt;0.0001
+ target_rep2 - target_rep4    31.51 4.31 Inf   7.308 &lt;0.0001
+ target_rep3 - target_rep4    12.84 2.88 Inf   4.463 &lt;0.0001
+
+sequence_type = unstructured:
+ contrast                  estimate   SE  df z.ratio p.value
+ target_rep1 - target_rep2    17.58 4.03 Inf   4.366 &lt;0.0001
+ target_rep1 - target_rep3    21.65 5.10 Inf   4.247  0.0001
+ target_rep1 - target_rep4    28.75 6.49 Inf   4.427 &lt;0.0001
+ target_rep2 - target_rep3     4.08 4.09 Inf   0.996  1.0000
+ target_rep2 - target_rep4    11.18 5.18 Inf   2.158  0.1855
+ target_rep3 - target_rep4     7.10 4.09 Inf   1.734  0.4971
+
+Degrees-of-freedom method: asymptotic 
+P value adjustment: bonferroni method for 6 tests </code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="fu">contrast</span>(</span>
+<span id="cb102-2"><a href="#cb102-2" aria-hidden="true" tabindex="-1"></a>  fac_unstruct,</span>
+<span id="cb102-3"><a href="#cb102-3" aria-hidden="true" tabindex="-1"></a> <span class="at">method =</span> <span class="fu">list</span>(<span class="at">linear =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.5</span>,<span class="sc">-</span><span class="fl">0.25</span> , <span class="fl">0.25</span>, <span class="fl">0.5</span>)), </span>
+<span id="cb102-4"><a href="#cb102-4" aria-hidden="true" tabindex="-1"></a> <span class="at">adjust =</span> <span class="st">&quot;fdr&quot;</span></span>
+<span id="cb102-5"><a href="#cb102-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb102-6"><a href="#cb102-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>sequence_type = structured:
+ contrast estimate   SE  df z.ratio p.value
+ linear      -32.9 3.47 Inf  -9.483 &lt;0.0001
+
+sequence_type = unstructured:
+ contrast estimate   SE  df z.ratio p.value
+ linear      -15.4 3.75 Inf  -4.104 &lt;0.0001
+
+Degrees-of-freedom method: asymptotic </code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode" id="cb104"><pre class="sourceCode r cell-code"><code class="sourceCode r"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot</span></span>
+<span id="cb104-2"><a href="#cb104-2" aria-hidden="true" tabindex="-1"></a>emm_facildf<span class="ot">&lt;-</span><span class="fu">as.data.frame</span>(fac_unstruct)</span>
+<span id="cb104-3"><a href="#cb104-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb104-4"><a href="#cb104-4" aria-hidden="true" tabindex="-1"></a>facil_plot<span class="ot">&lt;-</span><span class="fu">ggplot</span>(emm_facildf, <span class="fu">aes</span>(<span class="at">x =</span> target_rep, <span class="at">y =</span> emmean, <span class="at">color =</span> sequence_type,  <span class="at">group =</span> sequence_type)) <span class="sc">+</span></span>
+<span id="cb104-5"><a href="#cb104-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb104-6"><a href="#cb104-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb104-7"><a href="#cb104-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> asymp.LCL, <span class="at">ymax =</span> asymp.UCL), <span class="at">width =</span> <span class="fl">0.1</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb104-8"><a href="#cb104-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb104-9"><a href="#cb104-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Sequence type&quot;</span>,</span>
+<span id="cb104-10"><a href="#cb104-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;RT (ms)&quot;</span>,</span>
+<span id="cb104-11"><a href="#cb104-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Sequence type&quot;</span></span>
+<span id="cb104-12"><a href="#cb104-12" aria-hidden="true" tabindex="-1"></a>  )<span class="sc">+</span></span>
+<span id="cb104-13"><a href="#cb104-13" aria-hidden="true" tabindex="-1"></a>  <span class="co">#ggtitle(&quot;Target repetition&quot;)+</span></span>
+<span id="cb104-14"><a href="#cb104-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb104-15"><a href="#cb104-15" aria-hidden="true" tabindex="-1"></a><span class="co">#theme(legend.position = &quot;none&quot;)+</span></span>
+<span id="cb104-16"><a href="#cb104-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb104-17"><a href="#cb104-17" aria-hidden="true" tabindex="-1"></a>    <span class="co">#plot.title = element_text(size = 35, hjust = 0.5, face = &quot;plain&quot;),</span></span>
+<span id="cb104-18"><a href="#cb104-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">35</span>),</span>
+<span id="cb104-19"><a href="#cb104-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">35</span>),</span>
+<span id="cb104-20"><a href="#cb104-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">30</span>),</span>
+<span id="cb104-21"><a href="#cb104-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="fu">rel</span>(<span class="dv">2</span>)),</span>
+<span id="cb104-22"><a href="#cb104-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="fu">rel</span>(<span class="dv">2</span>)), </span>
+<span id="cb104-23"><a href="#cb104-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text.x =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">30</span>)</span>
+<span id="cb104-24"><a href="#cb104-24" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb104-25"><a href="#cb104-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb104-26"><a href="#cb104-26" aria-hidden="true" tabindex="-1"></a>facil_plot</span></code></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img src="analysis_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid" width="672" /></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">SL_valence</span></p>
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">SL_valence</span></p>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">SL_valence</span></p>
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">SL_valence</span></p>
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">SL_valence</span></p>
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw=="></span></p>
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj"></span></p>
+</div>
+</section>
 </section>
 
-</main>
-<!-- /main column -->
-<script id="quarto-html-after-body" type="application/javascript">
+</main> <!-- /main -->
+<script id = "quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -1185,7 +2950,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 </div> <!-- /content -->
 
+</body>
 
-
-
-</body></html>
+</html>

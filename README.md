@@ -1,4 +1,6 @@
 Description of the files contained in the repository. 
+An online notebook with the analyses, tables, and plots, can be found [here](https://fpupillo.github.io/Speech_segmentation_SL_valence/)
+
 `analysis_SL.qmd` 
 Notebookd with the analyses of the statistical learning data. 
 ### figures
