@@ -11,6 +11,7 @@ execute:
   message: false
 ---
 
+# SL data
 ## Data are first cleaned and preprocessed 
 
 ```{r}
@@ -288,7 +289,7 @@ Number of remaining participants by feedback condition
 ```{r}
 full_df<-full_df[!full_df$participant%in% c(excl_acc, excl_fa),]
 ```
-# now check if there are participants who did not complete the all trials
+## now check if there are participants who did not complete the all trials
 
 ```{R}
 #| warning: false
