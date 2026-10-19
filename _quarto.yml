@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: main
+  output-dir: docs
 
 render:
 - analysis.qmd
