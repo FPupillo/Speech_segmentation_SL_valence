@@ -1,0 +1,3 @@
+﻿Intro.started,Intro.stopped,participant,age,gender,handedness,date,expName,psychopyVersion,OS,frameRate,Welcome_message.started,Welcome_message.stopped,mouse.x,mouse.y,mouse.leftButton,mouse.midButton,mouse.rightButton,mouse.time
+0.0014,0.0016,391,,,,2025-02-04_10h16.10.799,stat_learn_task,2024.2.4,Win32,59.52380952,,,,,,,,
+,,391,,,,2025-02-04_10h16.10.799,stat_learn_task,2024.2.4,Win32,59.52380952,0.0018,19.9726,[0.018869661358480318],[-0.4174567536586145],[1],[0],[0],[19.96760000014305]

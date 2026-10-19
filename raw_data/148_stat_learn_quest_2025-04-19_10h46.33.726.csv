@@ -1,0 +1,4 @@
+﻿Intro.started,Intro.stopped,participant,date,expName,psychopyVersion,OS,frameRate,Welcome_message.started,Welcome_message.stopped,mouse.x,mouse.y,mouse.leftButton,mouse.midButton,mouse.rightButton,mouse.time,Questionnaire_1_intr_2.started,Questionnaire_1_intr_2.stopped,Questionnaire_1_intr_mouse.x,Questionnaire_1_intr_mouse.y,Questionnaire_1_intr_mouse.leftButton,Questionnaire_1_intr_mouse.midButton,Questionnaire_1_intr_mouse.rightButton,Questionnaire_1_intr_mouse.time,Questionnaire_1_intr_mouse.clicked_name
+0,0,148,2025-04-19_10h46.33.726,stat_learn_quest,2024.2.4,iPhone,50,,,,,,,,,,,,,,,,,
+,,148,2025-04-19_10h46.33.726,stat_learn_quest,2024.2.4,iPhone,50,0.001,3.416,[-0.1358974358974359],[-0.21923076923076923],[1],[0],[0],[3.412],,,,,,,,,
+,,148,2025-04-19_10h46.33.726,stat_learn_quest,2024.2.4,iPhone,50,,,,,,,,,3.416,8.032,[0.02564102564102564],[-0.1064102564102564],[1],[0],[0],[4.612],"[""Questionnaire_1_intr""]"

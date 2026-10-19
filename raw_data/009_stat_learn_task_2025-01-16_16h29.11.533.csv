@@ -1,0 +1,4 @@
+﻿Intro.started,Intro.stopped,participant,session,date,expName,psychopyVersion,OS,frameRate,Welcome_message.started,Welcome_message.stopped,mouse.x,mouse.y,mouse.leftButton,mouse.midButton,mouse.rightButton,mouse.time,Instr_1.started,Instr_1.stopped,key_resp_inst.keys,Instr_1_click.x,Instr_1_click.y,Instr_1_click.leftButton,Instr_1_click.midButton,Instr_1_click.rightButton,Instr_1_click.time,Instr_1_click.clicked_name
+0.0017,0.0019,009,001,2025-01-16_16h29.11.533,stat_learn_task,2024.2.4,Win32,60.24096386,,,,,,,,,,,,,,,,,,
+,,009,001,2025-01-16_16h29.11.533,stat_learn_task,2024.2.4,Win32,60.24096386,0.002,2.9416,[-0.14351849026150174],[-0.2287037319607205],[1],[0],[0],[2.936899999991059],,,,,,,,,,
+,,009,001,2025-01-16_16h29.11.533,stat_learn_task,2024.2.4,Win32,60.24096386,,,,,,,,,2.9417,3.9586,,[0.030555555555555555],[-0.40925928751627605],[1],[0],[0],[1.0124999999999993],"[""Instr_text_2""]"

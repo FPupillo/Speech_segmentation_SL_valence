@@ -1,0 +1,5 @@
+﻿Intro.started,Intro.stopped,participant,age,gender,handedness,date,expName,psychopyVersion,OS,frameRate,Welcome_message.started,Welcome_message.stopped,mouse.x,mouse.y,mouse.leftButton,mouse.midButton,mouse.rightButton,mouse.time,Instr_1.started,Instr_1.stopped,key_resp_inst.keys,Instr_1_click.x,Instr_1_click.y,Instr_1_click.leftButton,Instr_1_click.midButton,Instr_1_click.rightButton,Instr_1_click.time,Instr_1_click.clicked_name,Instr_2.started
+0.0004,0.0006,62,23,female,right,2025-02-26_10h34.58.157,stat_learn_task,2024.2.4,Win32,60.60606061,,,,,,,,,,,,,,,,,,,
+,,62,23,female,right,2025-02-26_10h34.58.157,stat_learn_task,2024.2.4,Win32,60.60606061,0.0008,39.6497,[-0.17592592592592593],[-0.21018522757071037],[1],[0],[0],[39.645500000000006],,,,,,,,,,,
+,,62,23,female,right,2025-02-26_10h34.58.157,stat_learn_task,2024.2.4,Win32,60.60606061,,,,,,,,,39.6502,44.0628,,[-0.009259259259259259],[-0.39907405994556566],[1],[0],[0],[4.404099999994045],"[""Instr_text_2""]",
+,,62,23,female,right,2025-02-26_10h34.58.157,stat_learn_task,2024.2.4,Win32,60.60606061,,,,,,,,,,,,,,,,,,,44.0643

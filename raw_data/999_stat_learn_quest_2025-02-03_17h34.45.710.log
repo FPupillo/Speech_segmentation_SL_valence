@@ -1,0 +1,1165 @@
+6.7402 	INFO 	Loaded monitor calibration from ['2025_01_06 13:09']
+6.7834 	WARNING 	User requested fullscreen with size [1440  900], but screen is actually [1920, 1080]. Using actual size
+8.4343 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000028CE778A080>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000028CE778A020>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000028CE783F520>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.4344 	EXP 	window1: backgroundImage = ''
+8.4344 	EXP 	window1: backgroundFit = 'none'
+8.5720 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.5720 	EXP 	window1: recordFrameIntervals = False
+8.7360 	EXP 	window1: recordFrameIntervals = True
+8.9194 	EXP 	Screen (0) actual frame rate measured at 60.00Hz
+8.9195 	EXP 	window1: recordFrameIntervals = False
+10.5500 	INFO 	keyboard.Keyboard is using iohub backend.
+10.5502 	INFO 	keyboard.Keyboard is using iohub backend.
+10.5503 	INFO 	keyboard.Keyboard is using iohub backend.
+10.5503 	INFO 	keyboard.Keyboard is using iohub backend.
+10.5504 	INFO 	keyboard.Keyboard is using iohub backend.
+10.5504 	INFO 	keyboard.Keyboard is using iohub backend.
+10.5505 	INFO 	keyboard.Keyboard is using iohub backend.
+10.5505 	EXP 	stat_learn_quest: status = STARTED
+10.6823 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='tilburg-university7000.jpg', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0.  , 0.25]), size=array([0.5 , 0.28]), texRes=128.0, units='height', win=Window(...))
+10.7567 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0.0, pos=array([ 0. , -0.1]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.7704 	EXP 	Created Questionnaire_1_intr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Questionnaire_1_intr', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.7998 	EXP 	Created text_questionnaire = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_questionnaire', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1.6)
+10.8080 	EXP 	Created end_questionnaire = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='end_questionnaire', opacity=1, ori=0.0, pos=array([ 0. , -0.4]), rgb=UNKNOWN, text='Please press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+10.8213 	EXP 	Created Disagree_strongly = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='Disagree_strongly', opacity=1, ori=0.0, pos=array([-0.6, -0.2]), rgb=UNKNOWN, text='1 = Disagree strongly', units='height', win=Window(...), wrapWidth=1)
+10.8295 	EXP 	Created Disagree_somewhat = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='Disagree_somewhat', opacity=1, ori=0.0, pos=array([-0.2, -0.2]), rgb=UNKNOWN, text='2 = Disagree Somewhat', units='height', win=Window(...), wrapWidth=0.5)
+10.8359 	EXP 	Created Agree_somewhat = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='Agree_somewhat', opacity=1, ori=0.0, pos=array([ 0.2, -0.2]), rgb=UNKNOWN, text='3 = Agree somewhat', units='height', win=Window(...), wrapWidth=1)
+10.8406 	EXP 	Created Agree_strongly = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='Agree_strongly', opacity=1, ori=0.0, pos=array([ 0.6, -0.2]), rgb=UNKNOWN, text='4 = Agree_strongly', units='height', win=Window(...), wrapWidth=1)
+10.8486 	EXP 	Created exemp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exemp', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='I am having such a blast!', units='height', win=Window(...), wrapWidth=1)
+10.8529 	EXP 	Created example = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='example', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='I am having such a blast!', units='height', win=Window(...), wrapWidth=1)
+10.8618 	EXP 	Created text_questionnaire_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_questionnaire_2', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1.6)
+10.8672 	EXP 	Created end_questionnaire_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='end_questionnaire_2', opacity=1, ori=0.0, pos=array([ 0. , -0.4]), rgb=UNKNOWN, text='Please press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+10.8741 	EXP 	Created double_option = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='double_option', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='1a = I am having a ball\n1b = I am not bored', units='height', win=Window(...), wrapWidth=1)
+10.8867 	EXP 	Created exemp_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exemp_2', opacity=1, ori=0.0, pos=array([ 0. , -0.2]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.8924 	EXP 	Created Questionnaire_instr_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Questionnaire_instr_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Press SPACE to start with a questionnaire', units='height', win=Window(...), wrapWidth=1)
+10.8942 	EXP 	Created item = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='item', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.8955 	EXP 	Created quest_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='quest_1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.8968 	EXP 	Created quest_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='quest_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=0.5)
+10.8978 	EXP 	Created quest_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='quest_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.8986 	EXP 	Created quest_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='quest_4', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.8994 	EXP 	Created quest_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='quest_5', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.9006 	EXP 	Created question_BFQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='question_BFQ', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.9268 	EXP 	Created Instr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Instr', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.9279 	EXP 	Created Question1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Question1', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.9702 	EXP 	Created Click_question_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Click_question_1', opacity=1, ori=0.0, pos=array([ 0. , -0.2]), rgb=UNKNOWN, text='Click HERE to continue', units='height', win=Window(...), wrapWidth=1)
+10.9834 	EXP 	Created Instr_part_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Instr_part_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.9844 	EXP 	Created Intro_part_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Intro_part_2', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1.6)
+10.9853 	EXP 	Created Question2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Question2', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.9861 	EXP 	Created Option_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Option_1', opacity=1, ori=0.0, pos=array([-0.6, -0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=0.3)
+10.9869 	EXP 	Created Option_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Option_2', opacity=1, ori=0.0, pos=array([-0.2, -0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=0.25)
+10.9877 	EXP 	Created Option_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Option_3', opacity=1, ori=0.0, pos=array([ 0.2, -0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=0.3)
+10.9885 	EXP 	Created Option_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Option_4', opacity=1, ori=0.0, pos=array([ 0.6, -0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=0.3)
+10.9893 	EXP 	Created Question2_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Question2_2', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.0272 	EXP 	Created Option_1_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Option_1_2', opacity=1, ori=0.0, pos=array([-0.6, -0.4]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=0.3)
+11.0281 	EXP 	Created Option_2_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Option_2_2', opacity=1, ori=0.0, pos=array([-0.2, -0.4]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=0.3)
+11.0290 	EXP 	Created Option_3_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Option_3_2', opacity=1, ori=0.0, pos=array([ 0.2, -0.4]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=0.3)
+11.0304 	EXP 	Created Option_4_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Option_4_2', opacity=1, ori=0.0, pos=array([ 0.6, -0.4]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=0.3)
+11.0377 	EXP 	Created Question2_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Question2_3', opacity=1, ori=0.0, pos=array([ 0. , -0.2]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.0497 	EXP 	Created end_message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='end_message', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+0.0022 	EXP 	textbox: autoLog = True
+0.0022 	EXP 	Other_reasons_text: autoLog = True
+0.0506 	EXP 	image: autoDraw = True
+0.0506 	EXP 	text_5: autoDraw = True
+0.3542 	DATA 	Mouse: Right button down, pos=(1219,571)
+0.3687 	EXP 	image: autoDraw = False
+0.3687 	EXP 	text_5: autoDraw = False
+0.3687 	EXP 	Questionnaire_1_intr: autoDraw = True
+0.3698 	DATA 	Mouse:  Right button up, pos=(1217,571)
+1.2856 	DATA 	Mouse: Left button down, pos=(1025,447)
+1.3024 	INFO 	Keyboard events cleared
+1.3021 	EXP 	Questionnaire_1_intr: autoDraw = False
+1.3021 	EXP 	text_questionnaire: autoDraw = True
+1.3021 	EXP 	end_questionnaire: autoDraw = True
+1.3021 	EXP 	Disagree_strongly: autoDraw = True
+1.3021 	EXP 	Disagree_somewhat: autoDraw = True
+1.3021 	EXP 	Agree_somewhat: autoDraw = True
+1.3021 	EXP 	Agree_strongly: autoDraw = True
+1.3021 	EXP 	exemp: autoDraw = True
+1.3021 	EXP 	example: autoDraw = True
+1.3724 	DATA 	Mouse:  Left button up, pos=(1025,448)
+2.2725 	DATA 	Mouse: Left button down, pos=(960,112)
+2.3721 	DATA 	Mouse:  Left button up, pos=(960,109)
+2.8971 	DATA 	Keypress: space
+2.9051 	INFO 	Keyboard events cleared
+2.9048 	EXP 	text_questionnaire: autoDraw = False
+2.9048 	EXP 	end_questionnaire: autoDraw = False
+2.9048 	EXP 	Disagree_strongly: autoDraw = False
+2.9048 	EXP 	Disagree_somewhat: autoDraw = False
+2.9048 	EXP 	Agree_somewhat: autoDraw = False
+2.9048 	EXP 	Agree_strongly: autoDraw = False
+2.9048 	EXP 	exemp: autoDraw = False
+2.9048 	EXP 	example: autoDraw = False
+2.9048 	EXP 	text_questionnaire_2: autoDraw = True
+2.9048 	EXP 	end_questionnaire_2: autoDraw = True
+2.9048 	EXP 	double_option: autoDraw = True
+2.9048 	EXP 	exemp_2: autoDraw = True
+3.3208 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+3.3236 	DATA 	Keypress: space
+3.3347 	INFO 	Keyboard events cleared
+3.3343 	EXP 	text_questionnaire_2: autoDraw = False
+3.3343 	EXP 	end_questionnaire_2: autoDraw = False
+3.3343 	EXP 	double_option: autoDraw = False
+3.3343 	EXP 	exemp_2: autoDraw = False
+3.3343 	EXP 	Questionnaire_instr_3: autoDraw = True
+3.8860 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+4.0215 	EXP 	Imported Questionnaires/PSS.xlsx as conditions, 10 conditions, 8 params
+4.0219 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'Title_PSS': '1. Upset', 'Question': 'In the last month, how often have you been upset because of something that happened unexpectedly?', 'quest1': '0-Never', 'quest2': '1-Almost never', 'quest3': '2-Sometimes', 'quest4': '3-Fairly often', 'quest5': '4-Very often', 'Questionnaire': 'PSS', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+4.0737 	DATA 	Keypress: space
+4.0769 	INFO 	Keyboard events cleared
+4.0765 	EXP 	Questionnaire_instr_3: autoDraw = False
+4.0765 	EXP 	item: height = 0.06
+4.0765 	EXP 	item: height = 0.06
+4.0765 	EXP 	item: height = 0.06
+4.0765 	EXP 	item: text = 'In the last month, how often have you been upset because of something that happened unexpectedly?'
+4.0765 	EXP 	quest_1: height = 0.03
+4.0765 	EXP 	quest_1: height = 0.03
+4.0765 	EXP 	quest_1: height = 0.03
+4.0765 	EXP 	quest_1: text = '0-Never'
+4.0765 	EXP 	quest_2: height = 0.03
+4.0765 	EXP 	quest_2: height = 0.03
+4.0765 	EXP 	quest_2: height = 0.03
+4.0765 	EXP 	quest_2: text = '1-Almost never'
+4.0765 	EXP 	quest_3: height = 0.03
+4.0765 	EXP 	quest_3: height = 0.03
+4.0765 	EXP 	quest_3: height = 0.03
+4.0765 	EXP 	quest_3: text = '2-Sometimes'
+4.0765 	EXP 	quest_4: height = 0.03
+4.0765 	EXP 	quest_4: height = 0.03
+4.0765 	EXP 	quest_4: height = 0.03
+4.0765 	EXP 	quest_4: text = '3-Fairly often'
+4.0765 	EXP 	quest_5: height = 0.03
+4.0765 	EXP 	quest_5: height = 0.03
+4.0765 	EXP 	quest_5: height = 0.03
+4.0765 	EXP 	quest_5: text = '4-Very often'
+4.0765 	EXP 	question_BFQ: text = ''
+4.0765 	EXP 	item: autoDraw = True
+4.0765 	EXP 	quest_1: autoDraw = True
+4.0765 	EXP 	quest_2: autoDraw = True
+4.0765 	EXP 	quest_3: autoDraw = True
+4.0765 	EXP 	quest_4: autoDraw = True
+4.0765 	EXP 	quest_5: autoDraw = True
+4.0765 	EXP 	question_BFQ: autoDraw = True
+4.0765 	EXP 	question_BFQ: height = 0.05
+4.0765 	EXP 	question_BFQ: height = 0.05
+4.0765 	EXP 	question_BFQ: height = 0.05
+4.0765 	EXP 	question_BFQ: text = ''
+7.3177 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'Title_PSS': '2. Control', 'Question': 'In the last month, how often have you felt that you were unable to control the important things in your life?', 'quest1': '0-Never', 'quest2': '1-Almost never', 'quest3': '2-Sometimes', 'quest4': '3-Fairly often', 'quest5': '4-Very often', 'Questionnaire': 'PSS', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+7.3839 	INFO 	Keyboard events cleared
+7.3834 	EXP 	item: autoDraw = False
+7.3834 	EXP 	quest_1: autoDraw = False
+7.3834 	EXP 	quest_2: autoDraw = False
+7.3834 	EXP 	quest_3: autoDraw = False
+7.3834 	EXP 	quest_4: autoDraw = False
+7.3834 	EXP 	quest_5: autoDraw = False
+7.3834 	EXP 	question_BFQ: autoDraw = False
+7.3834 	EXP 	item: height = 0.06
+7.3834 	EXP 	item: height = 0.06
+7.3834 	EXP 	item: height = 0.06
+7.3834 	EXP 	item: text = 'In the last month, how often have you felt that you were unable to control the important things in your life?'
+7.3834 	EXP 	quest_1: text = '0-Never'
+7.3834 	EXP 	quest_2: text = '1-Almost never'
+7.3834 	EXP 	quest_3: text = '2-Sometimes'
+7.3834 	EXP 	quest_4: text = '3-Fairly often'
+7.3834 	EXP 	quest_5: text = '4-Very often'
+7.3834 	EXP 	question_BFQ: text = ''
+7.3834 	EXP 	item: autoDraw = True
+7.3834 	EXP 	quest_1: autoDraw = True
+7.3834 	EXP 	quest_2: autoDraw = True
+7.3834 	EXP 	quest_3: autoDraw = True
+7.3834 	EXP 	quest_4: autoDraw = True
+7.3834 	EXP 	quest_5: autoDraw = True
+7.3834 	EXP 	question_BFQ: autoDraw = True
+7.8008 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'Title_PSS': '3. Nervous/Stressed', 'Question': 'In the last month, how often have you felt nervous and stressed?', 'quest1': '0-Never', 'quest2': '1-Almost never', 'quest3': '2-Sometimes', 'quest4': '3-Fairly often', 'quest5': '4-Very often', 'Questionnaire': 'PSS', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+7.8167 	INFO 	Keyboard events cleared
+7.8163 	EXP 	item: autoDraw = False
+7.8163 	EXP 	quest_1: autoDraw = False
+7.8163 	EXP 	quest_2: autoDraw = False
+7.8163 	EXP 	quest_3: autoDraw = False
+7.8163 	EXP 	quest_4: autoDraw = False
+7.8163 	EXP 	quest_5: autoDraw = False
+7.8163 	EXP 	question_BFQ: autoDraw = False
+7.8163 	EXP 	item: height = 0.06
+7.8163 	EXP 	item: height = 0.06
+7.8163 	EXP 	item: height = 0.06
+7.8163 	EXP 	item: text = 'In the last month, how often have you felt nervous and stressed?'
+7.8163 	EXP 	quest_1: text = '0-Never'
+7.8163 	EXP 	quest_2: text = '1-Almost never'
+7.8163 	EXP 	quest_3: text = '2-Sometimes'
+7.8163 	EXP 	quest_4: text = '3-Fairly often'
+7.8163 	EXP 	quest_5: text = '4-Very often'
+7.8163 	EXP 	question_BFQ: text = ''
+7.8163 	EXP 	item: autoDraw = True
+7.8163 	EXP 	quest_1: autoDraw = True
+7.8163 	EXP 	quest_2: autoDraw = True
+7.8163 	EXP 	quest_3: autoDraw = True
+7.8163 	EXP 	quest_4: autoDraw = True
+7.8163 	EXP 	quest_5: autoDraw = True
+7.8163 	EXP 	question_BFQ: autoDraw = True
+7.9508 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'Title_PSS': '4. Confident', 'Question': 'In the last month, how often have you felt confident about your ability to handle your personal problems?', 'quest1': '0-Never', 'quest2': '1-Almost never', 'quest3': '2-Sometimes', 'quest4': '3-Fairly often', 'quest5': '4-Very often', 'Questionnaire': 'PSS', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+7.9667 	INFO 	Keyboard events cleared
+7.9663 	EXP 	item: autoDraw = False
+7.9663 	EXP 	quest_1: autoDraw = False
+7.9663 	EXP 	quest_2: autoDraw = False
+7.9663 	EXP 	quest_3: autoDraw = False
+7.9663 	EXP 	quest_4: autoDraw = False
+7.9663 	EXP 	quest_5: autoDraw = False
+7.9663 	EXP 	question_BFQ: autoDraw = False
+7.9663 	EXP 	item: height = 0.06
+7.9663 	EXP 	item: height = 0.06
+7.9663 	EXP 	item: height = 0.06
+7.9663 	EXP 	item: text = 'In the last month, how often have you felt confident about your ability to handle your personal problems?'
+7.9663 	EXP 	quest_1: text = '0-Never'
+7.9663 	EXP 	quest_2: text = '1-Almost never'
+7.9663 	EXP 	quest_3: text = '2-Sometimes'
+7.9663 	EXP 	quest_4: text = '3-Fairly often'
+7.9663 	EXP 	quest_5: text = '4-Very often'
+7.9663 	EXP 	question_BFQ: text = ''
+7.9663 	EXP 	item: autoDraw = True
+7.9663 	EXP 	quest_1: autoDraw = True
+7.9663 	EXP 	quest_2: autoDraw = True
+7.9663 	EXP 	quest_3: autoDraw = True
+7.9663 	EXP 	quest_4: autoDraw = True
+7.9663 	EXP 	quest_5: autoDraw = True
+7.9663 	EXP 	question_BFQ: autoDraw = True
+8.1673 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'Title_PSS': '5. Your way', 'Question': 'In the last month, how often have you felt that things were going your way?', 'quest1': '0-Never', 'quest2': '1-Almost never', 'quest3': '2-Sometimes', 'quest4': '3-Fairly often', 'quest5': '4-Very often', 'Questionnaire': 'PSS', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+8.1832 	INFO 	Keyboard events cleared
+8.1829 	EXP 	item: autoDraw = False
+8.1829 	EXP 	quest_1: autoDraw = False
+8.1829 	EXP 	quest_2: autoDraw = False
+8.1829 	EXP 	quest_3: autoDraw = False
+8.1829 	EXP 	quest_4: autoDraw = False
+8.1829 	EXP 	quest_5: autoDraw = False
+8.1829 	EXP 	question_BFQ: autoDraw = False
+8.1829 	EXP 	item: height = 0.06
+8.1829 	EXP 	item: height = 0.06
+8.1829 	EXP 	item: height = 0.06
+8.1829 	EXP 	item: text = 'In the last month, how often have you felt that things were going your way?'
+8.1829 	EXP 	quest_1: text = '0-Never'
+8.1829 	EXP 	quest_2: text = '1-Almost never'
+8.1829 	EXP 	quest_3: text = '2-Sometimes'
+8.1829 	EXP 	quest_4: text = '3-Fairly often'
+8.1829 	EXP 	quest_5: text = '4-Very often'
+8.1829 	EXP 	question_BFQ: text = ''
+8.1829 	EXP 	item: autoDraw = True
+8.1829 	EXP 	quest_1: autoDraw = True
+8.1829 	EXP 	quest_2: autoDraw = True
+8.1829 	EXP 	quest_3: autoDraw = True
+8.1829 	EXP 	quest_4: autoDraw = True
+8.1829 	EXP 	quest_5: autoDraw = True
+8.1829 	EXP 	question_BFQ: autoDraw = True
+8.2871 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'Title_PSS': '6. Not cope', 'Question': 'In the last month, how often have you found that you could not cope with all the things that you had to do?', 'quest1': '0-Never', 'quest2': '1-Almost never', 'quest3': '2-Sometimes', 'quest4': '3-Fairly often', 'quest5': '4-Very often', 'Questionnaire': 'PSS', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+8.2998 	INFO 	Keyboard events cleared
+8.2995 	EXP 	item: autoDraw = False
+8.2995 	EXP 	quest_1: autoDraw = False
+8.2995 	EXP 	quest_2: autoDraw = False
+8.2995 	EXP 	quest_3: autoDraw = False
+8.2995 	EXP 	quest_4: autoDraw = False
+8.2995 	EXP 	quest_5: autoDraw = False
+8.2995 	EXP 	question_BFQ: autoDraw = False
+8.2995 	EXP 	item: height = 0.06
+8.2995 	EXP 	item: height = 0.06
+8.2995 	EXP 	item: height = 0.06
+8.2995 	EXP 	item: text = 'In the last month, how often have you found that you could not cope with all the things that you had to do?'
+8.2995 	EXP 	quest_1: text = '0-Never'
+8.2995 	EXP 	quest_2: text = '1-Almost never'
+8.2995 	EXP 	quest_3: text = '2-Sometimes'
+8.2995 	EXP 	quest_4: text = '3-Fairly often'
+8.2995 	EXP 	quest_5: text = '4-Very often'
+8.2995 	EXP 	question_BFQ: text = ''
+8.2995 	EXP 	item: autoDraw = True
+8.2995 	EXP 	quest_1: autoDraw = True
+8.2995 	EXP 	quest_2: autoDraw = True
+8.2995 	EXP 	quest_3: autoDraw = True
+8.2995 	EXP 	quest_4: autoDraw = True
+8.2995 	EXP 	quest_5: autoDraw = True
+8.2995 	EXP 	question_BFQ: autoDraw = True
+8.4175 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'Title_PSS': '7. Irritations', 'Question': 'In the last month, how often have you been able to control irritations in your life?', 'quest1': '0-Never', 'quest2': '1-Almost never', 'quest3': '2-Sometimes', 'quest4': '3-Fairly often', 'quest5': '4-Very often', 'Questionnaire': 'PSS', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+8.4331 	INFO 	Keyboard events cleared
+8.4327 	EXP 	item: autoDraw = False
+8.4327 	EXP 	quest_1: autoDraw = False
+8.4327 	EXP 	quest_2: autoDraw = False
+8.4327 	EXP 	quest_3: autoDraw = False
+8.4327 	EXP 	quest_4: autoDraw = False
+8.4327 	EXP 	quest_5: autoDraw = False
+8.4327 	EXP 	question_BFQ: autoDraw = False
+8.4327 	EXP 	item: height = 0.06
+8.4327 	EXP 	item: height = 0.06
+8.4327 	EXP 	item: height = 0.06
+8.4327 	EXP 	item: text = 'In the last month, how often have you been able to control irritations in your life?'
+8.4327 	EXP 	quest_1: text = '0-Never'
+8.4327 	EXP 	quest_2: text = '1-Almost never'
+8.4327 	EXP 	quest_3: text = '2-Sometimes'
+8.4327 	EXP 	quest_4: text = '3-Fairly often'
+8.4327 	EXP 	quest_5: text = '4-Very often'
+8.4327 	EXP 	question_BFQ: text = ''
+8.4327 	EXP 	item: autoDraw = True
+8.4327 	EXP 	quest_1: autoDraw = True
+8.4327 	EXP 	quest_2: autoDraw = True
+8.4327 	EXP 	quest_3: autoDraw = True
+8.4327 	EXP 	quest_4: autoDraw = True
+8.4327 	EXP 	quest_5: autoDraw = True
+8.4327 	EXP 	question_BFQ: autoDraw = True
+8.5511 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'Title_PSS': '8. On top', 'Question': 'In the last month, how often have you felt that you were on top of things?', 'quest1': '0-Never', 'quest2': '1-Almost never', 'quest3': '2-Sometimes', 'quest4': '3-Fairly often', 'quest5': '4-Very often', 'Questionnaire': 'PSS', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+8.5664 	INFO 	Keyboard events cleared
+8.5660 	EXP 	item: autoDraw = False
+8.5660 	EXP 	quest_1: autoDraw = False
+8.5660 	EXP 	quest_2: autoDraw = False
+8.5660 	EXP 	quest_3: autoDraw = False
+8.5660 	EXP 	quest_4: autoDraw = False
+8.5660 	EXP 	quest_5: autoDraw = False
+8.5660 	EXP 	question_BFQ: autoDraw = False
+8.5660 	EXP 	item: height = 0.06
+8.5660 	EXP 	item: height = 0.06
+8.5660 	EXP 	item: height = 0.06
+8.5660 	EXP 	item: text = 'In the last month, how often have you felt that you were on top of things?'
+8.5660 	EXP 	quest_1: text = '0-Never'
+8.5660 	EXP 	quest_2: text = '1-Almost never'
+8.5660 	EXP 	quest_3: text = '2-Sometimes'
+8.5660 	EXP 	quest_4: text = '3-Fairly often'
+8.5660 	EXP 	quest_5: text = '4-Very often'
+8.5660 	EXP 	question_BFQ: text = ''
+8.5660 	EXP 	item: autoDraw = True
+8.5660 	EXP 	quest_1: autoDraw = True
+8.5660 	EXP 	quest_2: autoDraw = True
+8.5660 	EXP 	quest_3: autoDraw = True
+8.5660 	EXP 	quest_4: autoDraw = True
+8.5660 	EXP 	quest_5: autoDraw = True
+8.5660 	EXP 	question_BFQ: autoDraw = True
+8.6518 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'Title_PSS': '9. Anger', 'Question': 'In the last month, how often have you been angered because of things that were outside of your control?', 'quest1': '0-Never', 'quest2': '1-Almost never', 'quest3': '2-Sometimes', 'quest4': '3-Fairly often', 'quest5': '4-Very often', 'Questionnaire': 'PSS', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+8.6731 	INFO 	Keyboard events cleared
+8.6726 	EXP 	item: autoDraw = False
+8.6726 	EXP 	quest_1: autoDraw = False
+8.6726 	EXP 	quest_2: autoDraw = False
+8.6726 	EXP 	quest_3: autoDraw = False
+8.6726 	EXP 	quest_4: autoDraw = False
+8.6726 	EXP 	quest_5: autoDraw = False
+8.6726 	EXP 	question_BFQ: autoDraw = False
+8.6726 	EXP 	item: height = 0.06
+8.6726 	EXP 	item: height = 0.06
+8.6726 	EXP 	item: height = 0.06
+8.6726 	EXP 	item: text = 'In the last month, how often have you been angered because of things that were outside of your control?'
+8.6726 	EXP 	quest_1: text = '0-Never'
+8.6726 	EXP 	quest_2: text = '1-Almost never'
+8.6726 	EXP 	quest_3: text = '2-Sometimes'
+8.6726 	EXP 	quest_4: text = '3-Fairly often'
+8.6726 	EXP 	quest_5: text = '4-Very often'
+8.6726 	EXP 	question_BFQ: text = ''
+8.6726 	EXP 	item: autoDraw = True
+8.6726 	EXP 	quest_1: autoDraw = True
+8.6726 	EXP 	quest_2: autoDraw = True
+8.6726 	EXP 	quest_3: autoDraw = True
+8.6726 	EXP 	quest_4: autoDraw = True
+8.6726 	EXP 	quest_5: autoDraw = True
+8.6726 	EXP 	question_BFQ: autoDraw = True
+8.7516 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'Title_PSS': '10. Difficulties', 'Question': 'In the last month, how often have you felt difficulties were piling up so high you could not overcome them?', 'quest1': '0-Never', 'quest2': '1-Almost never', 'quest3': '2-Sometimes', 'quest4': '3-Fairly often', 'quest5': '4-Very often', 'Questionnaire': 'PSS', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+8.7668 	INFO 	Keyboard events cleared
+8.7662 	EXP 	item: autoDraw = False
+8.7662 	EXP 	quest_1: autoDraw = False
+8.7662 	EXP 	quest_2: autoDraw = False
+8.7662 	EXP 	quest_3: autoDraw = False
+8.7662 	EXP 	quest_4: autoDraw = False
+8.7662 	EXP 	quest_5: autoDraw = False
+8.7662 	EXP 	question_BFQ: autoDraw = False
+8.7662 	EXP 	item: height = 0.06
+8.7662 	EXP 	item: height = 0.06
+8.7662 	EXP 	item: height = 0.06
+8.7662 	EXP 	item: text = 'In the last month, how often have you felt difficulties were piling up so high you could not overcome them?'
+8.7662 	EXP 	quest_1: text = '0-Never'
+8.7662 	EXP 	quest_2: text = '1-Almost never'
+8.7662 	EXP 	quest_3: text = '2-Sometimes'
+8.7662 	EXP 	quest_4: text = '3-Fairly often'
+8.7662 	EXP 	quest_5: text = '4-Very often'
+8.7662 	EXP 	question_BFQ: text = ''
+8.7662 	EXP 	item: autoDraw = True
+8.7662 	EXP 	quest_1: autoDraw = True
+8.7662 	EXP 	quest_2: autoDraw = True
+8.7662 	EXP 	quest_3: autoDraw = True
+8.7662 	EXP 	quest_4: autoDraw = True
+8.7662 	EXP 	quest_5: autoDraw = True
+8.7662 	EXP 	question_BFQ: autoDraw = True
+8.8632 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+8.8664 	INFO 	Keyboard events cleared
+8.8660 	EXP 	item: autoDraw = False
+8.8660 	EXP 	quest_1: autoDraw = False
+8.8660 	EXP 	quest_2: autoDraw = False
+8.8660 	EXP 	quest_3: autoDraw = False
+8.8660 	EXP 	quest_4: autoDraw = False
+8.8660 	EXP 	quest_5: autoDraw = False
+8.8660 	EXP 	question_BFQ: autoDraw = False
+8.8660 	EXP 	Questionnaire_instr_3: autoDraw = True
+10.2402 	DATA 	Mouse: Left button down, pos=(847,548)
+10.3507 	DATA 	Mouse:  Left button up, pos=(847,548)
+10.7498 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+10.9408 	EXP 	Imported Questionnaires/BDI.xlsx as conditions, 21 conditions, 6 params
+10.9414 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'Title_BDI': '1. Sadness', 'quest1': '0-I do not feel sad.', 'quest2': '1-I feel sad much of the time.', 'quest3': '2-I am sad all the time.', 'quest4': "3-I am so sad or unhappy that I can't stand it.", 'Questionnaire': 'BDI', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+10.9615 	DATA 	Keypress: space
+10.9645 	INFO 	Keyboard events cleared
+10.9641 	EXP 	Questionnaire_instr_3: autoDraw = False
+10.9641 	EXP 	item: height = 0.06
+10.9641 	EXP 	item: height = 0.06
+10.9641 	EXP 	item: height = 0.06
+10.9641 	EXP 	item: text = ''
+10.9641 	EXP 	quest_1: height = 0.03
+10.9641 	EXP 	quest_1: height = 0.03
+10.9641 	EXP 	quest_1: height = 0.03
+10.9641 	EXP 	quest_1: text = '0-I do not feel sad.'
+10.9641 	EXP 	quest_2: height = 0.03
+10.9641 	EXP 	quest_2: height = 0.03
+10.9641 	EXP 	quest_2: height = 0.03
+10.9641 	EXP 	quest_2: text = '1-I feel sad much of the time.'
+10.9641 	EXP 	quest_3: height = 0.03
+10.9641 	EXP 	quest_3: height = 0.03
+10.9641 	EXP 	quest_3: height = 0.03
+10.9641 	EXP 	quest_3: text = '2-I am sad all the time.'
+10.9641 	EXP 	quest_4: height = 0.03
+10.9641 	EXP 	quest_4: height = 0.03
+10.9641 	EXP 	quest_4: height = 0.03
+10.9641 	EXP 	quest_4: text = "3-I am so sad or unhappy that I can't stand it."
+10.9641 	EXP 	quest_5: height = 0.03
+10.9641 	EXP 	quest_5: height = 0.03
+10.9641 	EXP 	quest_5: height = 0.03
+10.9641 	EXP 	quest_5: text = ''
+10.9641 	EXP 	question_BFQ: text = ''
+10.9641 	EXP 	item: autoDraw = True
+10.9641 	EXP 	quest_1: autoDraw = True
+10.9641 	EXP 	quest_2: autoDraw = True
+10.9641 	EXP 	quest_3: autoDraw = True
+10.9641 	EXP 	quest_4: autoDraw = True
+10.9641 	EXP 	quest_5: autoDraw = True
+10.9641 	EXP 	question_BFQ: autoDraw = True
+12.1991 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'Title_BDI': '2. Pessimism', 'quest1': '0-I am not  discouraged about my future.', 'quest2': '1-I feel more discouraged about my future than I used to.', 'quest3': '2-I do not expect things to work out for me.', 'quest4': '3-I feel my future is hopeless and will only get worse.', 'Questionnaire': 'BDI', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+12.2161 	DATA 	Keypress: 0
+12.2305 	INFO 	Keyboard events cleared
+12.2301 	EXP 	item: autoDraw = False
+12.2301 	EXP 	quest_1: autoDraw = False
+12.2301 	EXP 	quest_2: autoDraw = False
+12.2301 	EXP 	quest_3: autoDraw = False
+12.2301 	EXP 	quest_4: autoDraw = False
+12.2301 	EXP 	quest_5: autoDraw = False
+12.2301 	EXP 	question_BFQ: autoDraw = False
+12.2301 	EXP 	item: text = ''
+12.2301 	EXP 	quest_1: height = 0.03
+12.2301 	EXP 	quest_1: height = 0.03
+12.2301 	EXP 	quest_1: height = 0.03
+12.2301 	EXP 	quest_1: text = '0-I am not  discouraged about my future.'
+12.2301 	EXP 	quest_2: height = 0.03
+12.2301 	EXP 	quest_2: height = 0.03
+12.2301 	EXP 	quest_2: height = 0.03
+12.2301 	EXP 	quest_2: text = '1-I feel more discouraged about my future than I used to.'
+12.2301 	EXP 	quest_3: height = 0.03
+12.2301 	EXP 	quest_3: height = 0.03
+12.2301 	EXP 	quest_3: height = 0.03
+12.2301 	EXP 	quest_3: text = '2-I do not expect things to work out for me.'
+12.2301 	EXP 	quest_4: height = 0.03
+12.2301 	EXP 	quest_4: height = 0.03
+12.2301 	EXP 	quest_4: height = 0.03
+12.2301 	EXP 	quest_4: text = '3-I feel my future is hopeless and will only get worse.'
+12.2301 	EXP 	quest_5: text = ''
+12.2301 	EXP 	question_BFQ: text = ''
+12.2301 	EXP 	item: autoDraw = True
+12.2301 	EXP 	quest_1: autoDraw = True
+12.2301 	EXP 	quest_2: autoDraw = True
+12.2301 	EXP 	quest_3: autoDraw = True
+12.2301 	EXP 	quest_4: autoDraw = True
+12.2301 	EXP 	quest_5: autoDraw = True
+12.2301 	EXP 	question_BFQ: autoDraw = True
+12.2993 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'Title_BDI': '3. Past failure', 'quest1': '0-I do not feel like a failure.', 'quest2': '1-I have failed more than I should have.', 'quest3': '2-As I look back, I see a lot of failures.', 'quest4': '3-I feel I am a total failure as a person.', 'Questionnaire': 'BDI', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+12.3180 	DATA 	Keypress: 1
+12.3249 	INFO 	Keyboard events cleared
+12.3245 	EXP 	item: autoDraw = False
+12.3245 	EXP 	quest_1: autoDraw = False
+12.3245 	EXP 	quest_2: autoDraw = False
+12.3245 	EXP 	quest_3: autoDraw = False
+12.3245 	EXP 	quest_4: autoDraw = False
+12.3245 	EXP 	quest_5: autoDraw = False
+12.3245 	EXP 	question_BFQ: autoDraw = False
+12.3245 	EXP 	item: text = ''
+12.3245 	EXP 	quest_1: height = 0.03
+12.3245 	EXP 	quest_1: height = 0.03
+12.3245 	EXP 	quest_1: height = 0.03
+12.3245 	EXP 	quest_1: text = '0-I do not feel like a failure.'
+12.3245 	EXP 	quest_2: height = 0.03
+12.3245 	EXP 	quest_2: height = 0.03
+12.3245 	EXP 	quest_2: height = 0.03
+12.3245 	EXP 	quest_2: text = '1-I have failed more than I should have.'
+12.3245 	EXP 	quest_3: height = 0.03
+12.3245 	EXP 	quest_3: height = 0.03
+12.3245 	EXP 	quest_3: height = 0.03
+12.3245 	EXP 	quest_3: text = '2-As I look back, I see a lot of failures.'
+12.3245 	EXP 	quest_4: height = 0.03
+12.3245 	EXP 	quest_4: height = 0.03
+12.3245 	EXP 	quest_4: height = 0.03
+12.3245 	EXP 	quest_4: text = '3-I feel I am a total failure as a person.'
+12.3245 	EXP 	quest_5: text = ''
+12.3245 	EXP 	question_BFQ: text = ''
+12.3245 	EXP 	item: autoDraw = True
+12.3245 	EXP 	quest_1: autoDraw = True
+12.3245 	EXP 	quest_2: autoDraw = True
+12.3245 	EXP 	quest_3: autoDraw = True
+12.3245 	EXP 	quest_4: autoDraw = True
+12.3245 	EXP 	quest_5: autoDraw = True
+12.3245 	EXP 	question_BFQ: autoDraw = True
+12.4156 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'Title_BDI': '4. Loss of Pleasure', 'quest1': '0-I get as much pleasure as I ever did from the things I enjoy.', 'quest2': "1-I don't enjoy things as much as I used to.", 'quest3': '2-I get very little pleasure from the things I used to enjoy.', 'quest4': "3-I can't get any pleasure from the things I used to enjoy.", 'Questionnaire': 'BDI', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+12.4323 	DATA 	Keypress: 0
+12.4348 	INFO 	Keyboard events cleared
+12.4345 	EXP 	item: autoDraw = False
+12.4345 	EXP 	quest_1: autoDraw = False
+12.4345 	EXP 	quest_2: autoDraw = False
+12.4345 	EXP 	quest_3: autoDraw = False
+12.4345 	EXP 	quest_4: autoDraw = False
+12.4345 	EXP 	quest_5: autoDraw = False
+12.4345 	EXP 	question_BFQ: autoDraw = False
+12.4345 	EXP 	item: text = ''
+12.4345 	EXP 	quest_1: height = 0.03
+12.4345 	EXP 	quest_1: height = 0.03
+12.4345 	EXP 	quest_1: height = 0.03
+12.4345 	EXP 	quest_1: text = '0-I get as much pleasure as I ever did from the things I enjoy.'
+12.4345 	EXP 	quest_2: height = 0.03
+12.4345 	EXP 	quest_2: height = 0.03
+12.4345 	EXP 	quest_2: height = 0.03
+12.4345 	EXP 	quest_2: text = "1-I don't enjoy things as much as I used to."
+12.4345 	EXP 	quest_3: height = 0.03
+12.4345 	EXP 	quest_3: height = 0.03
+12.4345 	EXP 	quest_3: height = 0.03
+12.4345 	EXP 	quest_3: text = '2-I get very little pleasure from the things I used to enjoy.'
+12.4345 	EXP 	quest_4: height = 0.03
+12.4345 	EXP 	quest_4: height = 0.03
+12.4345 	EXP 	quest_4: height = 0.03
+12.4345 	EXP 	quest_4: text = "3-I can't get any pleasure from the things I used to enjoy."
+12.4345 	EXP 	quest_5: text = ''
+12.4345 	EXP 	question_BFQ: text = ''
+12.4345 	EXP 	item: autoDraw = True
+12.4345 	EXP 	quest_1: autoDraw = True
+12.4345 	EXP 	quest_2: autoDraw = True
+12.4345 	EXP 	quest_3: autoDraw = True
+12.4345 	EXP 	quest_4: autoDraw = True
+12.4345 	EXP 	quest_5: autoDraw = True
+12.4345 	EXP 	question_BFQ: autoDraw = True
+12.5158 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'Title_BDI': '5. Guilty feelings', 'quest1': "0-I don't feel particularly guilty.", 'quest2': '1-I feel guilty over many things I have done or should have done.', 'quest3': '2-I feel quite guilty most of the time.', 'quest4': '3-I feel guilty all of the time.', 'Questionnaire': 'BDI', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+12.5324 	DATA 	Keypress: 1
+12.5350 	INFO 	Keyboard events cleared
+12.5347 	EXP 	item: autoDraw = False
+12.5347 	EXP 	quest_1: autoDraw = False
+12.5347 	EXP 	quest_2: autoDraw = False
+12.5347 	EXP 	quest_3: autoDraw = False
+12.5347 	EXP 	quest_4: autoDraw = False
+12.5347 	EXP 	quest_5: autoDraw = False
+12.5347 	EXP 	question_BFQ: autoDraw = False
+12.5347 	EXP 	item: text = ''
+12.5347 	EXP 	quest_1: height = 0.03
+12.5347 	EXP 	quest_1: height = 0.03
+12.5347 	EXP 	quest_1: height = 0.03
+12.5347 	EXP 	quest_1: text = "0-I don't feel particularly guilty."
+12.5347 	EXP 	quest_2: height = 0.03
+12.5347 	EXP 	quest_2: height = 0.03
+12.5347 	EXP 	quest_2: height = 0.03
+12.5347 	EXP 	quest_2: text = '1-I feel guilty over many things I have done or should have done.'
+12.5347 	EXP 	quest_3: height = 0.03
+12.5347 	EXP 	quest_3: height = 0.03
+12.5347 	EXP 	quest_3: height = 0.03
+12.5347 	EXP 	quest_3: text = '2-I feel quite guilty most of the time.'
+12.5347 	EXP 	quest_4: height = 0.03
+12.5347 	EXP 	quest_4: height = 0.03
+12.5347 	EXP 	quest_4: height = 0.03
+12.5347 	EXP 	quest_4: text = '3-I feel guilty all of the time.'
+12.5347 	EXP 	quest_5: text = ''
+12.5347 	EXP 	question_BFQ: text = ''
+12.5347 	EXP 	item: autoDraw = True
+12.5347 	EXP 	quest_1: autoDraw = True
+12.5347 	EXP 	quest_2: autoDraw = True
+12.5347 	EXP 	quest_3: autoDraw = True
+12.5347 	EXP 	quest_4: autoDraw = True
+12.5347 	EXP 	quest_5: autoDraw = True
+12.5347 	EXP 	question_BFQ: autoDraw = True
+12.5992 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'Title_BDI': '6. Punishment feelings', 'quest1': "0-I don't feel I am being punished.", 'quest2': '1-I feel I may be punished.', 'quest3': '2-I expect to be punished.', 'quest4': '3-I feel I am being punished.', 'Questionnaire': 'BDI', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+12.6129 	DATA 	Keypress: 0
+12.6157 	INFO 	Keyboard events cleared
+12.6153 	EXP 	item: autoDraw = False
+12.6153 	EXP 	quest_1: autoDraw = False
+12.6153 	EXP 	quest_2: autoDraw = False
+12.6153 	EXP 	quest_3: autoDraw = False
+12.6153 	EXP 	quest_4: autoDraw = False
+12.6153 	EXP 	quest_5: autoDraw = False
+12.6153 	EXP 	question_BFQ: autoDraw = False
+12.6153 	EXP 	item: text = ''
+12.6153 	EXP 	quest_1: height = 0.03
+12.6153 	EXP 	quest_1: height = 0.03
+12.6153 	EXP 	quest_1: height = 0.03
+12.6153 	EXP 	quest_1: text = "0-I don't feel I am being punished."
+12.6153 	EXP 	quest_2: height = 0.03
+12.6153 	EXP 	quest_2: height = 0.03
+12.6153 	EXP 	quest_2: height = 0.03
+12.6153 	EXP 	quest_2: text = '1-I feel I may be punished.'
+12.6153 	EXP 	quest_3: height = 0.03
+12.6153 	EXP 	quest_3: height = 0.03
+12.6153 	EXP 	quest_3: height = 0.03
+12.6153 	EXP 	quest_3: text = '2-I expect to be punished.'
+12.6153 	EXP 	quest_4: height = 0.03
+12.6153 	EXP 	quest_4: height = 0.03
+12.6153 	EXP 	quest_4: height = 0.03
+12.6153 	EXP 	quest_4: text = '3-I feel I am being punished.'
+12.6153 	EXP 	quest_5: text = ''
+12.6153 	EXP 	question_BFQ: text = ''
+12.6153 	EXP 	item: autoDraw = True
+12.6153 	EXP 	quest_1: autoDraw = True
+12.6153 	EXP 	quest_2: autoDraw = True
+12.6153 	EXP 	quest_3: autoDraw = True
+12.6153 	EXP 	quest_4: autoDraw = True
+12.6153 	EXP 	quest_5: autoDraw = True
+12.6153 	EXP 	question_BFQ: autoDraw = True
+12.7008 	DATA 	Keypress: 1
+12.7174 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'Title_BDI': '7. Self-dislike', 'quest1': '0-I feel the same about myself as ever.', 'quest2': '1-I have lost confidence in myself.', 'quest3': '2-I am disappointed in myself.', 'quest4': '3-I dislike myself.', 'Questionnaire': 'BDI', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+12.7425 	INFO 	Keyboard events cleared
+12.7422 	EXP 	item: autoDraw = False
+12.7422 	EXP 	quest_1: autoDraw = False
+12.7422 	EXP 	quest_2: autoDraw = False
+12.7422 	EXP 	quest_3: autoDraw = False
+12.7422 	EXP 	quest_4: autoDraw = False
+12.7422 	EXP 	quest_5: autoDraw = False
+12.7422 	EXP 	question_BFQ: autoDraw = False
+12.7422 	EXP 	item: text = ''
+12.7422 	EXP 	quest_1: height = 0.03
+12.7422 	EXP 	quest_1: height = 0.03
+12.7422 	EXP 	quest_1: height = 0.03
+12.7422 	EXP 	quest_1: text = '0-I feel the same about myself as ever.'
+12.7422 	EXP 	quest_2: height = 0.03
+12.7422 	EXP 	quest_2: height = 0.03
+12.7422 	EXP 	quest_2: height = 0.03
+12.7422 	EXP 	quest_2: text = '1-I have lost confidence in myself.'
+12.7422 	EXP 	quest_3: height = 0.03
+12.7422 	EXP 	quest_3: height = 0.03
+12.7422 	EXP 	quest_3: height = 0.03
+12.7422 	EXP 	quest_3: text = '2-I am disappointed in myself.'
+12.7422 	EXP 	quest_4: height = 0.03
+12.7422 	EXP 	quest_4: height = 0.03
+12.7422 	EXP 	quest_4: height = 0.03
+12.7422 	EXP 	quest_4: text = '3-I dislike myself.'
+12.7422 	EXP 	quest_5: text = ''
+12.7422 	EXP 	question_BFQ: text = ''
+12.7422 	EXP 	item: autoDraw = True
+12.7422 	EXP 	quest_1: autoDraw = True
+12.7422 	EXP 	quest_2: autoDraw = True
+12.7422 	EXP 	quest_3: autoDraw = True
+12.7422 	EXP 	quest_4: autoDraw = True
+12.7422 	EXP 	quest_5: autoDraw = True
+12.7422 	EXP 	question_BFQ: autoDraw = True
+12.7825 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'Title_BDI': '8. Self-criticalness', 'quest1': "0-I don't criticize or blame myself more than usual.", 'quest2': '1-I am more critical of myself than I used to be.', 'quest3': '2-I criticize myself for all of my faults.', 'quest4': '3-I blame myself for everything bad that happens.', 'Questionnaire': 'BDI', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+12.8005 	DATA 	Keypress: 0
+12.8032 	INFO 	Keyboard events cleared
+12.8028 	EXP 	item: autoDraw = False
+12.8028 	EXP 	quest_1: autoDraw = False
+12.8028 	EXP 	quest_2: autoDraw = False
+12.8028 	EXP 	quest_3: autoDraw = False
+12.8028 	EXP 	quest_4: autoDraw = False
+12.8028 	EXP 	quest_5: autoDraw = False
+12.8028 	EXP 	question_BFQ: autoDraw = False
+12.8028 	EXP 	item: text = ''
+12.8028 	EXP 	quest_1: height = 0.03
+12.8028 	EXP 	quest_1: height = 0.03
+12.8028 	EXP 	quest_1: height = 0.03
+12.8028 	EXP 	quest_1: text = "0-I don't criticize or blame myself more than usual."
+12.8028 	EXP 	quest_2: height = 0.03
+12.8028 	EXP 	quest_2: height = 0.03
+12.8028 	EXP 	quest_2: height = 0.03
+12.8028 	EXP 	quest_2: text = '1-I am more critical of myself than I used to be.'
+12.8028 	EXP 	quest_3: height = 0.03
+12.8028 	EXP 	quest_3: height = 0.03
+12.8028 	EXP 	quest_3: height = 0.03
+12.8028 	EXP 	quest_3: text = '2-I criticize myself for all of my faults.'
+12.8028 	EXP 	quest_4: height = 0.03
+12.8028 	EXP 	quest_4: height = 0.03
+12.8028 	EXP 	quest_4: height = 0.03
+12.8028 	EXP 	quest_4: text = '3-I blame myself for everything bad that happens.'
+12.8028 	EXP 	quest_5: text = ''
+12.8028 	EXP 	question_BFQ: text = ''
+12.8028 	EXP 	item: autoDraw = True
+12.8028 	EXP 	quest_1: autoDraw = True
+12.8028 	EXP 	quest_2: autoDraw = True
+12.8028 	EXP 	quest_3: autoDraw = True
+12.8028 	EXP 	quest_4: autoDraw = True
+12.8028 	EXP 	quest_5: autoDraw = True
+12.8028 	EXP 	question_BFQ: autoDraw = True
+12.8989 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'Title_BDI': '9. Suicidal thoughts or wishes', 'quest1': "0-I don't have any thoughts of killing myself.", 'quest2': '1-I have thoughts of killing myself, but I would not carry them out.', 'quest3': '2-I would like to kill myself.', 'quest4': '3-I would kill myself if I had the chance.', 'Questionnaire': 'BDI', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+12.9164 	DATA 	Keypress: 1
+12.9190 	INFO 	Keyboard events cleared
+12.9187 	EXP 	item: autoDraw = False
+12.9187 	EXP 	quest_1: autoDraw = False
+12.9187 	EXP 	quest_2: autoDraw = False
+12.9187 	EXP 	quest_3: autoDraw = False
+12.9187 	EXP 	quest_4: autoDraw = False
+12.9187 	EXP 	quest_5: autoDraw = False
+12.9187 	EXP 	question_BFQ: autoDraw = False
+12.9187 	EXP 	item: text = ''
+12.9187 	EXP 	quest_1: height = 0.03
+12.9187 	EXP 	quest_1: height = 0.03
+12.9187 	EXP 	quest_1: height = 0.03
+12.9187 	EXP 	quest_1: text = "0-I don't have any thoughts of killing myself."
+12.9187 	EXP 	quest_2: height = 0.03
+12.9187 	EXP 	quest_2: height = 0.03
+12.9187 	EXP 	quest_2: height = 0.03
+12.9187 	EXP 	quest_2: text = '1-I have thoughts of killing myself, but I would not carry them out.'
+12.9187 	EXP 	quest_3: height = 0.03
+12.9187 	EXP 	quest_3: height = 0.03
+12.9187 	EXP 	quest_3: height = 0.03
+12.9187 	EXP 	quest_3: text = '2-I would like to kill myself.'
+12.9187 	EXP 	quest_4: height = 0.03
+12.9187 	EXP 	quest_4: height = 0.03
+12.9187 	EXP 	quest_4: height = 0.03
+12.9187 	EXP 	quest_4: text = '3-I would kill myself if I had the chance.'
+12.9187 	EXP 	quest_5: text = ''
+12.9187 	EXP 	question_BFQ: text = ''
+12.9187 	EXP 	item: autoDraw = True
+12.9187 	EXP 	quest_1: autoDraw = True
+12.9187 	EXP 	quest_2: autoDraw = True
+12.9187 	EXP 	quest_3: autoDraw = True
+12.9187 	EXP 	quest_4: autoDraw = True
+12.9187 	EXP 	quest_5: autoDraw = True
+12.9187 	EXP 	question_BFQ: autoDraw = True
+12.9657 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'Title_BDI': '10. Crying', 'quest1': "0-I don't cry anymore than I used to.", 'quest2': '1-I cry more than I used to.', 'quest3': '2-I cry over every little thing.', 'quest4': "3-I feel like crying, but I can't.", 'Questionnaire': 'BDI', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+12.9799 	DATA 	Keypress: 0
+12.9829 	INFO 	Keyboard events cleared
+12.9826 	EXP 	item: autoDraw = False
+12.9826 	EXP 	quest_1: autoDraw = False
+12.9826 	EXP 	quest_2: autoDraw = False
+12.9826 	EXP 	quest_3: autoDraw = False
+12.9826 	EXP 	quest_4: autoDraw = False
+12.9826 	EXP 	quest_5: autoDraw = False
+12.9826 	EXP 	question_BFQ: autoDraw = False
+12.9826 	EXP 	item: text = ''
+12.9826 	EXP 	quest_1: height = 0.03
+12.9826 	EXP 	quest_1: height = 0.03
+12.9826 	EXP 	quest_1: height = 0.03
+12.9826 	EXP 	quest_1: text = "0-I don't cry anymore than I used to."
+12.9826 	EXP 	quest_2: height = 0.03
+12.9826 	EXP 	quest_2: height = 0.03
+12.9826 	EXP 	quest_2: height = 0.03
+12.9826 	EXP 	quest_2: text = '1-I cry more than I used to.'
+12.9826 	EXP 	quest_3: height = 0.03
+12.9826 	EXP 	quest_3: height = 0.03
+12.9826 	EXP 	quest_3: height = 0.03
+12.9826 	EXP 	quest_3: text = '2-I cry over every little thing.'
+12.9826 	EXP 	quest_4: height = 0.03
+12.9826 	EXP 	quest_4: height = 0.03
+12.9826 	EXP 	quest_4: height = 0.03
+12.9826 	EXP 	quest_4: text = "3-I feel like crying, but I can't."
+12.9826 	EXP 	quest_5: text = ''
+12.9826 	EXP 	question_BFQ: text = ''
+12.9826 	EXP 	item: autoDraw = True
+12.9826 	EXP 	quest_1: autoDraw = True
+12.9826 	EXP 	quest_2: autoDraw = True
+12.9826 	EXP 	quest_3: autoDraw = True
+12.9826 	EXP 	quest_4: autoDraw = True
+12.9826 	EXP 	quest_5: autoDraw = True
+12.9826 	EXP 	question_BFQ: autoDraw = True
+13.0819 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'Title_BDI': '11. Agitation', 'quest1': '0-I am no more restless or wound up than usual.', 'quest2': '1-I feel more restless or wound up than usual.', 'quest3': "2-I am so restless or agitated, it's hard to stay still.", 'quest4': '3-I am so restless or agitated that I have to keep moving or doing something.', 'Questionnaire': 'BDI', 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+13.0981 	DATA 	Keypress: 1
+13.1008 	INFO 	Keyboard events cleared
+13.1004 	EXP 	item: autoDraw = False
+13.1004 	EXP 	quest_1: autoDraw = False
+13.1004 	EXP 	quest_2: autoDraw = False
+13.1004 	EXP 	quest_3: autoDraw = False
+13.1004 	EXP 	quest_4: autoDraw = False
+13.1004 	EXP 	quest_5: autoDraw = False
+13.1004 	EXP 	question_BFQ: autoDraw = False
+13.1004 	EXP 	item: text = ''
+13.1004 	EXP 	quest_1: height = 0.03
+13.1004 	EXP 	quest_1: height = 0.03
+13.1004 	EXP 	quest_1: height = 0.03
+13.1004 	EXP 	quest_1: text = '0-I am no more restless or wound up than usual.'
+13.1004 	EXP 	quest_2: height = 0.03
+13.1004 	EXP 	quest_2: height = 0.03
+13.1004 	EXP 	quest_2: height = 0.03
+13.1004 	EXP 	quest_2: text = '1-I feel more restless or wound up than usual.'
+13.1004 	EXP 	quest_3: height = 0.03
+13.1004 	EXP 	quest_3: height = 0.03
+13.1004 	EXP 	quest_3: height = 0.03
+13.1004 	EXP 	quest_3: text = "2-I am so restless or agitated, it's hard to stay still."
+13.1004 	EXP 	quest_4: height = 0.03
+13.1004 	EXP 	quest_4: height = 0.03
+13.1004 	EXP 	quest_4: height = 0.03
+13.1004 	EXP 	quest_4: text = '3-I am so restless or agitated that I have to keep moving or doing something.'
+13.1004 	EXP 	quest_5: text = ''
+13.1004 	EXP 	question_BFQ: text = ''
+13.1004 	EXP 	item: autoDraw = True
+13.1004 	EXP 	quest_1: autoDraw = True
+13.1004 	EXP 	quest_2: autoDraw = True
+13.1004 	EXP 	quest_3: autoDraw = True
+13.1004 	EXP 	quest_4: autoDraw = True
+13.1004 	EXP 	quest_5: autoDraw = True
+13.1004 	EXP 	question_BFQ: autoDraw = True
+13.1498 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'Title_BDI': '12. Loss of Interest', 'quest1': '0-I have not lost interest in other people or activities.', 'quest2': '1-I am less interested in other people or things than before.', 'quest3': '2-I have lost most of my interest in other people or things.', 'quest4': "3-It's hard to get interested in anything.", 'Questionnaire': 'BDI', 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+13.1651 	DATA 	Keypress: 0
+13.1678 	INFO 	Keyboard events cleared
+13.1674 	EXP 	item: autoDraw = False
+13.1674 	EXP 	quest_1: autoDraw = False
+13.1674 	EXP 	quest_2: autoDraw = False
+13.1674 	EXP 	quest_3: autoDraw = False
+13.1674 	EXP 	quest_4: autoDraw = False
+13.1674 	EXP 	quest_5: autoDraw = False
+13.1674 	EXP 	question_BFQ: autoDraw = False
+13.1674 	EXP 	item: text = ''
+13.1674 	EXP 	quest_1: height = 0.03
+13.1674 	EXP 	quest_1: height = 0.03
+13.1674 	EXP 	quest_1: height = 0.03
+13.1674 	EXP 	quest_1: text = '0-I have not lost interest in other people or activities.'
+13.1674 	EXP 	quest_2: height = 0.03
+13.1674 	EXP 	quest_2: height = 0.03
+13.1674 	EXP 	quest_2: height = 0.03
+13.1674 	EXP 	quest_2: text = '1-I am less interested in other people or things than before.'
+13.1674 	EXP 	quest_3: height = 0.03
+13.1674 	EXP 	quest_3: height = 0.03
+13.1674 	EXP 	quest_3: height = 0.03
+13.1674 	EXP 	quest_3: text = '2-I have lost most of my interest in other people or things.'
+13.1674 	EXP 	quest_4: height = 0.03
+13.1674 	EXP 	quest_4: height = 0.03
+13.1674 	EXP 	quest_4: height = 0.03
+13.1674 	EXP 	quest_4: text = "3-It's hard to get interested in anything."
+13.1674 	EXP 	quest_5: text = ''
+13.1674 	EXP 	question_BFQ: text = ''
+13.1674 	EXP 	item: autoDraw = True
+13.1674 	EXP 	quest_1: autoDraw = True
+13.1674 	EXP 	quest_2: autoDraw = True
+13.1674 	EXP 	quest_3: autoDraw = True
+13.1674 	EXP 	quest_4: autoDraw = True
+13.1674 	EXP 	quest_5: autoDraw = True
+13.1674 	EXP 	question_BFQ: autoDraw = True
+13.2324 	EXP 	New trial (rep=0, index=12): <Trial 12 (12 in rep 0) data={'Title_BDI': '13. Indecisiveness', 'quest1': '0-I make decisions about as well as ever.', 'quest2': '1-I find it more difficult to make decisions than usual.', 'quest3': '2-I have much greater difficulty in making decisions than I used to.', 'quest4': '3-I have trouble making any decisions.', 'Questionnaire': 'BDI', 'thisN': 12, 'thisTrialN': 12, 'thisRepN': 0}>
+13.2492 	DATA 	Keypress: 1
+13.2521 	INFO 	Keyboard events cleared
+13.2518 	EXP 	item: autoDraw = False
+13.2518 	EXP 	quest_1: autoDraw = False
+13.2518 	EXP 	quest_2: autoDraw = False
+13.2518 	EXP 	quest_3: autoDraw = False
+13.2518 	EXP 	quest_4: autoDraw = False
+13.2518 	EXP 	quest_5: autoDraw = False
+13.2518 	EXP 	question_BFQ: autoDraw = False
+13.2518 	EXP 	item: text = ''
+13.2518 	EXP 	quest_1: height = 0.03
+13.2518 	EXP 	quest_1: height = 0.03
+13.2518 	EXP 	quest_1: height = 0.03
+13.2518 	EXP 	quest_1: text = '0-I make decisions about as well as ever.'
+13.2518 	EXP 	quest_2: height = 0.03
+13.2518 	EXP 	quest_2: height = 0.03
+13.2518 	EXP 	quest_2: height = 0.03
+13.2518 	EXP 	quest_2: text = '1-I find it more difficult to make decisions than usual.'
+13.2518 	EXP 	quest_3: height = 0.03
+13.2518 	EXP 	quest_3: height = 0.03
+13.2518 	EXP 	quest_3: height = 0.03
+13.2518 	EXP 	quest_3: text = '2-I have much greater difficulty in making decisions than I used to.'
+13.2518 	EXP 	quest_4: height = 0.03
+13.2518 	EXP 	quest_4: height = 0.03
+13.2518 	EXP 	quest_4: height = 0.03
+13.2518 	EXP 	quest_4: text = '3-I have trouble making any decisions.'
+13.2518 	EXP 	quest_5: text = ''
+13.2518 	EXP 	question_BFQ: text = ''
+13.2518 	EXP 	item: autoDraw = True
+13.2518 	EXP 	quest_1: autoDraw = True
+13.2518 	EXP 	quest_2: autoDraw = True
+13.2518 	EXP 	quest_3: autoDraw = True
+13.2518 	EXP 	quest_4: autoDraw = True
+13.2518 	EXP 	quest_5: autoDraw = True
+13.2518 	EXP 	question_BFQ: autoDraw = True
+13.3491 	EXP 	New trial (rep=0, index=13): <Trial 13 (13 in rep 0) data={'Title_BDI': '14. Worthlessness', 'quest1': '0-I do not feel I am worthless.', 'quest2': "1-I don't consider myself as worthwhile and useful as I used to.", 'quest3': '2-I feel more worthless as compared to others.', 'quest4': '3-I feel utterly worthless.', 'Questionnaire': 'BDI', 'thisN': 13, 'thisTrialN': 13, 'thisRepN': 0}>
+13.3638 	DATA 	Keypress: 0
+13.3666 	INFO 	Keyboard events cleared
+13.3663 	EXP 	item: autoDraw = False
+13.3663 	EXP 	quest_1: autoDraw = False
+13.3663 	EXP 	quest_2: autoDraw = False
+13.3663 	EXP 	quest_3: autoDraw = False
+13.3663 	EXP 	quest_4: autoDraw = False
+13.3663 	EXP 	quest_5: autoDraw = False
+13.3663 	EXP 	question_BFQ: autoDraw = False
+13.3663 	EXP 	item: text = ''
+13.3663 	EXP 	quest_1: height = 0.03
+13.3663 	EXP 	quest_1: height = 0.03
+13.3663 	EXP 	quest_1: height = 0.03
+13.3663 	EXP 	quest_1: text = '0-I do not feel I am worthless.'
+13.3663 	EXP 	quest_2: height = 0.03
+13.3663 	EXP 	quest_2: height = 0.03
+13.3663 	EXP 	quest_2: height = 0.03
+13.3663 	EXP 	quest_2: text = "1-I don't consider myself as worthwhile and useful as I used to."
+13.3663 	EXP 	quest_3: height = 0.03
+13.3663 	EXP 	quest_3: height = 0.03
+13.3663 	EXP 	quest_3: height = 0.03
+13.3663 	EXP 	quest_3: text = '2-I feel more worthless as compared to others.'
+13.3663 	EXP 	quest_4: height = 0.03
+13.3663 	EXP 	quest_4: height = 0.03
+13.3663 	EXP 	quest_4: height = 0.03
+13.3663 	EXP 	quest_4: text = '3-I feel utterly worthless.'
+13.3663 	EXP 	quest_5: text = ''
+13.3663 	EXP 	question_BFQ: text = ''
+13.3663 	EXP 	item: autoDraw = True
+13.3663 	EXP 	quest_1: autoDraw = True
+13.3663 	EXP 	quest_2: autoDraw = True
+13.3663 	EXP 	quest_3: autoDraw = True
+13.3663 	EXP 	quest_4: autoDraw = True
+13.3663 	EXP 	quest_5: autoDraw = True
+13.3663 	EXP 	question_BFQ: autoDraw = True
+13.4488 	EXP 	New trial (rep=0, index=14): <Trial 14 (14 in rep 0) data={'Title_BDI': '15. Loss of energy', 'quest1': '0-I have as much energy as ever.', 'quest2': '1-I have less energy than I used to have.', 'quest3': "2-I don't have enough energy to do very much.", 'quest4': "3-I don't have enough energy to do anything.", 'Questionnaire': 'BDI', 'thisN': 14, 'thisTrialN': 14, 'thisRepN': 0}>
+13.4641 	DATA 	Keypress: 1
+13.4676 	INFO 	Keyboard events cleared
+13.4672 	EXP 	item: autoDraw = False
+13.4672 	EXP 	quest_1: autoDraw = False
+13.4672 	EXP 	quest_2: autoDraw = False
+13.4672 	EXP 	quest_3: autoDraw = False
+13.4672 	EXP 	quest_4: autoDraw = False
+13.4672 	EXP 	quest_5: autoDraw = False
+13.4672 	EXP 	question_BFQ: autoDraw = False
+13.4672 	EXP 	item: text = ''
+13.4672 	EXP 	quest_1: height = 0.03
+13.4672 	EXP 	quest_1: height = 0.03
+13.4672 	EXP 	quest_1: height = 0.03
+13.4672 	EXP 	quest_1: text = '0-I have as much energy as ever.'
+13.4672 	EXP 	quest_2: height = 0.03
+13.4672 	EXP 	quest_2: height = 0.03
+13.4672 	EXP 	quest_2: height = 0.03
+13.4672 	EXP 	quest_2: text = '1-I have less energy than I used to have.'
+13.4672 	EXP 	quest_3: height = 0.03
+13.4672 	EXP 	quest_3: height = 0.03
+13.4672 	EXP 	quest_3: height = 0.03
+13.4672 	EXP 	quest_3: text = "2-I don't have enough energy to do very much."
+13.4672 	EXP 	quest_4: height = 0.03
+13.4672 	EXP 	quest_4: height = 0.03
+13.4672 	EXP 	quest_4: height = 0.03
+13.4672 	EXP 	quest_4: text = "3-I don't have enough energy to do anything."
+13.4672 	EXP 	quest_5: text = ''
+13.4672 	EXP 	question_BFQ: text = ''
+13.4672 	EXP 	item: autoDraw = True
+13.4672 	EXP 	quest_1: autoDraw = True
+13.4672 	EXP 	quest_2: autoDraw = True
+13.4672 	EXP 	quest_3: autoDraw = True
+13.4672 	EXP 	quest_4: autoDraw = True
+13.4672 	EXP 	quest_5: autoDraw = True
+13.4672 	EXP 	question_BFQ: autoDraw = True
+13.5488 	EXP 	New trial (rep=0, index=15): <Trial 15 (15 in rep 0) data={'Title_BDI': '16. Changes in sleeping pattern', 'quest1': '0-I have not experienced any change in my sleeping.', 'quest2': '1a-I sleep somewhat more than usual.\n1b-I sleep somewhat less than usual.', 'quest3': '2a-I sleep a lot more than usual.\n2b-I sleep a lot less than usual.', 'quest4': "3a-I sleep most of the day.\n3b-I wake up 1-2 hours early and can't get back to sleep.", 'Questionnaire': 'BDI', 'thisN': 15, 'thisTrialN': 15, 'thisRepN': 0}>
+13.5682 	DATA 	Keypress: 0
+13.5711 	INFO 	Keyboard events cleared
+13.5708 	EXP 	item: autoDraw = False
+13.5708 	EXP 	quest_1: autoDraw = False
+13.5708 	EXP 	quest_2: autoDraw = False
+13.5708 	EXP 	quest_3: autoDraw = False
+13.5708 	EXP 	quest_4: autoDraw = False
+13.5708 	EXP 	quest_5: autoDraw = False
+13.5708 	EXP 	question_BFQ: autoDraw = False
+13.5708 	EXP 	item: text = ''
+13.5708 	EXP 	quest_1: height = 0.03
+13.5708 	EXP 	quest_1: height = 0.03
+13.5708 	EXP 	quest_1: height = 0.03
+13.5708 	EXP 	quest_1: text = '0-I have not experienced any change in my sleeping.'
+13.5708 	EXP 	quest_2: height = 0.03
+13.5708 	EXP 	quest_2: height = 0.03
+13.5708 	EXP 	quest_2: height = 0.03
+13.5708 	EXP 	quest_2: text = '1a-I sleep somewhat more than usual.\n1b-I sleep somewhat less than usual.'
+13.5708 	EXP 	quest_3: height = 0.03
+13.5708 	EXP 	quest_3: height = 0.03
+13.5708 	EXP 	quest_3: height = 0.03
+13.5708 	EXP 	quest_3: text = '2a-I sleep a lot more than usual.\n2b-I sleep a lot less than usual.'
+13.5708 	EXP 	quest_4: height = 0.03
+13.5708 	EXP 	quest_4: height = 0.03
+13.5708 	EXP 	quest_4: height = 0.03
+13.5708 	EXP 	quest_4: text = "3a-I sleep most of the day.\n3b-I wake up 1-2 hours early and can't get back to sleep."
+13.5708 	EXP 	quest_5: text = ''
+13.5708 	EXP 	question_BFQ: text = ''
+13.5708 	EXP 	item: autoDraw = True
+13.5708 	EXP 	quest_1: autoDraw = True
+13.5708 	EXP 	quest_2: autoDraw = True
+13.5708 	EXP 	quest_3: autoDraw = True
+13.5708 	EXP 	quest_4: autoDraw = True
+13.5708 	EXP 	quest_5: autoDraw = True
+13.5708 	EXP 	question_BFQ: autoDraw = True
+13.6490 	EXP 	New trial (rep=0, index=16): <Trial 16 (16 in rep 0) data={'Title_BDI': '17. Irritability', 'quest1': '0-I am not more irritable than usual.', 'quest2': '1-I am more irritable than usual.', 'quest3': '2-I am much more irritable than usual.', 'quest4': '3-I am irritable all the time.', 'Questionnaire': 'BDI', 'thisN': 16, 'thisTrialN': 16, 'thisRepN': 0}>
+13.6634 	DATA 	Keypress: 1
+13.6661 	INFO 	Keyboard events cleared
+13.6658 	EXP 	item: autoDraw = False
+13.6658 	EXP 	quest_1: autoDraw = False
+13.6658 	EXP 	quest_2: autoDraw = False
+13.6658 	EXP 	quest_3: autoDraw = False
+13.6658 	EXP 	quest_4: autoDraw = False
+13.6658 	EXP 	quest_5: autoDraw = False
+13.6658 	EXP 	question_BFQ: autoDraw = False
+13.6658 	EXP 	item: text = ''
+13.6658 	EXP 	quest_1: height = 0.03
+13.6658 	EXP 	quest_1: height = 0.03
+13.6658 	EXP 	quest_1: height = 0.03
+13.6658 	EXP 	quest_1: text = '0-I am not more irritable than usual.'
+13.6658 	EXP 	quest_2: height = 0.03
+13.6658 	EXP 	quest_2: height = 0.03
+13.6658 	EXP 	quest_2: height = 0.03
+13.6658 	EXP 	quest_2: text = '1-I am more irritable than usual.'
+13.6658 	EXP 	quest_3: height = 0.03
+13.6658 	EXP 	quest_3: height = 0.03
+13.6658 	EXP 	quest_3: height = 0.03
+13.6658 	EXP 	quest_3: text = '2-I am much more irritable than usual.'
+13.6658 	EXP 	quest_4: height = 0.03
+13.6658 	EXP 	quest_4: height = 0.03
+13.6658 	EXP 	quest_4: height = 0.03
+13.6658 	EXP 	quest_4: text = '3-I am irritable all the time.'
+13.6658 	EXP 	quest_5: text = ''
+13.6658 	EXP 	question_BFQ: text = ''
+13.6658 	EXP 	item: autoDraw = True
+13.6658 	EXP 	quest_1: autoDraw = True
+13.6658 	EXP 	quest_2: autoDraw = True
+13.6658 	EXP 	quest_3: autoDraw = True
+13.6658 	EXP 	quest_4: autoDraw = True
+13.6658 	EXP 	quest_5: autoDraw = True
+13.6658 	EXP 	question_BFQ: autoDraw = True
+13.7326 	EXP 	New trial (rep=0, index=17): <Trial 17 (17 in rep 0) data={'Title_BDI': '18. Changes in Appetite', 'quest1': '0-I have not experienced any change in my appetite.', 'quest2': '1a-My appetite is somewhat less than usual.\n1b-My appetite is somewhat greater than usual.', 'quest3': '2a-My appetite is much less than before.\n2b-My appetite is much greater than usual.', 'quest4': '3a-I have no appetite at all.\n3b-I crave food all the time.', 'Questionnaire': 'BDI', 'thisN': 17, 'thisTrialN': 17, 'thisRepN': 0}>
+13.7541 	DATA 	Keypress: 0
+13.7571 	INFO 	Keyboard events cleared
+13.7568 	EXP 	item: autoDraw = False
+13.7568 	EXP 	quest_1: autoDraw = False
+13.7568 	EXP 	quest_2: autoDraw = False
+13.7568 	EXP 	quest_3: autoDraw = False
+13.7568 	EXP 	quest_4: autoDraw = False
+13.7568 	EXP 	quest_5: autoDraw = False
+13.7568 	EXP 	question_BFQ: autoDraw = False
+13.7568 	EXP 	item: text = ''
+13.7568 	EXP 	quest_1: height = 0.03
+13.7568 	EXP 	quest_1: height = 0.03
+13.7568 	EXP 	quest_1: height = 0.03
+13.7568 	EXP 	quest_1: text = '0-I have not experienced any change in my appetite.'
+13.7568 	EXP 	quest_2: height = 0.03
+13.7568 	EXP 	quest_2: height = 0.03
+13.7568 	EXP 	quest_2: height = 0.03
+13.7568 	EXP 	quest_2: text = '1a-My appetite is somewhat less than usual.\n1b-My appetite is somewhat greater than usual.'
+13.7568 	EXP 	quest_3: height = 0.03
+13.7568 	EXP 	quest_3: height = 0.03
+13.7568 	EXP 	quest_3: height = 0.03
+13.7568 	EXP 	quest_3: text = '2a-My appetite is much less than before.\n2b-My appetite is much greater than usual.'
+13.7568 	EXP 	quest_4: height = 0.03
+13.7568 	EXP 	quest_4: height = 0.03
+13.7568 	EXP 	quest_4: height = 0.03
+13.7568 	EXP 	quest_4: text = '3a-I have no appetite at all.\n3b-I crave food all the time.'
+13.7568 	EXP 	quest_5: text = ''
+13.7568 	EXP 	question_BFQ: text = ''
+13.7568 	EXP 	item: autoDraw = True
+13.7568 	EXP 	quest_1: autoDraw = True
+13.7568 	EXP 	quest_2: autoDraw = True
+13.7568 	EXP 	quest_3: autoDraw = True
+13.7568 	EXP 	quest_4: autoDraw = True
+13.7568 	EXP 	quest_5: autoDraw = True
+13.7568 	EXP 	question_BFQ: autoDraw = True
+13.8654 	EXP 	New trial (rep=0, index=18): <Trial 18 (18 in rep 0) data={'Title_BDI': '19. Concentration difficulty', 'quest1': '0-I can concentrate as well as ever.', 'quest2': "1-I can't concentrate as well as usual.", 'quest3': "2-It's hard to keep my mind on anything for very long.", 'quest4': "3-I find I can't concentrate on anything.", 'Questionnaire': 'BDI', 'thisN': 18, 'thisTrialN': 18, 'thisRepN': 0}>
+13.8794 	DATA 	Keypress: 1
+13.8822 	INFO 	Keyboard events cleared
+13.8819 	EXP 	item: autoDraw = False
+13.8819 	EXP 	quest_1: autoDraw = False
+13.8819 	EXP 	quest_2: autoDraw = False
+13.8819 	EXP 	quest_3: autoDraw = False
+13.8819 	EXP 	quest_4: autoDraw = False
+13.8819 	EXP 	quest_5: autoDraw = False
+13.8819 	EXP 	question_BFQ: autoDraw = False
+13.8819 	EXP 	item: text = ''
+13.8819 	EXP 	quest_1: height = 0.03
+13.8819 	EXP 	quest_1: height = 0.03
+13.8819 	EXP 	quest_1: height = 0.03
+13.8819 	EXP 	quest_1: text = '0-I can concentrate as well as ever.'
+13.8819 	EXP 	quest_2: height = 0.03
+13.8819 	EXP 	quest_2: height = 0.03
+13.8819 	EXP 	quest_2: height = 0.03
+13.8819 	EXP 	quest_2: text = "1-I can't concentrate as well as usual."
+13.8819 	EXP 	quest_3: height = 0.03
+13.8819 	EXP 	quest_3: height = 0.03
+13.8819 	EXP 	quest_3: height = 0.03
+13.8819 	EXP 	quest_3: text = "2-It's hard to keep my mind on anything for very long."
+13.8819 	EXP 	quest_4: height = 0.03
+13.8819 	EXP 	quest_4: height = 0.03
+13.8819 	EXP 	quest_4: height = 0.03
+13.8819 	EXP 	quest_4: text = "3-I find I can't concentrate on anything."
+13.8819 	EXP 	quest_5: text = ''
+13.8819 	EXP 	question_BFQ: text = ''
+13.8819 	EXP 	item: autoDraw = True
+13.8819 	EXP 	quest_1: autoDraw = True
+13.8819 	EXP 	quest_2: autoDraw = True
+13.8819 	EXP 	quest_3: autoDraw = True
+13.8819 	EXP 	quest_4: autoDraw = True
+13.8819 	EXP 	quest_5: autoDraw = True
+13.8819 	EXP 	question_BFQ: autoDraw = True
+13.9320 	EXP 	New trial (rep=0, index=19): <Trial 19 (19 in rep 0) data={'Title_BDI': '20. Tiredness or fatigue', 'quest1': '0-I am no more tired or fatigued than usual.', 'quest2': '1-I get more tired or fatigued more easily than usual.', 'quest3': '2-I am too tired or fatigued to do a lot of the things I used to do.', 'quest4': '3-I am too tired or fatigued to do most of the things I used to do.', 'Questionnaire': 'BDI', 'thisN': 19, 'thisTrialN': 19, 'thisRepN': 0}>
+13.9486 	DATA 	Keypress: 0
+13.9545 	INFO 	Keyboard events cleared
+13.9541 	EXP 	item: autoDraw = False
+13.9541 	EXP 	quest_1: autoDraw = False
+13.9541 	EXP 	quest_2: autoDraw = False
+13.9541 	EXP 	quest_3: autoDraw = False
+13.9541 	EXP 	quest_4: autoDraw = False
+13.9541 	EXP 	quest_5: autoDraw = False
+13.9541 	EXP 	question_BFQ: autoDraw = False
+13.9541 	EXP 	item: text = ''
+13.9541 	EXP 	quest_1: height = 0.03
+13.9541 	EXP 	quest_1: height = 0.03
+13.9541 	EXP 	quest_1: height = 0.03
+13.9541 	EXP 	quest_1: text = '0-I am no more tired or fatigued than usual.'
+13.9541 	EXP 	quest_2: height = 0.03
+13.9541 	EXP 	quest_2: height = 0.03
+13.9541 	EXP 	quest_2: height = 0.03
+13.9541 	EXP 	quest_2: text = '1-I get more tired or fatigued more easily than usual.'
+13.9541 	EXP 	quest_3: height = 0.03
+13.9541 	EXP 	quest_3: height = 0.03
+13.9541 	EXP 	quest_3: height = 0.03
+13.9541 	EXP 	quest_3: text = '2-I am too tired or fatigued to do a lot of the things I used to do.'
+13.9541 	EXP 	quest_4: height = 0.03
+13.9541 	EXP 	quest_4: height = 0.03
+13.9541 	EXP 	quest_4: height = 0.03
+13.9541 	EXP 	quest_4: text = '3-I am too tired or fatigued to do most of the things I used to do.'
+13.9541 	EXP 	quest_5: text = ''
+13.9541 	EXP 	question_BFQ: text = ''
+13.9541 	EXP 	item: autoDraw = True
+13.9541 	EXP 	quest_1: autoDraw = True
+13.9541 	EXP 	quest_2: autoDraw = True
+13.9541 	EXP 	quest_3: autoDraw = True
+13.9541 	EXP 	quest_4: autoDraw = True
+13.9541 	EXP 	quest_5: autoDraw = True
+13.9541 	EXP 	question_BFQ: autoDraw = True
+14.0483 	EXP 	New trial (rep=0, index=20): <Trial 20 (20 in rep 0) data={'Title_BDI': '21. Loss of interest in sex', 'quest1': '0-I have not noticed any recent change in my interest in sex.', 'quest2': '1-I am less interested in sex than I used to be.', 'quest3': '2-I am much less interested in sex now.', 'quest4': '3-I have lost interest in sex completely.', 'Questionnaire': 'BDI', 'thisN': 20, 'thisTrialN': 20, 'thisRepN': 0}>
+14.0650 	DATA 	Keypress: 1
+14.0685 	INFO 	Keyboard events cleared
+14.0681 	EXP 	item: autoDraw = False
+14.0681 	EXP 	quest_1: autoDraw = False
+14.0681 	EXP 	quest_2: autoDraw = False
+14.0681 	EXP 	quest_3: autoDraw = False
+14.0681 	EXP 	quest_4: autoDraw = False
+14.0681 	EXP 	quest_5: autoDraw = False
+14.0681 	EXP 	question_BFQ: autoDraw = False
+14.0681 	EXP 	item: text = ''
+14.0681 	EXP 	quest_1: height = 0.03
+14.0681 	EXP 	quest_1: height = 0.03
+14.0681 	EXP 	quest_1: height = 0.03
+14.0681 	EXP 	quest_1: text = '0-I have not noticed any recent change in my interest in sex.'
+14.0681 	EXP 	quest_2: height = 0.03
+14.0681 	EXP 	quest_2: height = 0.03
+14.0681 	EXP 	quest_2: height = 0.03
+14.0681 	EXP 	quest_2: text = '1-I am less interested in sex than I used to be.'
+14.0681 	EXP 	quest_3: height = 0.03
+14.0681 	EXP 	quest_3: height = 0.03
+14.0681 	EXP 	quest_3: height = 0.03
+14.0681 	EXP 	quest_3: text = '2-I am much less interested in sex now.'
+14.0681 	EXP 	quest_4: height = 0.03
+14.0681 	EXP 	quest_4: height = 0.03
+14.0681 	EXP 	quest_4: height = 0.03
+14.0681 	EXP 	quest_4: text = '3-I have lost interest in sex completely.'
+14.0681 	EXP 	quest_5: text = ''
+14.0681 	EXP 	question_BFQ: text = ''
+14.0681 	EXP 	item: autoDraw = True
+14.0681 	EXP 	quest_1: autoDraw = True
+14.0681 	EXP 	quest_2: autoDraw = True
+14.0681 	EXP 	quest_3: autoDraw = True
+14.0681 	EXP 	quest_4: autoDraw = True
+14.0681 	EXP 	quest_5: autoDraw = True
+14.0681 	EXP 	question_BFQ: autoDraw = True
+14.1937 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+14.1954 	DATA 	Keypress: 0
+14.1985 	INFO 	Keyboard events cleared
+14.1982 	EXP 	item: autoDraw = False
+14.1982 	EXP 	quest_1: autoDraw = False
+14.1982 	EXP 	quest_2: autoDraw = False
+14.1982 	EXP 	quest_3: autoDraw = False
+14.1982 	EXP 	quest_4: autoDraw = False
+14.1982 	EXP 	quest_5: autoDraw = False
+14.1982 	EXP 	question_BFQ: autoDraw = False
+14.1982 	EXP 	Questionnaire_instr_3: autoDraw = True
+14.3337 	DATA 	Keypress: 1
+14.4653 	DATA 	Keypress: 0
+14.9815 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+15.1713 	INFO 	saved data to C:\Users\fpupillo\OneDrive - Tilburg University\Projects\Language_prediction\prediction_error_language\stat_learn_quest\data/999_stat_learn_quest_2025-02-03_17h34.45.710.psydat
+15.1850 	INFO 	saved data to 'C:\\Users\\fpupillo\\OneDrive - Tilburg University\\Projects\\Language_prediction\\prediction_error_language\\stat_learn_quest\\data/999_stat_learn_quest_2025-02-03_17h34.45.710.csv'

@@ -1,0 +1,4 @@
+﻿Intro.started,Intro.stopped,participant,age,gender,handedness,date,expName,psychopyVersion,OS,frameRate,Welcome_message.started,Welcome_message.stopped,mouse.x,mouse.y,mouse.leftButton,mouse.midButton,mouse.rightButton,mouse.time,Instr_1.started,Instr_1.stopped,key_resp_inst.keys,key_resp_inst.rt,key_resp_inst.duration,Instr_1_click.x,Instr_1_click.y,Instr_1_click.leftButton,Instr_1_click.midButton,Instr_1_click.rightButton,Instr_1_click.time,Instr_1_click.clicked_name
+0.0012,0.0014,21,,,,2025-02-12_17h23.03.459,stat_learn_task,2024.2.4,Win32,60.24096386,,,,,,,,,,,,,,,,,,,,
+,,21,,,,2025-02-12_17h23.03.459,stat_learn_task,2024.2.4,Win32,60.24096386,0.0015,5.4438,[0.014971981681353674],[0.06484280265338048],[1],[0],[0],[5.439300000011922],,,,,,,,,,,,
+,,21,,,,2025-02-12_17h23.03.459,stat_learn_task,2024.2.4,Win32,60.24096386,,,,,,,,,5.4439,5.7106,space,0.2548,,[],[],[],[],[],[],[]

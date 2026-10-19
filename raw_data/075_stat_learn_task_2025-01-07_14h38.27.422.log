@@ -1,0 +1,140 @@
+6.0313 	INFO 	Loaded monitor calibration from ['2025_01_06 13:09']
+6.0780 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1920, 1080]. Using actual size
+7.5328 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000029121F84190>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000029121F84130>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000029122039720>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.5328 	EXP 	window1: backgroundImage = ''
+7.5328 	EXP 	window1: backgroundFit = 'none'
+7.6591 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.6591 	EXP 	window1: recordFrameIntervals = False
+7.8367 	EXP 	window1: recordFrameIntervals = True
+8.0202 	EXP 	Screen (0) actual frame rate measured at 59.99Hz
+8.0203 	EXP 	window1: recordFrameIntervals = False
+9.7536 	INFO 	keyboard.Keyboard is using iohub backend.
+9.7537 	INFO 	keyboard.Keyboard is using iohub backend.
+9.8090 	INFO 	keyboard.Keyboard is using iohub backend.
+9.8090 	EXP 	stat_learn_task: status = STARTED
+9.8407 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='tilburg-university7000.jpg', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0.  , 0.25]), size=array([0.5 , 0.28]), texRes=128.0, units='height', win=Window(...))
+9.9150 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0.0, pos=array([ 0. , -0.1]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.9419 	EXP 	Created Instr_text_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Instr_text_1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.9428 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0.  , 0.25]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.9436 	EXP 	Created target = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='target', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.1762 	EXP 	Sound Syllable set volume 1.000
+10.1808 	EXP 	Created target_syllable_is = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='target_syllable_is', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='target syllable is', units='height', win=Window(...), wrapWidth=1)
+10.1822 	EXP 	Created target_syll = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='target_syll', opacity=1, ori=0.0, pos=array([ 0. , -0.3]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.1882 	EXP 	Created text_1_SAM = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_1_SAM', opacity=1, ori=0.0, pos=array([0.   , 0.425]), rgb=UNKNOWN, text='How do you feel right now?', units='height', win=Window(...), wrapWidth=1)
+10.1944 	EXP 	Created ValenceImg = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='sam image.png', interpolate=True, mask=None, maskParams=None, name='ValenceImg', opacity=1, ori=0.0, pos=array([0.   , 0.225]), size=array([1.05, 0.19]), texRes=128, units='height', win=Window(...))
+10.2072 	EXP 	Created text_valence = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='text_valence', opacity=1, ori=0, pos=array([0.015, 0.075]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=2.5)
+10.2292 	EXP 	Created slider_valence_1 = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-3, fillColor=None, flip=False, font='Open Sans', granularity=0.0, labelColor=None, labelHeight=0.05, labelWrapWidth=None, labels=None, lineColor=None, markerColor=None, name='slider_valence_1', opacity=None, ori=0.0, pos=array([0.   , 0.075]), readOnly=False, self=UNKNOWN, size=array([0.81, 0.05]), startValue=None, style='rating', styleTweaks=[], ticks=array([  1,  25,  50,  75, 100]), units='height', win=Window(...))
+10.2390 	EXP 	Created text_continue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='text_continue', opacity=1, ori=0, pos=array([ 0.   , -0.425]), rgb=UNKNOWN, text='Click HERE to continue', units='height', win=Window(...), wrapWidth=2)
+0.0030 	EXP 	slider_valence_1: autoLog = True
+0.0030 	EXP 	slider_valence_1: styleTweaks = []
+0.0030 	EXP 	slider_valence_1: styleTweaks = []
+0.0030 	EXP 	slider_valence_1: styleTweaks = []
+0.0030 	EXP 	slider_valence_1: styleTweaks = []
+0.0030 	EXP 	slider_valence_1: contrast = 1.0
+0.0030 	EXP 	slider_valence_1: markerPos = None
+0.0030 	EXP 	slider_valence_1: autoLog = True
+0.0534 	EXP 	image: autoDraw = True
+0.0534 	EXP 	text_5: autoDraw = True
+2.1982 	DATA 	Mouse: Left button down, pos=(926,344)
+2.2140 	INFO 	Keyboard events cleared
+2.2134 	EXP 	image: autoDraw = False
+2.2134 	EXP 	text_5: autoDraw = False
+2.2134 	EXP 	Instr_text_1: autoDraw = True
+2.2333 	DATA 	Mouse:  Left button up, pos=(926,344)
+3.6360 	EXP 	Imported general_stimuli_list_male.csv as conditions, 144 conditions, 1 params
+3.6384 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'list': 'stimuli_lists/unstructured/male/stream_32.csv', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+3.6542 	EXP 	Imported stimuli_lists/unstructured/male/stream_32.csv as conditions, 48 conditions, 10 params
+3.6551 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'trialN': 32, 'sequence_type': 'unstructured', 'syllable': 'mo', 'syllable_path': 'sel_sounds/male/mo.mp3', 'syllable_n': None, 'syllable_order_n': 1, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'lu', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+3.7519 	DATA 	Keypress: space
+3.7565 	EXP 	Instr_text_1: autoDraw = False
+3.7565 	EXP 	text_2: height = 0.05
+3.7565 	EXP 	text_2: height = 0.05
+3.7565 	EXP 	text_2: height = 0.05
+3.7565 	EXP 	text_2: text = 'The target of this trial is\n\n\n'
+3.7565 	EXP 	target: height = 0.05
+3.7565 	EXP 	target: height = 0.05
+3.7565 	EXP 	target: height = 0.05
+3.7565 	EXP 	target: text = <psychopy.visual.text.TextStim object at 0x000002912C5C7BB0>
+3.7565 	EXP 	text_2: autoDraw = True
+3.7565 	EXP 	target: autoDraw = True
+8.6720 	EXP 	Sound Syllable reached end of file
+8.6792 	EXP 	Sound Syllable started
+8.6798 	INFO 	Keyboard events cleared
+8.6793 	EXP 	text_2: autoDraw = False
+8.6793 	EXP 	target: autoDraw = False
+8.6793 	EXP 	target_syll: height = 0.05
+8.6793 	EXP 	target_syll: height = 0.05
+8.6793 	EXP 	target_syll: height = 0.05
+8.6793 	EXP 	target_syll: text = <psychopy.visual.text.TextStim object at 0x000002912C5C7BB0>
+8.6793 	EXP 	target_syllable_is: autoDraw = True
+8.6793 	EXP 	target_syll: autoDraw = True
+8.8951 	EXP 	Sound Syllable reached end of file
+8.9117 	EXP 	Sound Syllable reached end of file
+8.9298 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'trialN': 32, 'sequence_type': 'unstructured', 'syllable': 'mo', 'syllable_path': 'sel_sounds/male/mo.mp3', 'syllable_n': None, 'syllable_order_n': 2, 'syllable_pos': None, 'repetition': 2, 'is_target': 0, 'target': 'lu', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+9.0613 	EXP 	Sound Syllable reached end of file
+9.0615 	EXP 	Sound Syllable started
+9.0668 	INFO 	Keyboard events cleared
+9.0664 	EXP 	target_syllable_is: autoDraw = False
+9.0664 	EXP 	target_syll: autoDraw = False
+9.0664 	EXP 	text_2: text = 'The target of this trial is\n\n\n'
+9.0664 	EXP 	target: height = 0.05
+9.0664 	EXP 	target: height = 0.05
+9.0664 	EXP 	target: height = 0.05
+9.0664 	EXP 	target: text = <psychopy.visual.text.TextStim object at 0x000002912C5C7BB0>
+9.0664 	EXP 	text_2: autoDraw = False
+9.0664 	EXP 	target: autoDraw = False
+9.0664 	EXP 	target_syll: height = 0.05
+9.0664 	EXP 	target_syll: height = 0.05
+9.0664 	EXP 	target_syll: height = 0.05
+9.0664 	EXP 	target_syll: text = <psychopy.visual.text.TextStim object at 0x000002912C5C7BB0>
+9.0664 	EXP 	target_syllable_is: autoDraw = True
+9.0664 	EXP 	target_syll: autoDraw = True
+9.2757 	EXP 	Sound Syllable reached end of file
+9.2811 	EXP 	Sound Syllable reached end of file
+9.3126 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'trialN': 32, 'sequence_type': 'unstructured', 'syllable': 'na', 'syllable_path': 'sel_sounds/male/na.mp3', 'syllable_n': None, 'syllable_order_n': 3, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'lu', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+9.3843 	INFO 	Keyboard events cleared
+9.3838 	EXP 	target_syllable_is: autoDraw = False
+9.3838 	EXP 	target_syll: autoDraw = False
+9.3838 	EXP 	text_2: text = 'The target of this trial is\n\n\n'
+9.3838 	EXP 	target: height = 0.05
+9.3838 	EXP 	target: height = 0.05
+9.3838 	EXP 	target: height = 0.05
+9.3838 	EXP 	target: text = <psychopy.visual.text.TextStim object at 0x000002912C5C7BB0>
+9.3838 	EXP 	text_2: autoDraw = False
+9.3838 	EXP 	target: autoDraw = False
+9.3838 	EXP 	target_syll: height = 0.05
+9.3838 	EXP 	target_syll: height = 0.05
+9.3838 	EXP 	target_syll: height = 0.05
+9.3838 	EXP 	target_syll: text = <psychopy.visual.text.TextStim object at 0x000002912C5C7BB0>
+9.3838 	EXP 	target_syllable_is: autoDraw = True
+9.3838 	EXP 	target_syll: autoDraw = True
+9.3846 	EXP 	Sound Syllable reached end of file
+9.4005 	EXP 	Sound Syllable started
+9.6996 	EXP 	Sound Syllable stopped
+9.7011 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'trialN': 32, 'sequence_type': 'unstructured', 'syllable': 'ba', 'syllable_path': 'sel_sounds/male/ba.mp3', 'syllable_n': None, 'syllable_order_n': 4, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'lu', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+9.7761 	INFO 	Keyboard events cleared
+9.7756 	EXP 	target_syllable_is: autoDraw = False
+9.7756 	EXP 	target_syll: autoDraw = False
+9.7756 	EXP 	text_2: text = 'The target of this trial is\n\n\n'
+9.7756 	EXP 	target: height = 0.05
+9.7756 	EXP 	target: height = 0.05
+9.7756 	EXP 	target: height = 0.05
+9.7756 	EXP 	target: text = <psychopy.visual.text.TextStim object at 0x000002912C5C7BB0>
+9.7756 	EXP 	text_2: autoDraw = False
+9.7756 	EXP 	target: autoDraw = False
+9.7756 	EXP 	target_syll: height = 0.05
+9.7756 	EXP 	target_syll: height = 0.05
+9.7756 	EXP 	target_syll: height = 0.05
+9.7756 	EXP 	target_syll: text = <psychopy.visual.text.TextStim object at 0x000002912C5C7BB0>
+9.7756 	EXP 	target_syllable_is: autoDraw = True
+9.7756 	EXP 	target_syll: autoDraw = True
+9.7763 	EXP 	Sound Syllable reached end of file
+9.7922 	EXP 	Sound Syllable started
+9.9648 	DATA 	Keypress: escape
+10.0487 	EXP 	Sound Syllable reached end of file
+10.0499 	EXP 	stat_learn_task: status = STOPPED
+10.0598 	EXP 	target_syllable_is: autoDraw = False
+10.0598 	EXP 	target_syll: autoDraw = False
+10.0599 	EXP 	stat_learn_task: status = STOPPED
+10.0670 	INFO 	saved data to 'C:\\Users\\fpupillo\\OneDrive - Tilburg University\\Projects\\Language_prediction\\prediction_error_language\\stat_learn_task\\data/075_stat_learn_task_2025-01-07_14h38.27.422.csv'
+10.0705 	INFO 	saved data to C:\Users\fpupillo\OneDrive - Tilburg University\Projects\Language_prediction\prediction_error_language\stat_learn_task\data/075_stat_learn_task_2025-01-07_14h38.27.422.psydat

@@ -1,0 +1,376 @@
+4.7323 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+4.7336 	INFO 	Loaded monitor calibration from ['2025_01_06 13:09']
+6.1219 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001AAFAAE7910>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001AAFAAE78B0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001AAFABB0E50>, multiSample=False, name='window1', numSamples=2, pos=[560.0, 240.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.1219 	EXP 	window1: backgroundImage = ''
+6.1220 	EXP 	window1: backgroundFit = 'none'
+6.1497 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1507 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1516 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1528 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1540 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1546 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1555 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1567 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1571 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1576 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1585 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1595 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1603 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1613 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1622 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1631 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1641 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1647 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1653 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1665 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1671 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.1694 	DEBUG 	Uploading Texture Font fontname to graphics card
+6.1841 	DEBUG 	Upload of Texture Font fontname complete
+6.2040 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.2052 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.2064 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.2067 	DEBUG 	Uploading Texture Font fontname to graphics card
+6.2212 	DEBUG 	Upload of Texture Font fontname complete
+6.2242 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.2242 	EXP 	window1: recordFrameIntervals = False
+6.4198 	EXP 	window1: recordFrameIntervals = True
+6.6051 	EXP 	Screen (0) actual frame rate measured at 59.80Hz
+6.6051 	EXP 	window1: recordFrameIntervals = False
+6.6308 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.6319 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.6338 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.6362 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.6390 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.6422 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.6434 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.6448 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.6465 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.6481 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+6.6486 	DEBUG 	Uploading Texture Font fontname to graphics card
+6.6498 	DEBUG 	Upload of Texture Font fontname complete
+6.6795 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+8.2809 	INFO 	keyboard.Keyboard is using iohub backend.
+8.2810 	INFO 	keyboard.Keyboard is using iohub backend.
+8.5346 	INFO 	keyboard.Keyboard is using iohub backend.
+8.5346 	EXP 	stat_learn_task: status = STARTED
+8.5657 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='tilburg-university7000.jpg', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0.  , 0.25]), size=array([0.5 , 0.28]), texRes=128.0, units='height', win=Window(...))
+8.6489 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0.0, pos=array([ 0. , -0.1]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.6574 	EXP 	Created Instr_text_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Instr_text_1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.6614 	EXP 	Created Instr_text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Instr_text_2', opacity=1, ori=0.0, pos=array([ 0. , -0.4]), rgb=UNKNOWN, text='Please click HERE to continue', units='height', win=Window(...), wrapWidth=1)
+8.6710 	EXP 	Created Instr_2_text_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Instr_2_text_1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.6900 	DEPRECATION 	System default audio device failed to connect, so using first found device: Speakers (Realtek(R) Audio)
+8.7479 	EXP 	Sound sample_sound set volume 1.000
+8.7539 	EXP 	Created Instr_2_text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Instr_2_text_2', opacity=1, ori=0.0, pos=array([ 0. , -0.4]), rgb=UNKNOWN, text='Please click HERE to continue', units='height', win=Window(...), wrapWidth=1)
+8.7608 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='More syllables will sound like the following:', units='height', win=Window(...), wrapWidth=1)
+8.7768 	EXP 	Sound sound_pract_trunc set volume 1.000
+8.7807 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_4', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='More syllables will sound like the following:', units='height', win=Window(...), wrapWidth=1)
+8.7933 	EXP 	Created Instr_5_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Instr_5_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.7966 	EXP 	Created Instr_5_text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Instr_5_text_2', opacity=1, ori=0.0, pos=array([ 0. , -0.4]), rgb=UNKNOWN, text='Please click HERE to continue', units='height', win=Window(...), wrapWidth=1)
+8.7975 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0.  , 0.25]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.7983 	EXP 	Created target_wind = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='target_wind', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.8138 	EXP 	Sound sound_target_info set volume 1.000
+8.8277 	EXP 	Sound sound_pract_trunc_2 set volume 1.000
+8.8287 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_7', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.8295 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0.  , 0.25]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.8303 	EXP 	Created target_wind = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='target_wind', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.8442 	EXP 	Sound sound_target_info set volume 1.000
+8.8599 	EXP 	Sound Syllable set volume 1.000
+8.8610 	EXP 	Created target_syll = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='target_syll', opacity=1, ori=0.0, pos=array([ 0. , -0.3]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.8653 	EXP 	Created text_1_SAM = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_1_SAM', opacity=1, ori=0.0, pos=array([0.   , 0.425]), rgb=UNKNOWN, text='How do you feel right now?', units='height', win=Window(...), wrapWidth=1)
+8.8701 	EXP 	Created ValenceImg = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='sam image.png', interpolate=True, mask=None, maskParams=None, name='ValenceImg', opacity=1, ori=0.0, pos=array([0.   , 0.225]), size=array([1.05, 0.19]), texRes=128, units='height', win=Window(...))
+8.8812 	EXP 	Created text_valence = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='text_valence', opacity=1, ori=0, pos=array([0.015, 0.075]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=2.5)
+8.9023 	EXP 	Created slider_valence_1 = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-3, fillColor=None, flip=False, font='Open Sans', granularity=0.0, labelColor=None, labelHeight=0.05, labelWrapWidth=None, labels=None, lineColor=None, markerColor=None, name='slider_valence_1', opacity=None, ori=0.0, pos=array([0.   , 0.075]), readOnly=False, self=UNKNOWN, size=array([0.81, 0.05]), startValue=None, style='rating', styleTweaks=[], ticks=array([  1,  25,  50,  75, 100]), units='height', win=Window(...))
+8.9096 	EXP 	Created text_continue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='text_continue', opacity=1, ori=0, pos=array([ 0.   , -0.425]), rgb=UNKNOWN, text='Click HERE to continue', units='height', win=Window(...), wrapWidth=2)
+0.0082 	EXP 	slider_valence_1: autoLog = True
+0.0082 	EXP 	slider_valence_1: styleTweaks = []
+0.0082 	EXP 	slider_valence_1: styleTweaks = []
+0.0082 	EXP 	slider_valence_1: styleTweaks = []
+0.0082 	EXP 	slider_valence_1: styleTweaks = []
+0.0082 	EXP 	slider_valence_1: contrast = 1.0
+0.0082 	EXP 	slider_valence_1: markerPos = None
+0.0082 	EXP 	slider_valence_1: autoLog = True
+0.0584 	EXP 	image: autoDraw = True
+0.0584 	EXP 	text_5: autoDraw = True
+0.9843 	DATA 	Mouse: Left button down, pos=(386,197)
+0.9938 	INFO 	Keyboard events cleared
+0.9931 	EXP 	image: autoDraw = False
+0.9931 	EXP 	text_5: autoDraw = False
+0.9931 	EXP 	Instr_text_1: autoDraw = True
+0.9931 	EXP 	Instr_text_2: autoDraw = True
+1.0825 	DATA 	Mouse:  Left button up, pos=(383,192)
+1.6460 	DATA 	Mouse: Left button down, pos=(437,68)
+1.6594 	EXP 	Instr_text_1: autoDraw = False
+1.6594 	EXP 	Instr_text_2: autoDraw = False
+1.6594 	EXP 	Instr_2_text_1: autoDraw = True
+1.7136 	DATA 	Mouse:  Left button up, pos=(437,68)
+2.2977 	DATA 	Mouse: Left button down, pos=(404,350)
+2.3812 	DATA 	Mouse:  Left button up, pos=(404,345)
+2.6464 	EXP 	Sound sample_sound reached end of file
+2.6597 	EXP 	Sound sample_sound started
+2.9236 	EXP 	Sound sample_sound reached end of file
+2.9455 	EXP 	Sound sample_sound reached end of file
+3.6587 	EXP 	Instr_2_text_2: autoDraw = True
+5.2796 	DATA 	Mouse: Left button down, pos=(394,51)
+5.2924 	EXP 	Instr_2_text_1: autoDraw = False
+5.2924 	EXP 	Instr_2_text_2: autoDraw = False
+5.2924 	EXP 	text_3: autoDraw = True
+5.3471 	DATA 	Mouse:  Left button up, pos=(394,51)
+7.3179 	DEBUG 	Read csv file with pandas: practice_stream_female_trunc.csv
+7.3232 	DEBUG 	Clearing unnamed columns from practice_stream_female_trunc.csv
+7.3252 	EXP 	Imported practice_stream_female_trunc.csv as conditions, 12 conditions, 10 params
+7.3260 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'za', 'syllable_path': 'sel_sounds/female/za.mp3', 'syllable_n': None, 'syllable_order_n': 1, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+7.3281 	EXP 	Sound sound_pract_trunc reached end of file
+7.3410 	EXP 	Sound sound_pract_trunc started
+7.3397 	EXP 	text_3: autoDraw = False
+7.3397 	EXP 	text_4: autoDraw = True
+7.6068 	EXP 	Sound sound_pract_trunc reached end of file
+7.6266 	EXP 	Sound sound_pract_trunc reached end of file
+7.6272 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'za', 'syllable_path': 'sel_sounds/female/za.mp3', 'syllable_n': None, 'syllable_order_n': 2, 'syllable_pos': None, 'repetition': 2, 'is_target': 0, 'target': 'ma', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+7.6410 	EXP 	text_4: autoDraw = False
+7.6410 	EXP 	text_4: autoDraw = True
+7.6770 	EXP 	Sound sound_pract_trunc reached end of file
+7.6909 	EXP 	Sound sound_pract_trunc started
+7.9626 	EXP 	Sound sound_pract_trunc reached end of file
+7.9778 	EXP 	Sound sound_pract_trunc reached end of file
+7.9785 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'lo', 'syllable_path': 'sel_sounds/female/lo.mp3', 'syllable_n': None, 'syllable_order_n': 3, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+8.0068 	EXP 	text_4: autoDraw = False
+8.0068 	EXP 	text_4: autoDraw = True
+8.0279 	EXP 	Sound sound_pract_trunc reached end of file
+8.0411 	EXP 	Sound sound_pract_trunc started
+8.3114 	EXP 	Sound sound_pract_trunc reached end of file
+8.3276 	EXP 	Sound sound_pract_trunc reached end of file
+8.3282 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'so', 'syllable_path': 'sel_sounds/female/so.mp3', 'syllable_n': None, 'syllable_order_n': 4, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+8.3413 	EXP 	text_4: autoDraw = False
+8.3413 	EXP 	text_4: autoDraw = True
+8.3796 	EXP 	Sound sound_pract_trunc reached end of file
+8.3916 	EXP 	Sound sound_pract_trunc started
+8.6611 	EXP 	Sound sound_pract_trunc reached end of file
+8.6771 	EXP 	Sound sound_pract_trunc reached end of file
+8.6777 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'ka', 'syllable_path': 'sel_sounds/female/ka.mp3', 'syllable_n': None, 'syllable_order_n': 5, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+8.6909 	EXP 	text_4: autoDraw = False
+8.6909 	EXP 	text_4: autoDraw = True
+8.7274 	EXP 	Sound sound_pract_trunc reached end of file
+8.7409 	EXP 	Sound sound_pract_trunc started
+9.0112 	EXP 	Sound sound_pract_trunc reached end of file
+9.0274 	EXP 	Sound sound_pract_trunc reached end of file
+9.0280 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'ma', 'syllable_path': 'sel_sounds/female/ma.mp3', 'syllable_n': None, 'syllable_order_n': 10, 'syllable_pos': None, 'repetition': 1, 'is_target': 1, 'target': 'ma', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+9.0410 	EXP 	text_4: autoDraw = False
+9.0410 	EXP 	text_4: autoDraw = True
+9.0789 	EXP 	Sound sound_pract_trunc reached end of file
+9.0910 	EXP 	Sound sound_pract_trunc started
+9.3611 	EXP 	Sound sound_pract_trunc reached end of file
+9.3776 	EXP 	Sound sound_pract_trunc reached end of file
+9.3782 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'go', 'syllable_path': 'sel_sounds/female/go.mp3', 'syllable_n': None, 'syllable_order_n': 6, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+9.3907 	EXP 	text_4: autoDraw = False
+9.3907 	EXP 	text_4: autoDraw = True
+9.4284 	EXP 	Sound sound_pract_trunc reached end of file
+9.4410 	EXP 	Sound sound_pract_trunc started
+9.7029 	EXP 	Sound sound_pract_trunc reached end of file
+9.7307 	EXP 	Sound sound_pract_trunc reached end of file
+9.7318 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'lo', 'syllable_path': 'sel_sounds/female/lo.mp3', 'syllable_n': None, 'syllable_order_n': 7, 'syllable_pos': None, 'repetition': 2, 'is_target': 0, 'target': 'ma', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+9.7426 	EXP 	text_4: autoDraw = False
+9.7426 	EXP 	text_4: autoDraw = True
+9.7803 	EXP 	Sound sound_pract_trunc reached end of file
+9.7918 	EXP 	Sound sound_pract_trunc started
+10.0613 	EXP 	Sound sound_pract_trunc reached end of file
+10.0770 	EXP 	Sound sound_pract_trunc reached end of file
+10.0776 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'fo', 'syllable_path': 'sel_sounds/female/fo.mp3', 'syllable_n': None, 'syllable_order_n': 8, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+10.0906 	EXP 	text_4: autoDraw = False
+10.0906 	EXP 	text_4: autoDraw = True
+10.1273 	EXP 	Sound sound_pract_trunc reached end of file
+10.1406 	EXP 	Sound sound_pract_trunc started
+10.3118 	EXP 	Sound sound_pract_trunc reached end of file
+10.3296 	EXP 	Sound sound_pract_trunc reached end of file
+10.4301 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'pe', 'syllable_path': 'sel_sounds/female/pe.mp3', 'syllable_n': None, 'syllable_order_n': 9, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+10.4405 	EXP 	text_4: autoDraw = False
+10.4405 	EXP 	text_4: autoDraw = True
+10.4770 	EXP 	Sound sound_pract_trunc reached end of file
+10.4905 	EXP 	Sound sound_pract_trunc started
+10.7524 	EXP 	Sound sound_pract_trunc reached end of file
+10.7771 	EXP 	Sound sound_pract_trunc reached end of file
+10.7778 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'ma', 'syllable_path': 'sel_sounds/female/ma.mp3', 'syllable_n': None, 'syllable_order_n': 20, 'syllable_pos': None, 'repetition': 2, 'is_target': 1, 'target': 'ma', 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+10.7910 	EXP 	text_4: autoDraw = False
+10.7910 	EXP 	text_4: autoDraw = True
+10.8282 	EXP 	Sound sound_pract_trunc reached end of file
+10.8408 	EXP 	Sound sound_pract_trunc started
+11.1009 	EXP 	Sound sound_pract_trunc reached end of file
+11.1097 	EXP 	Sound sound_pract_trunc reached end of file
+11.1272 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'so', 'syllable_path': 'sel_sounds/female/so.mp3', 'syllable_n': None, 'syllable_order_n': 12, 'syllable_pos': None, 'repetition': 2, 'is_target': 0, 'target': 'ma', 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+11.1406 	EXP 	text_4: autoDraw = False
+11.1406 	EXP 	text_4: autoDraw = True
+11.1768 	EXP 	Sound sound_pract_trunc reached end of file
+11.1905 	EXP 	Sound sound_pract_trunc started
+11.4540 	EXP 	Sound sound_pract_trunc reached end of file
+11.4763 	EXP 	Sound sound_pract_trunc reached end of file
+11.4906 	EXP 	text_4: autoDraw = False
+11.4906 	EXP 	Instr_5_text: autoDraw = True
+11.4906 	EXP 	Instr_5_text_2: autoDraw = True
+12.6934 	DATA 	Mouse: Left button down, pos=(433,64)
+12.6966 	DEBUG 	Read csv file with pandas: practice_stream_female_trunc.csv
+12.6973 	DEBUG 	Clearing unnamed columns from practice_stream_female_trunc.csv
+12.6987 	EXP 	Imported practice_stream_female_trunc.csv as conditions, 12 conditions, 10 params
+12.7002 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'ka', 'syllable_path': 'sel_sounds/female/ka.mp3', 'syllable_n': None, 'syllable_order_n': 5, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+12.7011 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+12.7211 	EXP 	Instr_5_text: autoDraw = False
+12.7211 	EXP 	Instr_5_text_2: autoDraw = False
+12.7211 	EXP 	text_2: height = 0.05
+12.7211 	EXP 	text_2: height = 0.05
+12.7211 	EXP 	text_2: height = 0.05
+12.7211 	EXP 	text_2: text = 'The target of this trial is\n\n\n'
+12.7211 	EXP 	target_wind: height = 0.05
+12.7211 	EXP 	target_wind: height = 0.05
+12.7211 	EXP 	target_wind: height = 0.05
+12.7211 	EXP 	target_wind: text = 'ma'
+12.7211 	EXP 	text_2: autoDraw = True
+12.7211 	EXP 	target_wind: autoDraw = True
+12.7237 	EXP 	Sound sound_target_info reached end of file
+12.7378 	EXP 	Sound sound_target_info started
+12.7770 	DATA 	Mouse:  Left button up, pos=(433,64)
+13.0020 	EXP 	Sound sound_target_info reached end of file
+13.0254 	EXP 	Sound sound_target_info reached end of file
+17.7581 	EXP 	Sound sound_pract_trunc_2 reached end of file
+17.7716 	EXP 	Sound sound_pract_trunc_2 started
+17.7702 	EXP 	text_2: autoDraw = False
+17.7702 	EXP 	target_wind: autoDraw = False
+17.7702 	EXP 	text_2: autoDraw = False
+17.7702 	EXP 	target_wind: autoDraw = False
+17.7702 	EXP 	text_7: height = 0.05
+17.7702 	EXP 	text_7: height = 0.05
+17.7702 	EXP 	text_7: height = 0.05
+17.7702 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+17.7702 	EXP 	text_7: autoDraw = True
+18.0328 	EXP 	Sound sound_pract_trunc_2 reached end of file
+18.0428 	EXP 	Sound sound_pract_trunc_2 reached end of file
+18.0584 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'za', 'syllable_path': 'sel_sounds/female/za.mp3', 'syllable_n': None, 'syllable_order_n': 2, 'syllable_pos': None, 'repetition': 2, 'is_target': 0, 'target': 'ma', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+18.0874 	EXP 	text_7: autoDraw = False
+18.0874 	EXP 	text_7: height = 0.05
+18.0874 	EXP 	text_7: height = 0.05
+18.0874 	EXP 	text_7: height = 0.05
+18.0874 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+18.0874 	EXP 	text_7: autoDraw = True
+18.1080 	EXP 	Sound sound_pract_trunc_2 reached end of file
+18.1217 	EXP 	Sound sound_pract_trunc_2 started
+18.3913 	EXP 	Sound sound_pract_trunc_2 reached end of file
+18.4082 	EXP 	Sound sound_pract_trunc_2 reached end of file
+18.4088 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'ma', 'syllable_path': 'sel_sounds/female/ma.mp3', 'syllable_n': None, 'syllable_order_n': 20, 'syllable_pos': None, 'repetition': 2, 'is_target': 1, 'target': 'ma', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+18.4377 	EXP 	text_7: autoDraw = False
+18.4377 	EXP 	text_7: height = 0.05
+18.4377 	EXP 	text_7: height = 0.05
+18.4377 	EXP 	text_7: height = 0.05
+18.4377 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+18.4377 	EXP 	text_7: autoDraw = True
+18.4574 	EXP 	Sound sound_pract_trunc_2 reached end of file
+18.4715 	EXP 	Sound sound_pract_trunc_2 started
+18.7357 	EXP 	Sound sound_pract_trunc_2 reached end of file
+18.7573 	EXP 	Sound sound_pract_trunc_2 reached end of file
+18.7579 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'go', 'syllable_path': 'sel_sounds/female/go.mp3', 'syllable_n': None, 'syllable_order_n': 6, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+18.7870 	EXP 	text_7: autoDraw = False
+18.7870 	EXP 	text_7: height = 0.05
+18.7870 	EXP 	text_7: height = 0.05
+18.7870 	EXP 	text_7: height = 0.05
+18.7870 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+18.7870 	EXP 	text_7: autoDraw = True
+18.8074 	EXP 	Sound sound_pract_trunc_2 reached end of file
+18.8214 	EXP 	Sound sound_pract_trunc_2 started
+19.0864 	EXP 	Sound sound_pract_trunc_2 reached end of file
+19.1072 	EXP 	Sound sound_pract_trunc_2 reached end of file
+19.1078 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'lo', 'syllable_path': 'sel_sounds/female/lo.mp3', 'syllable_n': None, 'syllable_order_n': 3, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+19.1374 	EXP 	text_7: autoDraw = False
+19.1374 	EXP 	text_7: height = 0.05
+19.1374 	EXP 	text_7: height = 0.05
+19.1374 	EXP 	text_7: height = 0.05
+19.1374 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+19.1374 	EXP 	text_7: autoDraw = True
+19.1573 	EXP 	Sound sound_pract_trunc_2 reached end of file
+19.1714 	EXP 	Sound sound_pract_trunc_2 started
+19.4411 	EXP 	Sound sound_pract_trunc_2 reached end of file
+19.4578 	EXP 	Sound sound_pract_trunc_2 reached end of file
+19.4583 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'ma', 'syllable_path': 'sel_sounds/female/ma.mp3', 'syllable_n': None, 'syllable_order_n': 10, 'syllable_pos': None, 'repetition': 1, 'is_target': 1, 'target': 'ma', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+19.4867 	EXP 	text_7: autoDraw = False
+19.4867 	EXP 	text_7: height = 0.05
+19.4867 	EXP 	text_7: height = 0.05
+19.4867 	EXP 	text_7: height = 0.05
+19.4867 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+19.4867 	EXP 	text_7: autoDraw = True
+19.5070 	EXP 	Sound sound_pract_trunc_2 reached end of file
+19.5211 	EXP 	Sound sound_pract_trunc_2 started
+19.7828 	EXP 	Sound sound_pract_trunc_2 reached end of file
+19.8070 	EXP 	Sound sound_pract_trunc_2 reached end of file
+19.8076 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'so', 'syllable_path': 'sel_sounds/female/so.mp3', 'syllable_n': None, 'syllable_order_n': 12, 'syllable_pos': None, 'repetition': 2, 'is_target': 0, 'target': 'ma', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+19.8369 	EXP 	text_7: autoDraw = False
+19.8369 	EXP 	text_7: height = 0.05
+19.8369 	EXP 	text_7: height = 0.05
+19.8369 	EXP 	text_7: height = 0.05
+19.8369 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+19.8369 	EXP 	text_7: autoDraw = True
+19.8574 	EXP 	Sound sound_pract_trunc_2 reached end of file
+19.8712 	EXP 	Sound sound_pract_trunc_2 started
+20.1428 	EXP 	Sound sound_pract_trunc_2 reached end of file
+20.1575 	EXP 	Sound sound_pract_trunc_2 reached end of file
+20.1581 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'pe', 'syllable_path': 'sel_sounds/female/pe.mp3', 'syllable_n': None, 'syllable_order_n': 9, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+20.1865 	EXP 	text_7: autoDraw = False
+20.1865 	EXP 	text_7: height = 0.05
+20.1865 	EXP 	text_7: height = 0.05
+20.1865 	EXP 	text_7: height = 0.05
+20.1865 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+20.1865 	EXP 	text_7: autoDraw = True
+20.2078 	EXP 	Sound sound_pract_trunc_2 reached end of file
+20.2215 	EXP 	Sound sound_pract_trunc_2 started
+20.4855 	EXP 	Sound sound_pract_trunc_2 reached end of file
+20.5115 	EXP 	Sound sound_pract_trunc_2 reached end of file
+20.5128 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'so', 'syllable_path': 'sel_sounds/female/so.mp3', 'syllable_n': None, 'syllable_order_n': 4, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+20.5529 	EXP 	text_7: autoDraw = False
+20.5529 	EXP 	text_7: height = 0.05
+20.5529 	EXP 	text_7: height = 0.05
+20.5529 	EXP 	text_7: height = 0.05
+20.5529 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+20.5529 	EXP 	text_7: autoDraw = True
+20.5555 	EXP 	Sound sound_pract_trunc_2 reached end of file
+20.5695 	EXP 	Sound sound_pract_trunc_2 started
+20.8377 	EXP 	Sound sound_pract_trunc_2 reached end of file
+20.8570 	EXP 	Sound sound_pract_trunc_2 reached end of file
+20.8579 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'za', 'syllable_path': 'sel_sounds/female/za.mp3', 'syllable_n': None, 'syllable_order_n': 1, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+20.8862 	EXP 	text_7: autoDraw = False
+20.8862 	EXP 	text_7: height = 0.05
+20.8862 	EXP 	text_7: height = 0.05
+20.8862 	EXP 	text_7: height = 0.05
+20.8862 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+20.8862 	EXP 	text_7: autoDraw = True
+20.9072 	EXP 	Sound sound_pract_trunc_2 reached end of file
+20.9212 	EXP 	Sound sound_pract_trunc_2 started
+21.1952 	EXP 	Sound sound_pract_trunc_2 reached end of file
+21.2066 	EXP 	Sound sound_pract_trunc_2 reached end of file
+21.2072 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'fo', 'syllable_path': 'sel_sounds/female/fo.mp3', 'syllable_n': None, 'syllable_order_n': 8, 'syllable_pos': None, 'repetition': 1, 'is_target': 0, 'target': 'ma', 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+21.2361 	EXP 	text_7: autoDraw = False
+21.2361 	EXP 	text_7: height = 0.05
+21.2361 	EXP 	text_7: height = 0.05
+21.2361 	EXP 	text_7: height = 0.05
+21.2361 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+21.2361 	EXP 	text_7: autoDraw = True
+21.2570 	EXP 	Sound sound_pract_trunc_2 reached end of file
+21.2706 	EXP 	Sound sound_pract_trunc_2 started
+21.4402 	EXP 	Sound sound_pract_trunc_2 reached end of file
+21.4576 	EXP 	Sound sound_pract_trunc_2 reached end of file
+21.5590 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'trialN': 0, 'sequence_type': 'practice', 'syllable': 'lo', 'syllable_path': 'sel_sounds/female/lo.mp3', 'syllable_n': None, 'syllable_order_n': 7, 'syllable_pos': None, 'repetition': 2, 'is_target': 0, 'target': 'ma', 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+21.6028 	EXP 	text_7: autoDraw = False
+21.6028 	EXP 	text_7: height = 0.05
+21.6028 	EXP 	text_7: height = 0.05
+21.6028 	EXP 	text_7: height = 0.05
+21.6028 	EXP 	text_7: text = <psychopy.visual.text.TextStim object at 0x000001AA8733A5F0>
+21.6028 	EXP 	text_7: autoDraw = True
+21.6055 	EXP 	Sound sound_pract_trunc_2 reached end of file
+21.6195 	EXP 	Sound sound_pract_trunc_2 started
+21.8839 	EXP 	Sound sound_pract_trunc_2 reached end of file
+21.9069 	EXP 	Sound sound_pract_trunc_2 reached end of file
+21.9101 	DEBUG 	Read csv file with pandas: general_stimuli_list_female.csv
+21.9108 	DEBUG 	Clearing unnamed columns from general_stimuli_list_female.csv
+21.9120 	EXP 	Imported general_stimuli_list_female.csv as conditions, 144 conditions, 1 params
+21.9130 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'listers': 'stimuli_lists/structured/male/stream_03.csv', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+21.9165 	DEBUG 	Read csv file with pandas: stimuli_lists/structured/male/stream_03.csv
+21.9176 	DEBUG 	Clearing unnamed columns from stimuli_lists/structured/male/stream_03.csv
+21.9207 	EXP 	Imported stimuli_lists/structured/male/stream_03.csv as conditions, 48 conditions, 10 params
+21.9213 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'trialN': 3, 'sequence_type': 'structured', 'syllable': 'be', 'syllable_path': 'sel_sounds/male/be.mp3', 'syllable_n': 2, 'syllable_order_n': 1, 'syllable_pos': 1, 'repetition': 1, 'is_target': 0, 'target': 'fe', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+21.9219 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+21.9908 	DEBUG 	Saving data for stat_learn_task ExperimentHandler
+22.0015 	INFO 	saved data to C:\Users\fpupillo\OneDrive - Tilburg University\Projects\Language_prediction\prediction_error_language\stat_learn_task\data/008_stat_learn_task_2025-01-14_18h59.28.847.psydat
+22.0407 	INFO 	saved data to 'C:\\Users\\fpupillo\\OneDrive - Tilburg University\\Projects\\Language_prediction\\prediction_error_language\\stat_learn_task\\data/008_stat_learn_task_2025-01-14_18h59.28.847.csv'

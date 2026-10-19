@@ -1,0 +1,23 @@
+12.1881 	INFO 	Loaded monitor calibration from ['2022_04_20 17:54']
+12.2002 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1440, 900]. Using actual size
+12.4632 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb0a1ddc640>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb0a1ddc550>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fb0a1c88070>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.4633 	EXP 	window1: backgroundImage = ''
+12.4633 	EXP 	window1: backgroundFit = 'none'
+12.5220 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+12.5220 	EXP 	window1: recordFrameIntervals = False
+12.7425 	EXP 	window1: recordFrameIntervals = True
+13.5760 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+16.0944 	INFO 	keyboard.Keyboard is using iohub backend.
+16.0945 	INFO 	keyboard.Keyboard is using iohub backend.
+16.0945 	INFO 	keyboard.Keyboard is using iohub backend.
+16.0945 	INFO 	keyboard.Keyboard is using iohub backend.
+16.0945 	INFO 	keyboard.Keyboard is using iohub backend.
+16.0946 	INFO 	keyboard.Keyboard is using iohub backend.
+16.0946 	INFO 	keyboard.Keyboard is using iohub backend.
+16.0946 	EXP 	stat_learn_quest: status = STARTED
+16.0993 	DEPRECATION 	Couldn't find image tilburg-university7000.jpg; check path? (tried: /Users/francescopupillo/Library/CloudStorage/OneDrive-TilburgUniversity/Projects/Language_prediction/prediction_error_language/questionnaires/tilburg-university7000.jpg)
+16.1164 	INFO 	saved data to /Users/francescopupillo/Library/CloudStorage/OneDrive-TilburgUniversity/Projects/Language_prediction/prediction_error_language/questionnaires/data/999_stat_learn_quest_2025-02-02_19h42.39.689.psydat
+16.1167 	INFO 	saved data to '/Users/francescopupillo/Library/CloudStorage/OneDrive-TilburgUniversity/Projects/Language_prediction/prediction_error_language/questionnaires/data/999_stat_learn_quest_2025-02-02_19h42.39.689.csv'

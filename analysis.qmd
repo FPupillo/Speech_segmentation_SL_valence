@@ -1,0 +1,683 @@
+---
+title: "SL_valence"
+format:
+  html:
+    toc: true
+    code-fold: true
+    output-file: index.html
+execute:
+  echo: true
+  warnings: false
+  message: false
+---
+
+## Data are first cleaned and preprocessed 
+
+```{r}
+#| message: false
+#| warning: false
+#| include: false
+#| 
+#| 
+# Start from scratch
+rm(list=ls())
+
+# load libraries
+source("R/0.get_packages.R")
+
+```
+
+```{r}
+#| eval: false
+#| include: false
+#| message: false
+#| warning: false
+
+
+# clean raw data
+source("R/1.data_cleaning.R")
+
+# proprocess raw data to extract valence and SL quantities
+source("R/2.preprocess.R")
+
+# some files return an error - they are incomplete data which were not included
+# in the final participants' pool
+```
+
+
+## Load the cleaned and preprocessed data
+```{r}
+# cleawn the workspace
+rm(list=ls())
+
+# load the long df with SL data
+full_df<-read.csv("group_data/long_df_stat.csv")
+```
+
+## Descriptives
+
+As false alarms, we consider the cases in which participants pressed space when:
+
+- 
+
+  1.  target never appeared
+
+- 
+
+  2.  Target appeared more than 2100 ms before
+
+The proportion is then calculated as the number of key presses over the number of syllables diveded by 48 times 4 (number of targets)
+
+## 
+
+```{r}
+#| echo: false
+
+# select only the task trials
+full_df<-full_df[full_df$sequence_type=="structured" | full_df$sequence_type=="unstructured",]
+
+
+
+paste0("total number of participants = ", length(unique(full_df$participant)))
+
+descriptives<-full_df %>% 
+  dplyr::group_by(participant ) %>%
+  dplyr::summarise(age = first(age), 
+            gender = first(gender),
+            Mean_RT = mean(RTms, na.rm = TRUE), 
+            accuracy = mean(accuracy, na.rm = T), 
+            false_alarms_count= sum(FA, na.rm= T),
+            false_alarm_per = sum(FA==1, na.rm =T)/ (n()/48*4),
+            n_trials = (n()/48*4)
+  ) 
+  #gt() %>%
+  # tab_header(
+  #   title = "Descriptives"
+  # )
+
+# histogrames of age
+ggplot(descriptives, aes(x = age))+
+  geom_histogram(aes(y = after_stat(density)), position = "identity",
+                 fill = "#D55E00",
+                 alpha =.4, bins = 10)+
+  geom_density(linewidth = 1, alpha = .30,  fill = "#D55E00")+
+  theme_classic()
+
+
+```
+
+## 
+
+Delete participants age\>35
+
+```{r}
+full_df<-full_df%>%
+     filter(age<36)
+
+# derive descriptives again
+descriptives<-full_df %>% 
+  dplyr::group_by(participant ) %>%
+  dplyr::summarise(age = first(age), 
+            gender = first(gender),
+            feedback = first(feedback),
+            Mean_RT = mean(RTms, na.rm = TRUE), 
+            accuracy = mean(accuracy, na.rm = T), 
+            false_alarms_count= sum(FA, na.rm= T),
+            valence =  mean(slider_valence_2.response, na.rm = T),
+
+            false_alarm_per = sum(FA==1, na.rm =T)/ (n()/48*4),
+            n_trials = (n()/48*4)
+  ) 
+  
+# histogrames of age
+ggplot(descriptives, aes(x = age))+
+  geom_histogram(aes(y = after_stat(density)), position = "identity",
+                 fill = "#009E73",
+                 alpha =.4, bins = 10)+
+  geom_density(linewidth = 1, alpha = .30,  fill = "#009E73")+
+  theme_classic()
+
+
+```
+
+## 
+
+Descriptives
+
+## 
+
+Recode the variable "gender". This variable has many different values. We need to record only three: Male, female, non-binary, not -reported
+
+```{r}
+
+# unique values gender
+gender_unique<-unique(descriptives$gender)
+
+# it is participant 91
+
+# there are some values that appear to be "FALSE". I need to find the right value
+descriptives$participant[descriptives$gender=="FALSE"]
+
+# it is participant 91. I can tell that is a female
+
+# create a new variable
+descriptives$gender_new<-descriptives$gender
+
+males<-c("Male", "male",   "Men" ,  "man","Male",  "male ", "male", "Man","Man ", "M" )
+
+females<-c("Female" ,  "Woman" ,"female" ,  "woman" ,   "woman " , "women" , "female " ,
+           "femalwe", "vrouw ", "Vrouw", "Vrouw " ,  "vrouw","Female ", "Femail" ,"f" , "v", "FALSE" )
+
+descriptives$gender_new[descriptives$gender_new %in% males ]<-"Male"
+descriptives$gender_new[descriptives$gender_new %in% females ]<-"Female"
+
+non_binary<-c("non-binary", "Bigender (biological male)","nonbinary")
+
+descriptives$gender_new[descriptives$gender_new %in% non_binary ]<-"Non binary"
+
+unique(descriptives$gender_new)
+
+
+# now also for the full_df
+full_df$gender_new<-full_df$gender
+full_df$gender_new[full_df$gender_new %in% males ]<-"Male"
+full_df$gender_new[full_df$gender_new %in% females ]<-"Female"
+
+non_binary<-c("non-binary", "Bigender (biological male)","nonbinary")
+
+full_df$gender_new[full_df$gender_new %in% non_binary ]<-"Non binary"
+
+unique(full_df$gender_new)
+```
+
+## Accuracy and sd
+
+```{r}
+
+full_df %>% 
+  dplyr::group_by(participant ) %>%
+  dplyr::summarise(age = first(age), 
+            gender_new = first(gender_new),
+            feedback=first(feedback),
+            Mean_RT = mean(RTms, na.rm = TRUE), 
+            accuracy = mean(accuracy, na.rm = T), 
+            false_alarms_count= sum(FA, na.rm= T),
+            false_alarm_per = sum(FA==1, na.rm =T)/ (n()/48*4),
+            n_trials = (n()/48*4)
+  ) %>%
+
+  group_by(feedback)%>%
+
+  summarise(n_participants = n_distinct(participant),
+            mean_age = mean(age, na.rm=T), 
+            sd_age = sd(age, na.rm=T),
+        n_male   = sum(gender_new == "Male" ,   na.rm = TRUE),
+        n_female = sum(gender_new == "Female", na.rm = TRUE),
+        n_non_binary = sum(gender_new == "Non binary", na.rm = TRUE),
+    #feedback_cond = sum(feedback ==1, na.rm = T),
+    age_min  = min(age, na.rm = TRUE),
+    age_max  = max(age, na.rm = TRUE))  %>% 
+  gt() %>%
+   tab_header(
+     title =  "participants"
+   )
+
+
+```
+historgrams of accuracy and false alarms
+
+```{r}
+ggplot(descriptives, aes(x = accuracy))+
+  geom_histogram() +
+  theme_classic()+
+  ggtitle("accuracy distribution")
+
+
+```
+
+## 
+
+```{r}
+ggplot(descriptives, aes(x = false_alarm_per))+
+  geom_histogram() +
+  theme_classic()+
+  ggtitle("false alarms % distribution")
+```
+
+## 
+
+Select only participants with accuracy above mean - 2.5 SD and false alarm percentage below mean + 2.5 sd
+
+```{r}
+
+
+
+cutoff_accuracy<-mean(descriptives$accuracy, na.rm=T) - 2.5*sd(descriptives$accuracy, na.rm=T)
+
+paste0("cutoff for accuracy is ", cutoff_accuracy)
+
+excl_acc<-descriptives$participant[descriptives$accuracy<cutoff_accuracy]
+
+# select participants
+paste0 ("participants excluded for low accuracy are ", 
+nrow(descriptives[descriptives$accuracy< cutoff_accuracy,]))
+
+
+# now exclusion for false alarms
+cutoff_false_alarm<-mean(descriptives$false_alarm_per, na.rm=T) + 2.5*sd(descriptives$false_alarm_per, na.rm=T)
+paste0("cutoff for false alarm is ", cutoff_false_alarm)
+
+# select participants
+paste0 ("participants excluded for high false alarms are ", 
+nrow(descriptives[descriptives$false_alarm_per> cutoff_false_alarm,]))
+
+excl_fa<-descriptives$participant[descriptives$false_alarm_per>cutoff_false_alarm]
+
+paste0 ("total participants excluded for low accuracy and high false alarms are ", 
+
+length(unique(c(excl_acc, excl_fa))))
+
+
+
+```
+
+## 
+
+Number of remaining participants by feedback condition
+
+```{r}
+full_df<-full_df[!full_df$participant%in% c(excl_acc, excl_fa),]
+```
+# now check if there are participants who did not complete the all trials
+
+```{R}
+#| warning: false
+#| echo: false
+
+# Before splitting the data into valence data and statistical learning data, 
+# we need to create the trial number for the valence responses
+
+# first, rename the trial number - recreate it so that it reflects the 
+full_df <- full_df %>%
+  group_by(participant) %>%
+  dplyr::mutate(trial_new = ceiling(row_number() / 49)) %>% #this also includes the SAM - this is why we have 49 trials instead of 48
+  ungroup()
+
+ 
+# check how many sequences pwer participant per condition
+trial_full<-full_df%>%
+    filter(is_target==1)%>%
+  group_by(participant, sequence_type) %>%
+  tally()
+
+trial_full$num_trials<-trial_full$n/4
+
+# check the unique trials
+unique_trial_num<-unique(trial_full$num_trials)
+
+# select those different from 72 and 18
+unique_trial_num<-unique_trial_num[unique_trial_num!=72 & unique_trial_num!=18]
+
+# select all the participants who had different numbers of trials
+incompl_trials<-which(trial_full$num_trials%in%unique_trial_num)
+
+# participants with incomplete trials
+part_incompl<-unique(trial_full$participant[incompl_trials])
+
+# delete those participants
+full_df<-full_df[!full_df$participant %in% part_incompl, ]
+
+print(paste0(length(part_incompl), " participants were excluded because did not complete all the trials (72 structured and 18 unstructured)"))
+```
+
+```{r}
+full_df[!is.na(full_df$feedback),] %>% 
+  dplyr::group_by(participant ) %>%
+  dplyr::summarise(age = first(age), 
+            gender_new = first(gender_new),
+            feedback=first(feedback),
+            Mean_RT = mean(RTms, na.rm = TRUE), 
+            accuracy = mean(accuracy, na.rm = T), 
+            false_alarms_count= sum(FA, na.rm= T),
+            false_alarm_per = sum(FA==1, na.rm =T)/ (n()/48*4),
+            n_trials = (n()/48*4)
+  ) %>%
+
+  group_by(feedback)%>%
+
+  summarise(n_participants = n_distinct(participant),
+            mean_age = mean(age, na.rm=T), 
+            sd_age = sd(age, na.rm=T),
+        n_male   = sum(gender_new == "Male" ,   na.rm = TRUE),
+        n_female = sum(gender_new == "Female", na.rm = TRUE),
+        n_non_binary = sum(gender_new == "Non binary", na.rm = TRUE),
+    #feedback_cond = sum(feedback ==1, na.rm = T),
+    age_min  = min(age, na.rm = TRUE),
+    age_max  = max(age, na.rm = TRUE),
+    Mean_RT = mean(Mean_RT, na.rm = TRUE), 
+            accuracy = mean(accuracy, na.rm = T), 
+            false_alarms_per= first(false_alarm_per)) %>%
+  gt() %>%
+   tab_header(
+     title =  "participants"
+   )
+
+```
+## 
+
+Is the difference in accuracy and RT statistically significant?
+
+```{r}
+mod_rt<-lmer(RTms~feedback + (1|participant),
+  data = full_df %>% 
+  filter(!participant %in% c(excl_acc, excl_fa) & accuracy ==1))
+
+summary(mod_rt)
+  
+
+mod_rt2<-lm(Mean_RT~feedback , data = descriptives)
+summary(mod_rt2)
+anova(mod_rt2)
+```
+
+## 
+
+```{r}
+
+
+mod_accuracy2<-lm(accuracy~feedback , data = descriptives)
+summary(mod_accuracy2)
+anova(mod_accuracy2)
+```
+
+## 
+
+False alarms
+
+```{r}
+
+mod_fa2<-lm(false_alarm_per~feedback , data = descriptives)
+summary(mod_fa2)
+anova(mod_fa2)
+```
+
+## 
+
+valence
+
+```{r}
+
+mod_val2<-lm(valence~feedback , data = descriptives)
+summary(mod_val2)
+anova(mod_val2)
+```
+
+```{R}
+# valence and arousal
+full_df_val<-full_df[!is.na(full_df$slider_valence_2.response),]
+
+# select only accuracy =1
+full_df<-full_df[full_df$accuracy==1,]
+
+# get trial number 
+full_df$trial_num<-full_df$trialN.1
+
+# check how many trials pwer participant per condition
+trial_val<-full_df_val%>%
+  group_by(participant, sequence_type) %>%
+  tally()
+
+unique(trial_val$n)
+
+# we only have 72 and 18
+
+# how many participants left?
+paste0("we have ", length(unique(full_df$participant[
+  !is.na(full_df$participant)
+])), " participants left")
+
+```
+
+## is there a difference in age due to condition assignment?
+
+```{r}
+
+
+
+descriptives<-descriptives[!descriptives$participant%in% c(excl_acc, excl_fa),]
+
+descriptives<-descriptives[!descriptives$participant %in% part_incompl, ]
+
+
+mod_age2<-lm(age~feedback,  data = descriptives)
+
+summary(mod_age2)
+anova(mod_age2)
+```
+
+## 
+Create valence datasets
+```{r}
+# calculate mean and standard deviation
+  valence_summary_val<- summarySEwithin(full_df_val,
+                                          measurevar = c("slider_valence_2.response"),
+                                          withinvars = c("target_pos", 
+                                                         "sequence_type" ), 
+                                          betweenvars = c("feedback", "participant"),
+                                          idvar = "participant", 
+                                          na.rm = T)
+  
+# val diff is the difference between the measure and the baseline
+  valence_summary_val_diff<- summarySEwithin(full_df_val,
+                                        measurevar = c("val_diff"),
+                                        withinvars = c("target_pos", 
+                                                       "sequence_type" ), 
+                                        betweenvars = c("feedback", "participant"),
+                                        idvar = "participant", 
+                                        na.rm = T)
+  
+```
+
+## Random structure model selection
+```{r}
+#| eval: false
+#| include: false
+
+source("R/random_structure_model_selection.R")
+
+```
+
+## Statistical learning main results
+```{r}
+# load the data
+load("mainSLmodels.Rdata")
+
+# stat_learn_mod_compl_syll_nointer_wcov<-lmer(RTms ~ 1+target_pos*target_rep*feedback2+syllable_order_n_z+
+#                    (1+target_pos+target_rep+syllable_order_n_z|participant ) ,
+#                  data = full_df[ 
+#                    full_df$sequence_type=="structured" ,], 
+#                  control = lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1000000000)), 
+#                  REML=T)
+
+Anova(stat_learn_mod_compl_syll_nointer_wcov, type =2)
+summary(stat_learn_mod_compl_syll_nointer_wcov)
+```
+
+## Break down the interaction
+```{r}
+emm_sl<-emmeans(stat_learn_mod_compl_syll_nointer_wcov, ~ target_pos | target_rep)
+
+pairs(emm_sl, adjust = "bonferroni")
+
+contrast(
+  emm_sl,
+ method = list(linear = c(-1, 0, 1)), 
+ adjust = "bonferroni"
+
+)
+
+```
+## SL results plot
+```{r}
+emm_sl_df<-as.data.frame(emm_sl)
+
+sl_plot<-ggplot(emm_sl_df, aes(x = target_pos, y = emmean, color = target_pos,  group = 1)) +
+  geom_point(size = 4) +
+  geom_line(size = 0.5, color = "black") +
+  geom_errorbar(aes(ymin = emmean-SE, ymax = emmean+SE), width = 0.1, size=2) +
+  labs(
+    x = "Triplet position",
+    y = "RT (ms)",
+    color = "Triplet position"
+  )+
+  ggtitle("Word presentation")+
+  theme_classic()+
+  facet_grid(.~target_rep)+
+theme(legend.position = "none")+
+  theme(
+    plot.title = element_text(size = 35, hjust = 0.5, face = "plain"),
+    axis.title.x = element_text(size = 35),
+    axis.title.y = element_text(size = 35),
+    axis.text=element_text(size=30),
+    legend.text=element_text(size=rel(2)),
+    legend.title = element_text(size=rel(2)), 
+    strip.text.x = element_text(size=30)
+  )
+  
+sl_plot
+```
+## Structured vs random streams
+```{r}
+# determine the random structure of the the model
+# source("R/4.structured_vs_unstructured_random_effects_model_selection.R")
+
+# stat_learn_mod_comp_str_full_rand_wpred_wcov<-lmer(RTms ~ 1+sequence_type_f*feedback2+syllable_order_n_z+trial_num_z+
+#                    (1+sequence_type_f+syllable_order_n_z+trial_num_z|participant ) ,
+#               data = full_df[is.na(full_df$target_pos) |full_df$target_pos==3, ],
+#                  control = lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e5)), 
+#                  REML=F)
+
+summary(stat_learn_mod_comp_str_full_rand_wpred_wcov)
+Anova(stat_learn_mod_comp_str_full_rand_wpred_wcov, type =2)
+```
+## Plot
+```{r}
+# with sequence type now for plotting
+# stat_learn_mod_comp_str_full_rand_wpred_wcov2<-lmer(RTms ~ 1+sequence_type*feedback2+syllable_order_n_z+trial_num_z+
+#                    (1+sequence_type+syllable_order_n_z+trial_num_z|participant ) ,
+#               data = full_df[is.na(full_df$target_pos) |full_df$target_pos==3, ],
+#                  control = lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e5)), 
+#                  REML=F)
+
+
+
+# create the estimated marginal means for the contrast
+emm_struct<-emmeans(stat_learn_mod_comp_str_full_rand_wpred_wcov2, ~ sequence_type )
+
+pairs(emm_struct)
+
+emm_struct_df<-as.data.frame(emm_struct)
+
+# rename sequence type from unstructured to random
+emm_struct_df$sequence_type2<-ifelse(emm_struct_df$sequence_type=="unstructured",
+                                     "random", "structured")
+struct_plot<-ggplot(emm_struct_df, aes(x = sequence_type2, y = emmean, color = sequence_type2,  group = 1)) +
+  geom_point(size = 4) +
+  geom_line(size = 0.5, color = "black") +
+  geom_errorbar(aes(ymin = asymp.LCL, ymax = asymp.UCL), width = 0.1, size=2) +
+  labs(
+    x = "Sequence type",
+    y = "RT (ms)",
+    color = "Sequence type"
+  )+
+  #ggtitle("Target repetition")+
+  theme_classic()+
+  scale_color_discrete(labels = c("Random", "Structured")) +
+theme(legend.position = "none")+
+  theme(
+    #plot.title = element_text(size = 35, hjust = 0.5, face = "plain"),
+    axis.title.x = element_text(size = 35),
+    axis.title.y = element_text(size = 35),
+    axis.text=element_text(size=30),
+    legend.text=element_text(size=rel(2)),
+    legend.title = element_text(size=rel(2)), 
+    strip.text.x = element_text(size=30)
+  )
+
+struct_plot
+
+slplots_comb<-ggpubr::ggarrange(sl_plot, struct_plot, ncol = 2,   labels = c("a)", "b)" ), 
+                  font.label = list(size = 38, face = "bold"), 
+                   label.x = 0.02 , label.y = 0.98) # position of tags in each panel (0–1))
+
+ggsave(filename = "figures/SL_plots_combined.png", width= 22, height=10, dpi = 300)
+
+```
+## check the facilitation effect for unstructured strams
+
+```{r}
+facil_effect<-lmer(RTms ~ 1+target_rep*sequence_type+syllable_order_n_z+trial_new+
+                   (1+target_rep*sequence_type++syllable_order_n_z+trial_new|participant ) ,
+                 data = full_df[is.na(full_df$target_pos) |full_df$target_pos!=1,], 
+                 control = lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1000000000)), 
+                 REML=T)
+
+summary(facil_effect)
+Anova(facil_effect, type = 2)
+
+# only in the unstructured
+unstructured_streams_fact_effect<-lmer(RTms ~ 1+target_rep+syllable_order_n_z+
+                   (1+target_rep+syllable_order_n_z|participant ) ,
+                 data = full_df[ 
+                   full_df$sequence_type=="unstructured"  ,], 
+                 control = lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1000000000)), 
+                 REML=T)
+
+
+summary(unstructured_streams_fact_effect)
+Anova(unstructured_streams_fact_effect, type =2)
+
+# test for linearity
+fac_unstruct <- emmeans(facil_effect, ~ target_rep|sequence_type)
+
+pairs(fac_unstruct, adjust = "bonferroni")
+contrast(
+  fac_unstruct,
+ method = list(linear = c(-0.5,-0.25 , 0.25, 0.5)), 
+ adjust = "fdr"
+
+)
+
+# plot
+emm_facildf<-as.data.frame(fac_unstruct)
+
+facil_plot<-ggplot(emm_facildf, aes(x = target_rep, y = emmean, color = sequence_type,  group = sequence_type)) +
+  geom_point(size = 4) +
+  geom_line(size = 0.5) +
+  geom_errorbar(aes(ymin = asymp.LCL, ymax = asymp.UCL), width = 0.1, size=2) +
+  labs(
+    x = "Sequence type",
+    y = "RT (ms)",
+    color = "Sequence type"
+  )+
+  #ggtitle("Target repetition")+
+  theme_classic()+
+#theme(legend.position = "none")+
+  theme(
+    #plot.title = element_text(size = 35, hjust = 0.5, face = "plain"),
+    axis.title.x = element_text(size = 35),
+    axis.title.y = element_text(size = 35),
+    axis.text=element_text(size=30),
+    legend.text=element_text(size=rel(2)),
+    legend.title = element_text(size=rel(2)), 
+    strip.text.x = element_text(size=30)
+  )
+
+facil_plot
+```
+
+
+
+
+
+

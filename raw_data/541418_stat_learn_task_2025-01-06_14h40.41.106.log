@@ -1,0 +1,62 @@
+4.0603 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+4.0612 	INFO 	Loaded monitor calibration from ['2025_01_06 13:09']
+5.1624 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002CE1549E650>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002CE1549E5F0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002CE1555BC10>, multiSample=False, name='window1', numSamples=2, pos=[560.0, 240.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.1625 	EXP 	window1: backgroundImage = ''
+5.1625 	EXP 	window1: backgroundFit = 'none'
+5.1920 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.1930 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.1940 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.1953 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.1964 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.1971 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.1982 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.1995 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.1999 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2003 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2013 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2022 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2031 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2040 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2048 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2058 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2067 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2073 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2079 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2091 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2096 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2126 	DEBUG 	Uploading Texture Font fontname to graphics card
+5.2264 	DEBUG 	Upload of Texture Font fontname complete
+5.2459 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2471 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2483 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.2486 	DEBUG 	Uploading Texture Font fontname to graphics card
+5.2600 	DEBUG 	Upload of Texture Font fontname complete
+5.2623 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+5.2623 	EXP 	window1: recordFrameIntervals = False
+5.4339 	EXP 	window1: recordFrameIntervals = True
+5.6173 	EXP 	Screen (0) actual frame rate measured at 60.25Hz
+5.6174 	EXP 	window1: recordFrameIntervals = False
+5.6446 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.6455 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.6469 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.6487 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.6501 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.6515 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.6522 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.6534 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.6547 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.6559 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.6562 	DEBUG 	Uploading Texture Font fontname to graphics card
+5.6570 	DEBUG 	Upload of Texture Font fontname complete
+5.6812 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+7.1783 	INFO 	keyboard.Keyboard is using iohub backend.
+7.3856 	INFO 	keyboard.Keyboard is using iohub backend.
+7.3857 	EXP 	stat_learn_task: status = STARTED
+7.4354 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Info about the experiment', units='height', win=Window(...), wrapWidth=1)
+7.6344 	EXP 	Sound Syllable set volume 1.000
+7.6355 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+7.6426 	EXP 	Created text_1_SAM = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_1_SAM', opacity=1, ori=0.0, pos=array([0.   , 0.425]), rgb=UNKNOWN, text='How do you feel right now?', units='height', win=Window(...), wrapWidth=1)
+7.6435 	DEPRECATION 	Couldn't find image sam image.png; check path? (tried: C:\Users\fpupillo\OneDrive - Tilburg University\Projects\Language_prediction\prediction_error_language\stat_learn_task\sam image.png)
+7.7049 	DEBUG 	Saving data for stat_learn_task ExperimentHandler
+7.7070 	INFO 	saved data to C:\Users\fpupillo\OneDrive - Tilburg University\Projects\Language_prediction\prediction_error_language\stat_learn_task\data/541418_stat_learn_task_2025-01-06_14h40.41.106.psydat
+7.7098 	INFO 	saved data to 'C:\\Users\\fpupillo\\OneDrive - Tilburg University\\Projects\\Language_prediction\\prediction_error_language\\stat_learn_task\\data/541418_stat_learn_task_2025-01-06_14h40.41.106.csv'

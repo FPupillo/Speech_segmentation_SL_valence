@@ -1,0 +1,4 @@
+﻿Intro.started,Intro.stopped,participant,age,gender,handedness,date,expName,psychopyVersion,OS,frameRate,Welcome_message.started,Welcome_message.stopped,mouse.x,mouse.y,mouse.leftButton,mouse.midButton,mouse.rightButton,mouse.time,Instr_1.started
+0.0002,0.0005,01,23,Female ,right ,2025-03-06_11h21.55.960,stat_learn_task,2024.2.4,Win32,59.52380952,,,,,,,,,
+,,01,23,Female ,right ,2025-03-06_11h21.55.960,stat_learn_task,2024.2.4,Win32,59.52380952,0.0007,17.2417,[-0.0065753257437928085],[-0.18410958068011557],[1],[0],[0],[17.237599999997766],
+,,01,23,Female ,right ,2025-03-06_11h21.55.960,stat_learn_task,2024.2.4,Win32,59.52380952,,,,,,,,,17.2418

@@ -1,0 +1,3 @@
+﻿block,thisN,thisTrialN,thisRepN,trialN,syllable,block_loop.thisRepN,block_loop.thisTrialN,block_loop.thisN,block_loop.thisIndex,syllable_loop.thisRepN,syllable_loop.thisTrialN,syllable_loop.thisN,syllable_loop.thisIndex,thisRow.t,notes,Intro.started,text.started,Intro.stopped,participant,session,date,expName,psychopyVersion,frameRate,expStart,
+,,,,,,,,,,,,,,,,0.017132900014985353,0.027819100010674447,1.0137174999981653,704939,001,2025-01-06_14h41.30.381,stat_learn_task,2024.2.4,60.20378983142544,2025-01-06 14h41.35.069037 +0100,
+stimuli_lists/block_01.csv,0,0,0,1,sel_sounds/female_le.mp3,0,0,0,0,0,0,0,0,,,,,,,,,,,,,
