@@ -614,7 +614,7 @@ ggsave(filename = "figures/SL_plots_combined.png",
        plot = slplots_comb, width= 22, height=10, dpi = 300)
 
 ```
-## check the facilitation effect for unstructured strams
+## check the facilitation effect for unstructured streams
 
 ```{r}
 # facil_effect<-lmer(RTms ~ 1+target_rep*sequence_type+syllable_order_n_z+trial_new+
