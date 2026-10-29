@@ -26,6 +26,16 @@ rm(list=ls())
 # load libraries
 source("R/0.get_packages.R")
 
+# initialize the environment to create a library of packages and their current
+# version
+renv::init(bare = TRUE)
+
+# create a snapshot of the packages used and their version
+renv::snapshot()
+
+# to recreate the environemnt, with the packages and their dependencies, 
+# run "renv::restore()"
+
 ```
 
 ```{r}
@@ -225,7 +235,7 @@ full_df %>%
 
 
 ```
-historgrams of accuracy and false alarms
+Histograms of accuracy and false alarms
 
 ```{r}
 ggplot(descriptives, aes(x = accuracy))+
@@ -357,26 +367,38 @@ full_df[!is.na(full_df$feedback),] %>%
     age_max  = max(age, na.rm = TRUE),
     Mean_RT = mean(Mean_RT, na.rm = TRUE), 
             accuracy = mean(accuracy, na.rm = T), 
-            false_alarms_per= first(false_alarm_per)) %>%
+            false_alarms_per= first(false_alarm_per))  %>%
   gt() %>%
    tab_header(
      title =  "participants"
    )
-
 ```
 ## 
 
-Is the difference in accuracy and RT statistically significant?
+Is the difference in age between the feedback and no-feedback group?
 
 ```{r}
-mod_rt<-lmer(RTms~feedback + (1|participant),
-  data = full_df %>% 
-  filter(!participant %in% c(excl_acc, excl_fa) & accuracy ==1))
 
-summary(mod_rt)
-  
+# create a group level analysis
+group_level_feedback<-full_df[!is.na(full_df$feedback),] %>% 
+  dplyr::group_by(participant, feedback ) %>%
+  dplyr::summarise(age = first(age), 
+            gender_new = first(gender_new),
+            Mean_RT = mean(RTms, na.rm = TRUE), 
+            accuracy = mean(accuracy, na.rm = T), 
+            age = mean(age, na.rm=T),
+            false_alarms_count= sum(FA, na.rm= T),
+            false_alarm_per = sum(FA==1, na.rm =T)/ (n()/48*4),
+            n_trials = (n()/48*4),
+           valence = mean(slider_valence_2.response, na.rm = T), 
+           arousal = mean(slider_arousal.response, na.rm=T))
+# do a t test
+mod_age<-lm(age~feedback , data = group_level_feedback)
+summary(mod_age)
+anova(mod_age)
 
-mod_rt2<-lm(Mean_RT~feedback , data = descriptives)
+mod_rt2<-lm(Mean_RT~feedback , data = group_level_feedback)
+
 summary(mod_rt2)
 anova(mod_rt2)
 ```

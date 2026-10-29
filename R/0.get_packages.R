@@ -2,6 +2,8 @@ options(repos = c(CRAN = "https://cloud.r-project.org"))
 
 
 required_packages <- c("ggplot2",
+                       "ggpubr",
+                       "renv",
                        "dplyr", 
                        "lme4",
                        "lmerTest", 
@@ -12,7 +14,8 @@ required_packages <- c("ggplot2",
                        "gt",  
                        "sjPlot", # to use "tab_model"
                        "effectsize", # to  get the effect sizes
-                       "emmeans" # estimated margina.l means
+                       "emmeans", # estimated margina.l means, 
+                       "yaml" # to scan dependencies within quarto
 
 )
 

@@ -1,0 +1,7 @@
+.quarto/
+docs/
+figures/
+group_data/
+main/
+raw_data/
+raw_data_2
