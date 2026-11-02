@@ -23,20 +23,20 @@ execute:
 # Start from scratch
 rm(list=ls())
 
+# initialize the environment to create a library of packages and their current
+# version
+# renv::init(bare = TRUE)
+
 # load libraries
 source("R/0.get_packages.R")
 
-# initialize the environment to create a library of packages and their current
-# version
-renv::init(bare = TRUE)
-
 # create a snapshot of the packages used and their version
-renv::snapshot()
+# renv::snapshot()
 
 # to recreate the environemnt, with the packages and their dependencies, 
 # run "renv::restore()"
-
 ```
+
 
 ```{r}
 #| eval: false
@@ -58,8 +58,7 @@ source("R/2.preprocess.R")
 
 ## Load the cleaned and preprocessed data
 ```{r}
-# cleawn the workspace
-rm(list=ls())
+
 
 # load the long df with SL data
 full_df<-read.csv("group_data/long_df_stat.csv")
@@ -235,7 +234,8 @@ full_df %>%
 
 
 ```
-Histograms of accuracy and false alarms
+## Accuracy and False alarms
+### Histograms of accuracy and false alarms
 
 ```{r}
 ggplot(descriptives, aes(x = accuracy))+
@@ -255,7 +255,7 @@ ggplot(descriptives, aes(x = false_alarm_per))+
   ggtitle("false alarms % distribution")
 ```
 
-## 
+### Filter participants
 
 Select only participants with accuracy above mean - 2.5 SD and false alarm percentage below mean + 2.5 sd
 
@@ -356,7 +356,7 @@ full_df[!is.na(full_df$feedback),] %>%
 
   group_by(feedback)%>%
 
-  summarise(n_participants = n_distinct(participant),
+  dplyr::summarise(n_participants = n_distinct(participant),
             mean_age = mean(age, na.rm=T), 
             sd_age = sd(age, na.rm=T),
         n_male   = sum(gender_new == "Male" ,   na.rm = TRUE),
@@ -373,18 +373,49 @@ full_df[!is.na(full_df$feedback),] %>%
      title =  "participants"
    )
 ```
-## 
+## now I want to count the number of streams for structured and unstructured
+```{r}
+sequence_part<-full_df %>%
+  dplyr::count(participant, sequence_type, name = "count") %>%
+  mutate(count_per_42 = count / 42)
+```
 
-Is the difference in age between the feedback and no-feedback group?
 
+## Differences between feedback and no-feedback groups
+
+### Descriptives including feedback group
+```{r}
+full_df[!is.na(full_df$feedback),] %>% 
+  dplyr::group_by(feedback ) %>%
+  dplyr::summarise(Mean_age = first(age), 
+            gender_new = first(gender_new),
+            feedback=first(feedback),
+            Mean_RT = mean(RTms, na.rm = TRUE), 
+            accuracy = mean(accuracy, na.rm = T), 
+            false_alarms_count= sum(FA, na.rm= T),
+            false_alarm_per = sum(FA==1, na.rm =T)/ (n()/48*4),
+            n_trials = (n()/48*4), 
+             valence = mean(slider_valence_2.response, na.rm = T), 
+           arousal = mean(slider_arousal.response, na.rm=T)) %>%
+
+  gt() %>%
+   tab_header(
+     title =  "participants"
+   )
+  
+```
+
+
+### Age differences
 ```{r}
 
-# create a group level analysis
+# create a group level dataset
 group_level_feedback<-full_df[!is.na(full_df$feedback),] %>% 
   dplyr::group_by(participant, feedback ) %>%
   dplyr::summarise(age = first(age), 
             gender_new = first(gender_new),
             Mean_RT = mean(RTms, na.rm = TRUE), 
+            feedback = first(feedback),
             accuracy = mean(accuracy, na.rm = T), 
             age = mean(age, na.rm=T),
             false_alarms_count= sum(FA, na.rm= T),
@@ -392,58 +423,42 @@ group_level_feedback<-full_df[!is.na(full_df$feedback),] %>%
             n_trials = (n()/48*4),
            valence = mean(slider_valence_2.response, na.rm = T), 
            arousal = mean(slider_arousal.response, na.rm=T))
+
+
 # do a t test
 mod_age<-lm(age~feedback , data = group_level_feedback)
 summary(mod_age)
 anova(mod_age)
 
-mod_rt2<-lm(Mean_RT~feedback , data = group_level_feedback)
 
-summary(mod_rt2)
-anova(mod_rt2)
 ```
 
-## 
-
-```{r}
-
-
-mod_accuracy2<-lm(accuracy~feedback , data = descriptives)
-summary(mod_accuracy2)
-anova(mod_accuracy2)
+### Overall response time differences
+```{R}
+mod_RT<-lm(Mean_RT~feedback , data = group_level_feedback)
+summary(mod_RT)
+anova(mod_RT)
 ```
 
-## 
-
-False alarms
-
-```{r}
-
-mod_fa2<-lm(false_alarm_per~feedback , data = descriptives)
-summary(mod_fa2)
-anova(mod_fa2)
+### Target detection accuracy
+```{R}
+mod_accuracy<-lm(accuracy~feedback , data = group_level_feedback)
+summary(mod_accuracy)
+anova(mod_accuracy)
 ```
 
-## 
-
-valence
-
-```{r}
-
-mod_val2<-lm(valence~feedback , data = descriptives)
-summary(mod_val2)
-anova(mod_val2)
+### False alarms
+```{R}
+mod_fa_per<-lm(false_alarm_per~feedback , data = group_level_feedback)
+summary(mod_fa_per)
+anova(mod_fa_per)
 ```
+### Valence
 
 ```{R}
+
 # valence and arousal
 full_df_val<-full_df[!is.na(full_df$slider_valence_2.response),]
-
-# select only accuracy =1
-full_df<-full_df[full_df$accuracy==1,]
-
-# get trial number 
-full_df$trial_num<-full_df$trialN.1
 
 # check how many trials pwer participant per condition
 trial_val<-full_df_val%>%
@@ -481,6 +496,8 @@ anova(mod_age2)
 ## 
 Create valence datasets
 ```{r}
+
+
 # calculate mean and standard deviation
   valence_summary_val<- summarySEwithin(full_df_val,
                                           measurevar = c("slider_valence_2.response"),
@@ -506,15 +523,24 @@ Create valence datasets
 #| eval: false
 #| include: false
 
-source("R/random_structure_model_selection.R")
+# the file for comparing null models for the analysis of Statistical learning
+source("R/3.SL_random_effects_model_selection.R")
 
 ```
 
 ## Statistical learning main results
 ```{r}
-# load the data
-load("mainSLmodels.Rdata")
+# load the data - apart from the valence data
+# create a temporary environment
 
+
+# save the new object
+#save.image("mainSLmodels.Rdata")
+
+# save the new environment (")
+base::load("mainSLmodels.Rdata")
+
+# the model used: 
 # stat_learn_mod_compl_syll_nointer_wcov<-lmer(RTms ~ 1+target_pos*target_rep*feedback2+syllable_order_n_z+
 #                    (1+target_pos+target_rep+syllable_order_n_z|participant ) ,
 #                  data = full_df[ 

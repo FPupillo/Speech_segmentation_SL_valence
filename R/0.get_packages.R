@@ -2,6 +2,7 @@ options(repos = c(CRAN = "https://cloud.r-project.org"))
 
 
 required_packages <- c("ggplot2",
+                       "tidyr",
                        "ggpubr",
                        "renv",
                        "dplyr", 
