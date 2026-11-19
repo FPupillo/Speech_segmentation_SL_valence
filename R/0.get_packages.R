@@ -11,6 +11,7 @@ required_packages <- c("ggplot2",
                        "car", 
                        "Rmisc", 
                        "reshape2",
+                       "ggeffects",                       
                        "knitr",
                        "gt",  
                        "sjPlot", # to use "tab_model"

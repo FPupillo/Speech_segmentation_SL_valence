@@ -35,6 +35,19 @@ source("R/0.get_packages.R")
 
 # to recreate the environemnt, with the packages and their dependencies, 
 # run "renv::restore()"
+
+# params for printing
+params<-  # add personalized parmaeters
+    theme(
+    plot.title = element_text(size = 30),
+    axis.title.x = element_text(size = 35),
+    axis.title.y = element_text(size = 35),
+    axis.text=element_text(size=30),
+    legend.text=element_text(size=rel(2)),
+    legend.title = element_text(size=rel(2)), 
+    strip.text.x = element_text(size=30)
+  )
+
 ```
 
 
@@ -82,6 +95,7 @@ The proportion is then calculated as the number of key presses over the number o
 
 ```{r}
 #| echo: false
+#| warning: false
 
 # select only the task trials
 full_df<-full_df[full_df$sequence_type=="structured" | full_df$sequence_type=="unstructured",]
@@ -408,6 +422,7 @@ full_df[!is.na(full_df$feedback),] %>%
 
 ### Age differences
 ```{r}
+#| warning: false
 
 # create a group level dataset
 group_level_feedback<-full_df[!is.na(full_df$feedback),] %>% 
@@ -496,6 +511,7 @@ anova(mod_age2)
 ## 
 Create valence datasets
 ```{r}
+#| warning: false
 
 
 # calculate mean and standard deviation
@@ -530,15 +546,23 @@ source("R/3.SL_random_effects_model_selection.R")
 
 ## Statistical learning main results
 ```{r}
-# load the data - apart from the valence data
-# create a temporary environment
-
-
 # save the new object
 #save.image("mainSLmodels.Rdata")
 
-# save the new environment (")
+# because we want to prevent the valence dataset from being overwritten, 
+# we can create a temporary object
+full_df_val_temp<-full_df_val
+
+
 base::load("mainSLmodels.Rdata")
+
+# retrieve the original valence dataset
+full_df_val<-full_df_val_temp
+
+# delete the temporary one
+rm(full_df_val_temp)
+
+# run the model
 
 # the model used: 
 # stat_learn_mod_compl_syll_nointer_wcov<-lmer(RTms ~ 1+target_pos*target_rep*feedback2+syllable_order_n_z+
@@ -574,6 +598,8 @@ sl_plot<-ggplot(emm_sl_df, aes(x = target_pos, y = emmean, color = target_pos,  
   geom_point(size = 4) +
   geom_line(size = 0.5, color = "black") +
   geom_errorbar(aes(ymin = emmean-SE, ymax = emmean+SE), width = 0.1, size=2) +
+   #geom_errorbar(aes(ymin = asymp.LCL, ymax =asymp.UCL), width = 0.1, size=2) +
+
   labs(
     x = "Triplet position",
     y = "RT (ms)",
@@ -633,7 +659,9 @@ emm_struct_df$sequence_type2<-ifelse(emm_struct_df$sequence_type=="unstructured"
 struct_plot<-ggplot(emm_struct_df, aes(x = sequence_type2, y = emmean, color = sequence_type2,  group = 1)) +
   geom_point(size = 4) +
   geom_line(size = 0.5, color = "black") +
-  geom_errorbar(aes(ymin = asymp.LCL, ymax = asymp.UCL), width = 0.1, size=2) +
+  #geom_errorbar(aes(ymin = asymp.LCL, ymax = asymp.UCL), width = 0.1, size=2) +
+    geom_errorbar(aes(ymin = emmean-SE, ymax = emmean+SE), width = 0.1, size=2) +
+
   labs(
     x = "Sequence type",
     y = "RT (ms)",
@@ -726,8 +754,389 @@ facil_plot<-ggplot(emm_facildf, aes(x = target_rep, y = emmean, color = sequence
 facil_plot
 ```
 
+# Affective state analyses
+```{r}
+#| eval: false
+#| include: false
+# check how many trials pwer participant per condition
+trial_val<-full_df_val%>%
+  group_by(participant, sequence_type) %>%
+  tally()
+
+unique(trial_val$n)
+```
+## plot valence difference and arousal
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# first valence
+
+# create summarised within-participant dataset
+dat_sum_tr_diff<- summarySEwithin(full_df_val[full_df_val$sequence_type=="structured",],
+                                     measurevar = "val_diff",
+                                     withinvars = "trial_new" , 
+                                     betweenvars = "feedback",
+                                     idvar = "participant", 
+                                     na.rm = T)
+
+# convert trial number as numeric
+dat_sum_tr_diff$trial_new<-as.numeric(dat_sum_tr_diff$trial_new)
+
+# plot
+val_diff_trial_plot<-ggplot(dat_sum_tr_diff,aes(x = trial_new, y = val_diff, 
+                       group = 1))+
+  # this adds the line
+  stat_summary(fun.y="mean",geom="line", size = 1.5)+
+  # this add the shadow considering the within-participant standard error
+  geom_ribbon(aes(ymin=val_diff-se, ymax=val_diff+se), alpha=0.5, colour=NA)+
+
+    xlab("Stream number")+
+  ylab("Valence change")+
+  
+  # create continuous breaks
+scale_x_continuous(
+  breaks = c(1, 30, 50, 70, 90)
+)+
+
+  theme(plot.title = element_text(hjust = 0.5))+
+  # use the classic theme
+  theme_classic()+
+  # customized parameters
+    params
+
+# create summarised within-particiopants mean and se
+dat_sum_tr_ar_diff<- summarySEwithin(full_df_val[full_df_val$sequence_type=="structured",],
+                                     measurevar = "arous_diff",
+                                     withinvars = "trial_new" , 
+                                     betweenvars = "feedback",
+                                     idvar = "participant", 
+                                     na.rm = T)
+
+dat_sum_tr_ar_diff$trial_new<-as.numeric(dat_sum_tr_ar_diff$trial_new)
+arousal_diff_trial_plot<-ggplot(dat_sum_tr_ar_diff,aes(x = trial_new, y = arous_diff, 
+                       group = 1))+
+  # this adds the line
+  stat_summary(fun.y="mean",geom="line", size = 1.5)+
+  # this add the shadow considering the within-participant standard error
+  geom_ribbon(aes(ymin=arous_diff-se, ymax=arous_diff+se), alpha=0.5, colour=NA)+
+   xlab("Stream number")+
+  ylab("Arousal centered")+
+  
+scale_x_continuous(
+  breaks = c(1, 30, 50, 70, 90)
+)+
+
+  theme(plot.title = element_text(hjust = 0.5))+
+  # use the classic theme
+  theme_classic()+
+    params
+
+# combine the plots and save the figure
+val_ar_plot<-ggpubr::ggarrange(val_diff_trial_plot, arousal_diff_trial_plot, 
+                     ncol = 2,nrow = 1, common.legend = TRUE, legend = "bottom", 
+                     labels = c("a)", "b)"), 
+                     font.label = list(size = 38, face = "bold"), 
+                     label.x = -0.02, label.y = 1.02) # position of tags in each panel (0–1))
+
+# save it
+ggsave("figures/valence_arousal_trialN.png", width = 12, height = 12, dpi = 300)
+
+val_ar_plot
+```
+
+
+## effect of target position on valence difference
+```{r}
+#| include: false
+# center trial number
+full_df_val$trial_new_c<-scale(full_df_val$trial_new)
+
+# target position is a categorical factor
+full_df_val$target_pos<-as.factor(full_df_val$target_pos)
+
+# sum to zero contrasts
+contrasts(full_df_val$target_pos) <- contr.sum(3)
+full_df_val$feedback<-as.factor(full_df_val$feedback)
+contrasts(full_df_val$feedback) <- contr.sum(2)
+```
+
+### random effect model selection
+```{r}
+#| eval: false
+#| include: false
+source("R/5.valence_diff_target_pos_random_effects_model_selection.R")
+```
+
+
+### now the model with predictors (target position)
+```{r}
+#| echo: true
+#| message: false
+#| warning: false
 
 
 
 
+mod_target_pos_val_diff<-lmer(val_diff~target_pos*trial_new_c*feedback+
+                  (1|participant), 
+                data = full_df_val)
+
+ #summary(mod_target_pos_val_diff)
+
+Anova(mod_target_pos_val_diff, type = 2)
+
+eta_squared(mod_target_pos_val_diff)
+
+# estimated marginal means and bonferroni-corrected pairwise comparisons
+emm <- emmeans(mod_target_pos_val_diff, ~ target_pos)
+
+
+contrast(emm, method = "pairwise", adjust = "bonferroni")
+
+
+```
+
+### plot valence difference as a function of target position
+```{r}
+#| message: false
+#| warning: true
+emm<-as.data.frame(emm)
+
+val_diff_target<-ggplot(emm, aes(x = target_pos, y = emmean, color = target_pos,  group = 1)) +
+  geom_point(size = 4) +
+  geom_line(size = 0.5, color = "black") +
+  geom_errorbar(aes(ymin = emmean-SE, ymax = emmean+SE), width = 0.1, size=2) +
+  labs(
+    x = "Triplet position",
+    y = "Predicted Valence change",
+    color = "Triplet position"
+  )+
+  theme_classic()+
+
+
+theme(legend.position = "none")+
+params
+
+
+# save it
+val_diff_target
+```
+
+## valence difference as a function of sequence type (sstructured vs random)
+### random effect model selection
+```{r}
+#| eval: false
+#| message: false
+#| warning: false
+#| include: false
+ source("6.valence_diff_target_pos_random_effects_model_selection")
+```
+
+### Include predictors
+```{r}
+mod_valdiff_sequence<-lmer(val_diff~sequence_type*trial_new_c*feedback+
+                  (1+sequence_type| participant), 
+                data =full_df_val[is.na(full_df_val$target_pos)|full_df_val$target_pos==3, ] )
+
+summary(mod_valdiff_sequence)
+anova(mod_valdiff_sequence, type =3)
+
+full_df_val$sequence_type_c<-ifelse(full_df_val$sequence_type=="structured", 0.5, -0.5)
+
+mod_valdiff_sequence_c<-lmer(val_diff~sequence_type_c*trial_new_c+
+                  (1+sequence_type| participant), 
+                data =full_df_val[is.na(full_df_val$target_pos)|full_df_val$target_pos==3, ] )
+
+summary(mod_valdiff_sequence_c)
+Anova(mod_valdiff_sequence_c, type =2)
+eta_squared(mod_valdiff_sequence_c)
+
+# trial structure as category
+# rename sequence type
+full_df_val$sequence_type2<-ifelse(full_df_val$sequence_type=="unstructured", "random", "structured")
+
+mod_valdiff_sequence<-lmer(val_diff~sequence_type2*trial_new_c+
+                  (1+sequence_type2| participant), 
+                data =full_df_val[is.na(full_df_val$target_pos)|full_df_val$target_pos==3, ] )
+
+# effect of trial number on random and structured streams
+emm_val_sequence_cat <- emtrends(mod_valdiff_sequence, ~ sequence_type2, var = "trial_new_c")
+
+test(emm_val_sequence_cat, adjust = "bonferroni")
+
+
+# in structured
+mod_valdiff_sequence_struct<-lmer(val_diff~trial_new_c+
+                  (1| participant), 
+                data =full_df_val[is.na(full_df_val$target_pos)|full_df_val$target_pos==3 & full_df_val$sequence_type=="structured", ] )
+
+summary(mod_valdiff_sequence_struct)
+
+# random
+mod_valdiff_sequence_unstruct<-lmer(val_diff~trial_new_c+
+                  (1| participant), 
+                data =full_df_val[is.na(full_df_val$target_pos)|full_df_val$target_pos==3 & full_df_val$sequence_type=="unstructured", ] )
+
+summary(mod_valdiff_sequence_unstruct)
+
+# structured without centering
+emm_val_sequence <- emmeans(mod_valdiff_sequence, ~ sequence_type2)
+
+contrast(emm_val_sequence, method = "pairwise", adjust = "bonferroni")
+
+emm_val_sequence_df<-as.data.frame(emm_val_sequence)
+
+```
+
+### Plot 
+```{r}
+#| message: false
+#| warning: false
+
+valdiff_struct<-ggplot(emm_val_sequence_df, aes(x = sequence_type2, y = emmean, color = sequence_type2,  group = 1)) +
+  geom_point(size = 4) +
+  geom_line(size = 0.5, color = "black") +
+  geom_errorbar(aes(ymin = emmean-SE, ymax = emmean+SE), width = 0.1, size=2) +
+
+  labs(
+    x = "Sequence type",
+    y = "Predicted valence change",
+    color = "Sequence Type"
+  )+
+  theme_classic()+
+  params
+
+
+
+```
+
+## effect of taget position on arousal difference
+### model selection for random effects
+```{r}
+#| eval: false
+#| message: false
+#| warning: false
+#| include: false
+source("R/7.arousal_diff_target_pos_random_effects_model_selection.R")
+```
+
+### Include the predictors
+```{r}
+mod_arous_diff_comp_struct<-lmer(arous_diff~target_pos*feedback*trial_new_c+
+                                   (1| participant), 
+                                 data =full_df_val[full_df_val$sequence_type=="structured",] )
+
+summary(mod_arous_diff_comp_struct)
+Anova(mod_arous_diff_comp_struct, type = 2)
+
+eta_squared(mod_arous_diff_comp_struct)
+emm_aros_diff_target <- emmeans(mod_arous_diff_comp_struct, ~ target_pos)
+contrast(emm_aros_diff_target, method = "pairwise", adjust = "bonferroni")
+
+```
+
+### Plot arousal difference as a function of target position
+```{r}
+emm_aros_diff_target_df<-as.data.frame(emm_aros_diff_target)
+
+arousal_diff_target<-ggplot(emm_aros_diff_target_df, aes(x = target_pos, y = emmean, color = target_pos,  group = 1)) +
+  geom_point(size = 4) +
+  geom_line(size = 0.5, color = "black") +
+  geom_errorbar(aes(ymin = emmean-SE, ymax = emmean+SE), width = 0.1, size=2) +
+  labs(
+    x = "Triplet position",
+    y = "Predicted arousal change",
+    color = "Triplet position"
+  )+
+  theme_classic()+
+theme(legend.position = "none")+
+params
+
+
+
+```
+
+## Arousal difference as a function of sequence type
+### Random effect structure determination 
+```{r}
+#| eval: false
+#| message: false
+#| warning: false
+#| include: false
+source("R/8.arousal_diff_sequence_type_random_effects_model_selection")
+```
+
+### Include the predictors
+```{r}
+
+mod_arous_diff_comp_struct_sequence<-lmer(arous_diff~sequence_type2*feedback*trial_new_c+
+                  (1+sequence_type2| participant), 
+                data =full_df_val )
+
+summary(mod_arous_diff_comp_struct_sequence)
+Anova(mod_arous_diff_comp_struct_sequence, type = 2)
+eta_squared(mod_arous_diff_comp_struct_sequence)
+
+emm_aros_diff_struct <- emmeans(mod_arous_diff_comp_struct_sequence, ~ sequence_type2|feedback)
+
+
+contrast(emm_aros_diff_struct, method = "pairwise", adjust = "bonferroni")
+```
+### Plot 
+```{r}
+
+emm_aros_diff_struct_nofeedb <- as.data.frame(emmeans(mod_arous_diff_comp_struct_sequence, ~ sequence_type2))
+
+arousal_diff_struct_nofeedb<-ggplot(emm_aros_diff_struct_nofeedb, aes(x = sequence_type2, y = emmean, color = sequence_type2,  group = 1)) +
+  geom_point(size = 4) +
+  geom_line(size = 0.5, color = "black") +
+  geom_errorbar(aes(ymin = emmean-SE, ymax = emmean+SE), width = 0.1, size=2) +
+  labs(
+    x = "Sequence type",
+    y = "Predicted arousal change",
+    color = "Sequence Type"
+  )+
+  theme_classic()+
+#   facet_wrap(.~feedback,
+# labeller = as_labeller(c(
+#     "feedb" = "Feedback",
+#     "no_feedb" = "No feedback"
+# ))
+#)+
+theme(legend.position = "none")+
+params
+```
+
+## Combine the plots
+```{r}
+plots_val_aros<-ggpubr::ggarrange(val_diff_target, valdiff_struct,arousal_diff_target,
+                                  arousal_diff_struct_nofeedb,ncol = 2,nrow =2,  common.legend = TRUE, legend = "none",
+                                  labels = c("a)", "b)" , "c)", "d)"), 
+                                   font.label = list(size = 38, face = "bold"),
+                                  label.x = 0, label.y = 0.98) # position of tags in each panel (0–1))
+
+
+ggsave(filename =  "figures/valence_arousal_plots.png", 
+       width = 22, height = 16, dpi = 300)
+
+# plot and change the params
+params2<-    theme(
+    plot.title = element_text(size = 8),
+    axis.title.x = element_text(size = 10),
+    axis.title.y = element_text(size = 10),
+    axis.text=element_text(size=8),
+    legend.text=element_text(size=rel(1)),
+    legend.title = element_text(size=rel(1)), 
+    strip.text.x = element_text(size=8)
+  )
+
+ggpubr::ggarrange(val_diff_target+params2, valdiff_struct+params2,
+                  arousal_diff_target+params2, arousal_diff_struct_nofeedb+params2,
+                  ncol = 2,nrow =2,  common.legend = TRUE, legend = "none",
+                                  labels = c("a)", "b)" , "c)", "d)"), 
+                                   font.label = list(size = 15, face = "bold"),
+                                  label.x = 0, label.y = 1.05) # position of tags in each panel (0–1))
+```
 
